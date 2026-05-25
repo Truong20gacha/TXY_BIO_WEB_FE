@@ -13,7 +13,12 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4 md:gap-8">
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-2.5">
-              <span className="block flex-shrink-0 w-[22px] h-[22px] bg-accent-bg" />
+              <img
+                src="/images/logo.webp"
+                alt=""
+                aria-hidden="true"
+                className="block flex-shrink-0 h-7 w-auto bg-[#F0F4F1] mix-blend-multiply"
+              />
               <span className="text-body-sm font-medium tracking-[0.12em] uppercase text-surface-white">
                 TXYbio
               </span>

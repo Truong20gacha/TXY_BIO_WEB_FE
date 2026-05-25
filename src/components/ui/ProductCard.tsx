@@ -47,7 +47,7 @@ export function ProductCard({ product, index }: ProductCardProps) {
   const benefitTags = (extras.keyBenefits ?? []).slice(0, MAX_BENEFIT_TAGS)
   const form = extras.form
 
-  const angleShot = product.gallery.length > 1 ? product.gallery[1] : null
+  const angleShot = product.gallery.find(g => g.includes('3d-angle')) ?? null
 
   return (
     <article className="relative flex flex-col p-6 border border-line-divider hover:bg-surface-alt transition-colors duration-200 md:p-8">

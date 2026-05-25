@@ -901,8 +901,8 @@
       "category": "animal-nutrition",
       "image": "/images/products/yeast-cell-wall-mos/card.png",
       "gallery": [
-        "/images/products/yeast-cell-wall-mos/card.png",
-        "/images/products/yeast-cell-wall-mos/3d-angle.png"
+        "/images/products/yeast-cell-wall-mos/3d-angle.png",
+        "/images/products/yeast-cell-wall-mos/card.png"
       ],
       "shortDescription": "Mannan-oligosaccharide and beta-glucan complex that binds pathogens, supports beneficial gut flora, and modulates immune response.",
       "fullDescription": "Yeast cell wall is derived from a yeast extraction process and accounts for approximately 25% of the total cell mass. It is composed primarily of cell wall proteins, mannoproteins, glucans, chitin, and N-acetylglucosamine. The two functional ingredients are mannan-oligosaccharides (MOS) and beta-glucans, which together deliver multiple gut and immune benefits in shrimp and poultry.",
@@ -935,16 +935,37 @@
         }
       ],
       "composition": [
-        { "label": "β-glucan",     "value": 20 },
-        { "label": "MOS",          "value": 20 },
-        { "label": "Crude protein", "value": 30 },
-        { "label": "Others",       "value": 30 }
+        {
+          "label": "β-glucan",
+          "value": 20
+        },
+        {
+          "label": "MOS",
+          "value": 20
+        },
+        {
+          "label": "Crude protein",
+          "value": 30
+        },
+        {
+          "label": "Others",
+          "value": 30
+        }
       ],
       "modeOfAction": {
         "steps": [
-          { "title": "Bind",  "body": "MOS molecules attach to fimbriae of pathogenic bacteria such as E. coli and Salmonella." },
-          { "title": "Block", "body": "Bound bacteria can no longer adhere to intestinal villi — colonisation is prevented." },
-          { "title": "Flush", "body": "Bacteria pass through the gut with faeces; no infection establishes in the host." }
+          {
+            "title": "Bind",
+            "body": "MOS molecules attach to fimbriae of pathogenic bacteria such as E. coli and Salmonella."
+          },
+          {
+            "title": "Block",
+            "body": "Bound bacteria can no longer adhere to intestinal villi — colonisation is prevented."
+          },
+          {
+            "title": "Flush",
+            "body": "Bacteria pass through the gut with faeces; no infection establishes in the host."
+          }
         ]
       },
       "dosages": [
@@ -978,7 +999,11 @@
       "shelfLife": "24 months",
       "storage": "Store in a cool, dry place in original packaging",
       "datasheetUrl": "/datasheets/yeast-cell-wall-mos.pdf",
-      "primaryFor": ["shrimp", "broiler", "layer"],
+      "primaryFor": [
+        "shrimp",
+        "broiler",
+        "layer"
+      ],
       "relatedProducts": [
         "yeast-beta-glucan",
         "autolyzed-yeast"
@@ -992,8 +1017,8 @@
       "category": "animal-nutrition",
       "image": "/images/products/yeast-beta-glucan/card.png",
       "gallery": [
-        "/images/products/yeast-beta-glucan/card.png",
-        "/images/products/yeast-beta-glucan/3d-angle.png"
+        "/images/products/yeast-beta-glucan/3d-angle.png",
+        "/images/products/yeast-beta-glucan/card.png"
       ],
       "shortDescription": "Purified beta-(1,3)-D-glucan from baker's yeast cell walls — one of the most potent anti-infective immunomodulators available.",
       "fullDescription": "Yeast beta-glucan, also known as beta-(1,3)-D-glucan, is a specialised polysaccharide derived from the cell walls of baker's yeast (Saccharomyces cerevisiae). Purified to 70–90% concentration, it ranks among the most potent anti-infective immunomodulators in the beta-(1,3)-glucan family.",
@@ -1018,16 +1043,37 @@
         }
       ],
       "composition": [
-        { "label": "β-glucan", "value": 80 },
-        { "label": "Fat",      "value": 5 },
-        { "label": "Protein",  "value": 3 },
-        { "label": "Others",   "value": 12 }
+        {
+          "label": "β-glucan",
+          "value": 80
+        },
+        {
+          "label": "Fat",
+          "value": 5
+        },
+        {
+          "label": "Protein",
+          "value": 3
+        },
+        {
+          "label": "Others",
+          "value": 12
+        }
       ],
       "modeOfAction": {
         "steps": [
-          { "title": "Recognise", "body": "β-glucan binds to Dectin-1 receptors on macrophages and neutrophils." },
-          { "title": "Activate",  "body": "Receptor binding triggers cytokine release and primes the innate immune response." },
-          { "title": "Defend",    "body": "Enhanced systemic resistance to viral, bacterial, and parasitic challenges." }
+          {
+            "title": "Recognise",
+            "body": "β-glucan binds to Dectin-1 receptors on macrophages and neutrophils."
+          },
+          {
+            "title": "Activate",
+            "body": "Receptor binding triggers cytokine release and primes the innate immune response."
+          },
+          {
+            "title": "Defend",
+            "body": "Enhanced systemic resistance to viral, bacterial, and parasitic challenges."
+          }
         ]
       },
       "dosages": [
@@ -1061,7 +1107,10 @@
       "shelfLife": "24 months",
       "storage": "Store in a cool, dry place in original packaging",
       "datasheetUrl": "/datasheets/yeast-beta-glucan.pdf",
-      "primaryFor": ["shrimp", "broiler"],
+      "primaryFor": [
+        "shrimp",
+        "broiler"
+      ],
       "relatedProducts": [
         "yeast-cell-wall-mos",
         "selenium-yeast"
@@ -1075,8 +1124,8 @@
       "category": "animal-nutrition",
       "image": "/images/products/selenium-yeast/card.png",
       "gallery": [
-        "/images/products/selenium-yeast/card.png",
-        "/images/products/selenium-yeast/3d-angle.png"
+        "/images/products/selenium-yeast/3d-angle.png",
+        "/images/products/selenium-yeast/card.png"
       ],
       "shortDescription": "High-bioavailability organic selenium enriched in yeast cells through submerged fermentation.",
       "fullDescription": "Selenium yeast is produced by culturing specially selected strains of Saccharomyces cerevisiae in a selenium-enriched medium. The resulting product contains selenium predominantly in organic form (selenomethionine), offering significantly higher bioavailability and safety than inorganic sodium selenite.",
@@ -1109,15 +1158,33 @@
         }
       ],
       "composition": [
-        { "label": "Crude protein", "value": 40 },
-        { "label": "Moisture",      "value": 6 },
-        { "label": "Others",        "value": 54 }
+        {
+          "label": "Crude protein",
+          "value": 40
+        },
+        {
+          "label": "Moisture",
+          "value": 6
+        },
+        {
+          "label": "Others",
+          "value": 54
+        }
       ],
       "modeOfAction": {
         "steps": [
-          { "title": "Absorb",  "body": "Organic selenium (selenomethionine) is absorbed via amino acid transporters in the gut." },
-          { "title": "Convert", "body": "Selenium is incorporated into selenoproteins like glutathione peroxidase (GPx)." },
-          { "title": "Protect", "body": "Selenoproteins scavenge free radicals and reduce oxidative damage in tissues." }
+          {
+            "title": "Absorb",
+            "body": "Organic selenium (selenomethionine) is absorbed via amino acid transporters in the gut."
+          },
+          {
+            "title": "Convert",
+            "body": "Selenium is incorporated into selenoproteins like glutathione peroxidase (GPx)."
+          },
+          {
+            "title": "Protect",
+            "body": "Selenoproteins scavenge free radicals and reduce oxidative damage in tissues."
+          }
         ]
       },
       "dosages": [
@@ -1151,7 +1218,10 @@
       "shelfLife": "24 months",
       "storage": "Store in a cool, dry place in original packaging",
       "datasheetUrl": "/datasheets/selenium-yeast.pdf",
-      "primaryFor": ["layer", "shrimp"],
+      "primaryFor": [
+        "layer",
+        "shrimp"
+      ],
       "relatedProducts": [
         "yeast-beta-glucan",
         "autolyzed-yeast"
@@ -1165,8 +1235,8 @@
       "category": "animal-nutrition",
       "image": "/images/products/autolyzed-yeast/card.png",
       "gallery": [
-        "/images/products/autolyzed-yeast/card.png",
-        "/images/products/autolyzed-yeast/3d-angle.png"
+        "/images/products/autolyzed-yeast/3d-angle.png",
+        "/images/products/autolyzed-yeast/card.png"
       ],
       "shortDescription": "Highly digestible protein, free amino acids, peptides, nucleic acids, beta-glucans, mannans, and flavor nucleotides — ideal for early-stage growth.",
       "fullDescription": "Autolyzed yeast is derived from baker's yeast (Saccharomyces cerevisiae) broken down through controlled autolysis. The process releases protein as free amino acids and peptides while retaining the full functional profile of the cell — including beta-glucans for immune support, mannans for pathogen binding, functional nucleic acids for growth, and flavor nucleotides for feed palatability. The result is significantly more digestible than intact yeast cells, making it ideal for early-stage growth in shrimp post-larvae and broiler chicks.",
@@ -1191,14 +1261,29 @@
         }
       ],
       "composition": [
-        { "label": "Crude protein",       "value": 45 },
-        { "label": "Functional fraction", "value": 55 }
+        {
+          "label": "Crude protein",
+          "value": 45
+        },
+        {
+          "label": "Functional fraction",
+          "value": 55
+        }
       ],
       "modeOfAction": {
         "steps": [
-          { "title": "Release", "body": "Controlled autolysis breaks yeast cells into free amino acids, peptides, and nucleotides." },
-          { "title": "Absorb",  "body": "Highly bioavailable peptides absorbed faster than intact protein — no enzymatic step needed." },
-          { "title": "Drive",   "body": "Nucleotides support gut development; flavour nucleotides boost feed palatability." }
+          {
+            "title": "Release",
+            "body": "Controlled autolysis breaks yeast cells into free amino acids, peptides, and nucleotides."
+          },
+          {
+            "title": "Absorb",
+            "body": "Highly bioavailable peptides absorbed faster than intact protein — no enzymatic step needed."
+          },
+          {
+            "title": "Drive",
+            "body": "Nucleotides support gut development; flavour nucleotides boost feed palatability."
+          }
         ]
       },
       "dosages": [
@@ -1232,13 +1317,15 @@
       "shelfLife": "24 months",
       "storage": "Store in a cool, dry place in original packaging",
       "datasheetUrl": "/datasheets/autolyzed-yeast.pdf",
-      "primaryFor": ["shrimp", "broiler"],
+      "primaryFor": [
+        "shrimp",
+        "broiler"
+      ],
       "relatedProducts": [
         "yeast-cell-wall-mos",
         "selenium-yeast"
       ]
     },
-
     {
       "id": "ye-standard-powder",
       "slug": "ye-standard-powder",
@@ -1250,8 +1337,8 @@
       "audienceTag": "Food ingredient",
       "image": "/images/products/ye-standard-powder/card.png",
       "gallery": [
-        "/images/products/ye-standard-powder/card.png",
-        "/images/products/ye-standard-powder/3d-angle.png"
+        "/images/products/ye-standard-powder/3d-angle.png",
+        "/images/products/ye-standard-powder/card.png"
       ],
       "shortDescription": "Natural savoury yeast extract for soups, sauces, snacks, bouillon, and vegan cooking — non-GMO, gluten-free.",
       "fullDescription": "YE Standard Powder is a versatile yeast extract designed for food manufacturing. Provides clean-label umami and savoury notes for soups, sauces, seasonings, snacks, bouillon, and plant-based dishes. Suitable for vegan applications.",
@@ -1274,25 +1361,53 @@
         "Clean label"
       ],
       "specifications": [
-        { "label": "Total Nitrogen", "value": "10%" },
-        { "label": "FAN", "value": "4%" },
-        { "label": "Moisture", "value": "<6%" },
-        { "label": "NaCl", "value": "≤5%" },
-        { "label": "Ash", "value": "15%" },
-        { "label": "pH", "value": "4.0–7.0" },
-        { "label": "Appearance", "value": "Light brown powder" }
+        {
+          "label": "Total Nitrogen",
+          "value": "10%"
+        },
+        {
+          "label": "FAN",
+          "value": "4%"
+        },
+        {
+          "label": "Moisture",
+          "value": "<6%"
+        },
+        {
+          "label": "NaCl",
+          "value": "≤5%"
+        },
+        {
+          "label": "Ash",
+          "value": "15%"
+        },
+        {
+          "label": "pH",
+          "value": "4.0–7.0"
+        },
+        {
+          "label": "Appearance",
+          "value": "Light brown powder"
+        }
       ],
       "dosages": [],
       "inclusionRate": "Per product formulation requirements",
-      "certifications": ["iso-22000", "brc", "halal", "kosher"],
+      "certifications": [
+        "iso-22000",
+        "brc",
+        "halal",
+        "kosher"
+      ],
       "packaging": "20 kg paper bag",
       "shelfLife": "24 months",
       "storage": "Cool dry place, ≤25°C, sealed",
       "datasheetUrl": "/datasheets/ye-standard-powder.pdf",
       "primaryFor": [],
-      "relatedProducts": ["ye-standard-paste", "ye-umami"]
+      "relatedProducts": [
+        "ye-standard-paste",
+        "ye-umami"
+      ]
     },
-
     {
       "id": "ye-standard-paste",
       "slug": "ye-standard-paste",
@@ -1304,8 +1419,8 @@
       "audienceTag": "Food ingredient",
       "image": "/images/products/ye-standard-paste/card.png",
       "gallery": [
-        "/images/products/ye-standard-paste/card.png",
-        "/images/products/ye-standard-paste/3d-angle.png"
+        "/images/products/ye-standard-paste/3d-angle.png",
+        "/images/products/ye-standard-paste/card.png"
       ],
       "shortDescription": "Concentrated savoury yeast paste for sauces, ready meals, marinades, soup bases, and plant-based meat applications.",
       "fullDescription": "YE Standard Paste delivers concentrated yeast extract flavour in liquid form, ideal for industrial cooking applications. Used in sauces, ready meals, marinades, soup bases, and plant-based meat formulations where viscous form is preferred.",
@@ -1328,25 +1443,53 @@
         "Plant-based meat ready"
       ],
       "specifications": [
-        { "label": "Total Nitrogen", "value": "≥9%" },
-        { "label": "FAN", "value": "≥3%" },
-        { "label": "Moisture", "value": "35%" },
-        { "label": "NaCl", "value": "5%" },
-        { "label": "Ash", "value": "≤15%" },
-        { "label": "pH", "value": "4.5–7.0" },
-        { "label": "Appearance", "value": "Light to medium brown paste" }
+        {
+          "label": "Total Nitrogen",
+          "value": "≥9%"
+        },
+        {
+          "label": "FAN",
+          "value": "≥3%"
+        },
+        {
+          "label": "Moisture",
+          "value": "35%"
+        },
+        {
+          "label": "NaCl",
+          "value": "5%"
+        },
+        {
+          "label": "Ash",
+          "value": "≤15%"
+        },
+        {
+          "label": "pH",
+          "value": "4.5–7.0"
+        },
+        {
+          "label": "Appearance",
+          "value": "Light to medium brown paste"
+        }
       ],
       "dosages": [],
       "inclusionRate": "Per product formulation requirements",
-      "certifications": ["iso-22000", "brc", "halal", "kosher"],
+      "certifications": [
+        "iso-22000",
+        "brc",
+        "halal",
+        "kosher"
+      ],
       "packaging": "25 kg HDPE pail",
       "shelfLife": "18 months",
       "storage": "4–25°C, refrigerate after opening",
       "datasheetUrl": "/datasheets/ye-standard-paste.pdf",
       "primaryFor": [],
-      "relatedProducts": ["ye-standard-powder", "ye-umami"]
+      "relatedProducts": [
+        "ye-standard-powder",
+        "ye-umami"
+      ]
     },
-
     {
       "id": "ye-umami",
       "slug": "ye-umami",
@@ -1358,8 +1501,8 @@
       "audienceTag": "Food ingredient",
       "image": "/images/products/ye-umami/card.png",
       "gallery": [
-        "/images/products/ye-umami/card.png",
-        "/images/products/ye-umami/3d-angle.png"
+        "/images/products/ye-umami/3d-angle.png",
+        "/images/products/ye-umami/card.png"
       ],
       "shortDescription": "Premium yeast extract enriched with 5'-nucleotides (I+G) at 8–12% — superior umami booster for plant-based meat, ramen, and gourmet seasoning.",
       "fullDescription": "YE Umami Type is a premium yeast extract enriched with naturally-occurring 5'-nucleotides (IMP + GMP, collectively 'I+G') at 8–12%. Delivers superior umami depth and synergistic flavour enhancement without added MSG. Designed for plant-based meat, premium snacks, gourmet seasoning, ramen, and bouillon applications.",
@@ -1381,24 +1524,49 @@
         "No added MSG"
       ],
       "specifications": [
-        { "label": "Protein", "value": "60–70%" },
-        { "label": "I+G (IMP+GMP)", "value": "8–12%" },
-        { "label": "Glutamic acid", "value": "≤12%" },
-        { "label": "pH", "value": "5.0–6.5" },
-        { "label": "Moisture", "value": "≤6%" },
-        { "label": "Appearance", "value": "Light yellow to brown powder" }
+        {
+          "label": "Protein",
+          "value": "60–70%"
+        },
+        {
+          "label": "I+G (IMP+GMP)",
+          "value": "8–12%"
+        },
+        {
+          "label": "Glutamic acid",
+          "value": "≤12%"
+        },
+        {
+          "label": "pH",
+          "value": "5.0–6.5"
+        },
+        {
+          "label": "Moisture",
+          "value": "≤6%"
+        },
+        {
+          "label": "Appearance",
+          "value": "Light yellow to brown powder"
+        }
       ],
       "dosages": [],
       "inclusionRate": "0.1–0.5% of total formulation",
-      "certifications": ["iso-22000", "brc", "halal", "kosher"],
+      "certifications": [
+        "iso-22000",
+        "brc",
+        "halal",
+        "kosher"
+      ],
       "packaging": "20 kg paper bag",
       "shelfLife": "24 months",
       "storage": "Cool dry place, ≤25°C",
       "datasheetUrl": "/datasheets/ye-umami.pdf",
       "primaryFor": [],
-      "relatedProducts": ["ye-kokumi", "ye-standard-powder"]
+      "relatedProducts": [
+        "ye-kokumi",
+        "ye-standard-powder"
+      ]
     },
-
     {
       "id": "ye-kokumi",
       "slug": "ye-kokumi",
@@ -1410,8 +1578,8 @@
       "audienceTag": "Food ingredient",
       "image": "/images/products/ye-kokumi/card.png",
       "gallery": [
-        "/images/products/ye-kokumi/card.png",
-        "/images/products/ye-kokumi/3d-angle.png"
+        "/images/products/ye-kokumi/3d-angle.png",
+        "/images/products/ye-kokumi/card.png"
       ],
       "shortDescription": "Specialty yeast extract rich in γ-glutamyl peptides — delivers kokumi (mouthfulness and flavour continuity) for plant-based dairy, vegan cheese, and low-salt applications.",
       "fullDescription": "YE Kokumi Type is a specialty yeast extract rich in γ-glutamyl peptides that delivers 'kokumi' — the Japanese flavour concept of mouthfulness, body, and continuity. Particularly effective in plant-based dairy, vegan cheese, dairy-free desserts, low-salt food, and artisanal sauce applications.",
@@ -1433,24 +1601,49 @@
         "Low-salt ready"
       ],
       "specifications": [
-        { "label": "Protein", "value": "65–75%" },
-        { "label": "Total Nitrogen", "value": "≥5%" },
-        { "label": "FAN", "value": "≥2%" },
-        { "label": "Moisture", "value": "≤6%" },
-        { "label": "pH", "value": "5.0–6.5" },
-        { "label": "Appearance", "value": "Light brown powder" }
+        {
+          "label": "Protein",
+          "value": "65–75%"
+        },
+        {
+          "label": "Total Nitrogen",
+          "value": "≥5%"
+        },
+        {
+          "label": "FAN",
+          "value": "≥2%"
+        },
+        {
+          "label": "Moisture",
+          "value": "≤6%"
+        },
+        {
+          "label": "pH",
+          "value": "5.0–6.5"
+        },
+        {
+          "label": "Appearance",
+          "value": "Light brown powder"
+        }
       ],
       "dosages": [],
       "inclusionRate": "Per product formulation requirements",
-      "certifications": ["iso-22000", "brc", "halal", "kosher"],
+      "certifications": [
+        "iso-22000",
+        "brc",
+        "halal",
+        "kosher"
+      ],
       "packaging": "20 kg paper bag",
       "shelfLife": "24 months",
       "storage": "Cool dry place, ≤25°C",
       "datasheetUrl": "/datasheets/ye-kokumi.pdf",
       "primaryFor": [],
-      "relatedProducts": ["ye-umami", "ye-standard-powder"]
+      "relatedProducts": [
+        "ye-umami",
+        "ye-standard-powder"
+      ]
     },
-
     {
       "id": "ye-ce-powder",
       "slug": "ye-ce-powder",
@@ -1462,8 +1655,8 @@
       "audienceTag": "Industrial use only",
       "image": "/images/products/ye-ce-powder/card.png",
       "gallery": [
-        "/images/products/ye-ce-powder/card.png",
-        "/images/products/ye-ce-powder/3d-angle.png"
+        "/images/products/ye-ce-powder/3d-angle.png",
+        "/images/products/ye-ce-powder/card.png"
       ],
       "shortDescription": "Sustained-release yeast nitrogen source for 5–7 day industrial fermentation campaigns — antibiotic, probiotic, enzyme, vaccine, and recombinant protein production.",
       "fullDescription": "YE Continuously Effective Powder delivers sustained nitrogen release optimised for long bioprocess campaigns (5–7 days). Designed for antibiotic, probiotic, enzyme, vaccine, and recombinant protein production where consistent nitrogen availability throughout fermentation drives yield and reproducibility.",
@@ -1485,23 +1678,45 @@
         "5–7 day campaign ready"
       ],
       "specifications": [
-        { "label": "Total Nitrogen", "value": "≥11%" },
-        { "label": "FAN", "value": "≥4%" },
-        { "label": "Moisture", "value": "≤8%" },
-        { "label": "Ash", "value": "≤10%" },
-        { "label": "Appearance", "value": "Light yellow to brown powder" }
+        {
+          "label": "Total Nitrogen",
+          "value": "≥11%"
+        },
+        {
+          "label": "FAN",
+          "value": "≥4%"
+        },
+        {
+          "label": "Moisture",
+          "value": "≤8%"
+        },
+        {
+          "label": "Ash",
+          "value": "≤10%"
+        },
+        {
+          "label": "Appearance",
+          "value": "Light yellow to brown powder"
+        }
       ],
       "dosages": [],
       "inclusionRate": "Per bioprocess specification",
-      "certifications": ["iso-22000", "brc", "halal", "kosher"],
+      "certifications": [
+        "iso-22000",
+        "brc",
+        "halal",
+        "kosher"
+      ],
       "packaging": "25 kg paper bag",
       "shelfLife": "24 months",
       "storage": "Cool dry place, ≤25°C, sealed",
       "datasheetUrl": "/datasheets/ye-ce-powder.pdf",
       "primaryFor": [],
-      "relatedProducts": ["ye-ce-paste", "ye-microbial-nutrition"]
+      "relatedProducts": [
+        "ye-ce-paste",
+        "ye-microbial-nutrition"
+      ]
     },
-
     {
       "id": "ye-fa-paste",
       "slug": "ye-fa-paste",
@@ -1513,8 +1728,8 @@
       "audienceTag": "Industrial use only",
       "image": "/images/products/ye-fa-paste/card.png",
       "gallery": [
-        "/images/products/ye-fa-paste/card.png",
-        "/images/products/ye-fa-paste/3d-angle.png"
+        "/images/products/ye-fa-paste/3d-angle.png",
+        "/images/products/ye-fa-paste/card.png"
       ],
       "shortDescription": "Rapid-release liquid yeast nitrogen for 24–48 hour fermentation cycles — probiotic, enzyme, starter cultures, and short-cycle bioprocess.",
       "fullDescription": "YE Fast-Acting Paste delivers rapid nitrogen release in liquid form, optimised for short-cycle bioprocesses (24–48 hours). Particularly effective for probiotic propagation, enzyme production, starter culture activation, and rapid-turnaround commercial fermentation.",
@@ -1536,23 +1751,45 @@
         "24–48h cycle ready"
       ],
       "specifications": [
-        { "label": "Total Nitrogen", "value": "≥10%" },
-        { "label": "FAN", "value": "≥4%" },
-        { "label": "Moisture", "value": "≤40%" },
-        { "label": "Ash", "value": "≤10%" },
-        { "label": "Appearance", "value": "Light brown paste" }
+        {
+          "label": "Total Nitrogen",
+          "value": "≥10%"
+        },
+        {
+          "label": "FAN",
+          "value": "≥4%"
+        },
+        {
+          "label": "Moisture",
+          "value": "≤40%"
+        },
+        {
+          "label": "Ash",
+          "value": "≤10%"
+        },
+        {
+          "label": "Appearance",
+          "value": "Light brown paste"
+        }
       ],
       "dosages": [],
       "inclusionRate": "Per bioprocess specification",
-      "certifications": ["iso-22000", "brc", "halal", "kosher"],
+      "certifications": [
+        "iso-22000",
+        "brc",
+        "halal",
+        "kosher"
+      ],
       "packaging": "20 kg HDPE pail",
       "shelfLife": "18 months",
       "storage": "4–25°C, refrigerate after opening",
       "datasheetUrl": "/datasheets/ye-fa-paste.pdf",
       "primaryFor": [],
-      "relatedProducts": ["ye-ce-paste", "ye-microbial-nutrition"]
+      "relatedProducts": [
+        "ye-ce-paste",
+        "ye-microbial-nutrition"
+      ]
     },
-
     {
       "id": "ye-microbial-nutrition",
       "slug": "ye-microbial-nutrition",
@@ -1564,8 +1801,8 @@
       "audienceTag": "Industrial use only",
       "image": "/images/products/ye-microbial-nutrition/card.png",
       "gallery": [
-        "/images/products/ye-microbial-nutrition/card.png",
-        "/images/products/ye-microbial-nutrition/3d-angle.png"
+        "/images/products/ye-microbial-nutrition/3d-angle.png",
+        "/images/products/ye-microbial-nutrition/card.png"
       ],
       "shortDescription": "Universal-grade pharma-quality yeast extract for R&D, pilot fermentation, cell culture, vaccine, and probiotic production. Available in powder or paste form.",
       "fullDescription": "YE for Microbial Nutrition is a universal-grade yeast extract designed for the breadth of bioprocessing applications: laboratory R&D, pilot fermentation, cell culture media, vaccine production, and commercial probiotic manufacturing. Available in both powder and paste forms. Rich in B-vitamins.",
@@ -1587,24 +1824,49 @@
         "Powder & paste options"
       ],
       "specifications": [
-        { "label": "Total Nitrogen", "value": "≥10%" },
-        { "label": "FAN", "value": "≥4%" },
-        { "label": "B-vitamins", "value": "Niacin · Biotin" },
-        { "label": "Moisture (powder)", "value": "≤6%" },
-        { "label": "Moisture (paste)", "value": "25–35%" },
-        { "label": "Appearance", "value": "Light yellow powder or brown paste" }
+        {
+          "label": "Total Nitrogen",
+          "value": "≥10%"
+        },
+        {
+          "label": "FAN",
+          "value": "≥4%"
+        },
+        {
+          "label": "B-vitamins",
+          "value": "Niacin · Biotin"
+        },
+        {
+          "label": "Moisture (powder)",
+          "value": "≤6%"
+        },
+        {
+          "label": "Moisture (paste)",
+          "value": "25–35%"
+        },
+        {
+          "label": "Appearance",
+          "value": "Light yellow powder or brown paste"
+        }
       ],
       "dosages": [],
       "inclusionRate": "Per bioprocess specification",
-      "certifications": ["iso-22000", "brc", "halal", "kosher"],
+      "certifications": [
+        "iso-22000",
+        "brc",
+        "halal",
+        "kosher"
+      ],
       "packaging": "20 kg bag (powder) or 20 kg HDPE pail (paste)",
       "shelfLife": "24 months (powder) / 18 months (paste)",
       "storage": "≤25°C (powder) / 4–25°C (paste)",
       "datasheetUrl": "/datasheets/ye-microbial-nutrition.pdf",
       "primaryFor": [],
-      "relatedProducts": ["ye-ce-powder", "ye-fa-paste"]
+      "relatedProducts": [
+        "ye-ce-powder",
+        "ye-fa-paste"
+      ]
     },
-
     {
       "id": "ye-ce-paste",
       "slug": "ye-ce-paste",
@@ -1616,8 +1878,8 @@
       "audienceTag": "Industrial use only",
       "image": "/images/products/ye-ce-paste/card.png",
       "gallery": [
-        "/images/products/ye-ce-paste/card.png",
-        "/images/products/ye-ce-paste/3d-angle.png"
+        "/images/products/ye-ce-paste/3d-angle.png",
+        "/images/products/ye-ce-paste/card.png"
       ],
       "shortDescription": "Liquid-form yeast extract for sustained-release feed in large-scale continuous bioreactors — antibiotic, biofuel, and biopharmaceutical production.",
       "fullDescription": "YE Continuously Effective Paste delivers sustained nitrogen release in liquid form, optimised for large-scale continuous bioreactor operations. Designed for antibiotic, biofuel, and biopharmaceutical production where consistent fed-batch supply drives campaign yield.",
@@ -1639,21 +1901,44 @@
         "Continuous bioreactor"
       ],
       "specifications": [
-        { "label": "Total Nitrogen", "value": "≥10%" },
-        { "label": "FAN", "value": "≥4%" },
-        { "label": "Moisture", "value": "≤40%" },
-        { "label": "Ash", "value": "≤10%" },
-        { "label": "Appearance", "value": "Light brown paste" }
+        {
+          "label": "Total Nitrogen",
+          "value": "≥10%"
+        },
+        {
+          "label": "FAN",
+          "value": "≥4%"
+        },
+        {
+          "label": "Moisture",
+          "value": "≤40%"
+        },
+        {
+          "label": "Ash",
+          "value": "≤10%"
+        },
+        {
+          "label": "Appearance",
+          "value": "Light brown paste"
+        }
       ],
       "dosages": [],
       "inclusionRate": "Per bioprocess specification",
-      "certifications": ["iso-22000", "brc", "halal", "kosher"],
+      "certifications": [
+        "iso-22000",
+        "brc",
+        "halal",
+        "kosher"
+      ],
       "packaging": "20 kg HDPE pail",
       "shelfLife": "18 months",
       "storage": "4–25°C, sealed",
       "datasheetUrl": "/datasheets/ye-ce-paste.pdf",
       "primaryFor": [],
-      "relatedProducts": ["ye-ce-powder", "ye-fa-paste"]
+      "relatedProducts": [
+        "ye-ce-powder",
+        "ye-fa-paste"
+      ]
     }
   ],
   "heroes": {

@@ -35,7 +35,12 @@ export function Header() {
       >
         <div className="container-x flex items-center justify-between py-5 md:py-6">
           <Link to="/" className="flex items-center gap-2.5">
-            <span className="block flex-shrink-0 w-[22px] h-[22px] bg-accent-primary" />
+            <img
+              src="/images/logo.webp"
+              alt=""
+              aria-hidden="true"
+              className="block flex-shrink-0 h-7 w-auto bg-[#F0F4F1] mix-blend-multiply"
+            />
             <span className="text-body-sm font-medium tracking-[0.12em] uppercase text-ink-primary">
               TXYbio
             </span>
@@ -101,9 +106,17 @@ export function Header() {
         )}
       >
         <div className="flex items-center justify-between px-6 py-5 border-b border-line-hair">
-          <span className="text-body-sm font-medium tracking-[0.12em] uppercase text-ink-primary">
-            TXYbio
-          </span>
+          <div className="flex items-center gap-2.5">
+            <img
+              src="/images/logo.webp"
+              alt=""
+              aria-hidden="true"
+              className="block flex-shrink-0 h-6 w-auto bg-[#F0F4F1] mix-blend-multiply"
+            />
+            <span className="text-body-sm font-medium tracking-[0.12em] uppercase text-ink-primary">
+              TXYbio
+            </span>
+          </div>
           <button
             className="flex items-center justify-center w-10 h-10 -mr-2 text-ink-primary"
             onClick={handleCloseDrawer}

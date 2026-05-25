@@ -1,0 +1,2653 @@
+{
+  "_meta": {
+    "source": "Content adapted from txybio.com (text only — TXY website uses placeholder images). Real placeholder images sourced from Unsplash for development. Replace with custom photography before launch.",
+    "audience": "Australian B2B importers · poultry farmers, shrimp farmers, distributors",
+    "focus": "Shrimp and poultry feed additives",
+    "language": "en",
+    "lastUpdated": "2026-05-19",
+    "imageStrategy": "All images use working URLs (Unsplash for photos, Wikimedia for cert logos, inline SVG for logo). These work during development but should be replaced with custom company photography and proper licensed cert badges before launch — see design-system.md → Photographer brief.",
+    "instructions": "Each top-level section has a 'consumedBy' array listing exactly which React components consume that data. Use this to navigate: when editing a section, you know which components will update."
+  },
+  "company": {
+    "consumedBy": [
+      {
+        "component": "Header",
+        "file": "src/components/common/Header.tsx",
+        "uses": [
+          "logoUrl",
+          "shortName",
+          "tagline"
+        ],
+        "as": "Logo image + brand text + hover tooltip"
+      },
+      {
+        "component": "Footer",
+        "file": "src/components/common/Footer.tsx",
+        "uses": [
+          "logoUrlWhite",
+          "shortName",
+          "fullDescription"
+        ],
+        "as": "Brand block (white logo on dark bg) + copyright line"
+      },
+      {
+        "component": "HomeHero",
+        "file": "src/sections/homepage/HomeHero.tsx",
+        "uses": [
+          "tagline"
+        ],
+        "as": "Visible above main headline as small text"
+      },
+      {
+        "component": "AboutHero",
+        "file": "src/sections/about/AboutHero.tsx",
+        "uses": [
+          "fullDescription",
+          "industryPosition"
+        ],
+        "as": "Hero body paragraph + eyebrow line"
+      },
+      {
+        "component": "AboutSnippet",
+        "file": "src/sections/homepage/AboutSnippet.tsx",
+        "uses": [
+          "shortDescription",
+          "established"
+        ],
+        "as": "Below-headline paragraph on homepage"
+      },
+      {
+        "component": "SEO meta tags",
+        "file": "src/lib/seo.ts",
+        "uses": [
+          "legalName",
+          "shortName"
+        ],
+        "as": "og:site_name, schema.org Organization"
+      }
+    ],
+    "legalName": "TXYbio Co., Ltd",
+    "shortName": "TXYbio",
+    "brandPrimary": "TXYbio",
+    "brandSecondary": "",
+    "tagline": "Yeast biotech for nutrition and fermentation.",
+    "shortDescription": "Pioneer in yeast fermentation for animal nutrition.",
+    "fullDescription": "TXYbio is a yeast biotechnology enterprise operating across three product lines: feed additives for shrimp and poultry, food ingredients for umami and savoury flavour, and yeast extracts for industrial fermentation. From three fermentation facilities in China, we serve global distributors with certified, export-ready products — each supported by full technical documentation and traceable quality control.",
+    "industryPosition": "Pioneer in the yeast fermentation industry",
+    "established": "2003",
+    "yearsInBusiness": "30+",
+    "headquarters": {
+      "city": "Shanghai",
+      "country": "China"
+    },
+    "logoUrl": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 28'><rect width='22' height='22' x='2' y='3' fill='%231F4D3D'/><text x='30' y='20' font-family='Inter,sans-serif' font-size='13' font-weight='500' letter-spacing='0.05em' fill='%231A1A1A'>TXYbio</text></svg>",
+    "logoUrlWhite": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 28'><rect width='22' height='22' x='2' y='3' fill='%23FFFFFF'/><text x='30' y='20' font-family='Inter,sans-serif' font-size='13' font-weight='500' letter-spacing='0.05em' fill='%23FFFFFF'>TXYbio</text></svg>",
+    "marketsServed": [
+      {
+        "region": "Australia",
+        "highlight": true
+      },
+      {
+        "region": "New Zealand",
+        "highlight": true
+      },
+      {
+        "region": "Europe",
+        "highlight": false
+      },
+      {
+        "region": "Americas",
+        "highlight": false
+      },
+      {
+        "region": "Southeast Asia",
+        "highlight": false
+      }
+    ],
+    "subsidiaries": [
+      {
+        "name": "TXYbio Biology Engineering Co., Ltd",
+        "type": "Research & Development",
+        "location": "Suzhou, China"
+      },
+      {
+        "name": "TXYbio Biotechnology Co., Ltd",
+        "type": "Production & Fermentation",
+        "location": "Shanghai, China"
+      },
+      {
+        "name": "TXYbio Australia Pty Ltd",
+        "type": "Distribution & Customer Service",
+        "location": "Sydney, Australia"
+      }
+    ]
+  },
+  "mission": {
+    "consumedBy": [
+      {
+        "component": "MissionVisionSection",
+        "file": "src/sections/about/MissionVisionSection.tsx",
+        "uses": [
+          "title",
+          "statement",
+          "description",
+          "iconName"
+        ],
+        "as": "Left card of 2-column Mission/Vision block"
+      },
+      {
+        "component": "AboutHero",
+        "file": "src/sections/about/AboutHero.tsx",
+        "uses": [
+          "statement"
+        ],
+        "as": "Optional subtitle below main headline"
+      }
+    ],
+    "title": "Our mission",
+    "statement": "Biotechnology for the benefit of agriculture.",
+    "description": "Use advanced biotechnology and production technology to provide high-quality products and services for animal nutrition, innovating sustainable approaches to shrimp and poultry production.",
+    "iconName": "compass"
+  },
+  "vision": {
+    "consumedBy": [
+      {
+        "component": "MissionVisionSection",
+        "file": "src/sections/about/MissionVisionSection.tsx",
+        "uses": [
+          "title",
+          "statement",
+          "description",
+          "iconName"
+        ],
+        "as": "Right card of 2-column Mission/Vision block"
+      }
+    ],
+    "title": "Our vision",
+    "statement": "To build an internationally leading biotechnology enterprise.",
+    "description": "Establish a leading position in yeast derivatives and animal nutrition across the Asia-Pacific region, with Australia as a primary export market.",
+    "iconName": "target"
+  },
+  "corePrinciples": {
+    "consumedBy": [
+      {
+        "component": "ValuesGrid",
+        "file": "src/sections/about/ValuesGrid.tsx",
+        "uses": [
+          "title",
+          "items[]"
+        ],
+        "as": "4-column grid, each card uses item.title + description + iconName"
+      },
+      {
+        "component": "ValuesTeaser",
+        "file": "src/sections/homepage/ValuesTeaser.tsx",
+        "uses": [
+          "title",
+          "items[]"
+        ],
+        "as": "Optional condensed 4 values on homepage"
+      }
+    ],
+    "title": "Core principles",
+    "items": [
+      {
+        "id": "sustainability",
+        "title": "Sustainable development",
+        "description": "Responsible choices in fermentation, sourcing, and waste management. We create today and future value for the enterprise, humanity, and the environment.",
+        "iconName": "leaf"
+      },
+      {
+        "id": "innovation",
+        "title": "Innovate and enterprising",
+        "description": "Long-term investments in research and development to solve current challenges for our customers in aquaculture and poultry production.",
+        "iconName": "lightbulb"
+      },
+      {
+        "id": "integrity",
+        "title": "Professional integrity",
+        "description": "Insist on providing customers with high-quality products and professional services. Strict adherence to our code of conduct to maintain reputation and credibility.",
+        "iconName": "shield"
+      },
+      {
+        "id": "quality",
+        "title": "Quality first",
+        "description": "Strict management according to established systems, regulations, and standard guidelines across product quality, production, safety, and environmental protection.",
+        "iconName": "badge-check"
+      }
+    ]
+  },
+  "philosophy": {
+    "consumedBy": [
+      {
+        "component": "PhilosophyAccordion",
+        "file": "src/sections/about/PhilosophyAccordion.tsx",
+        "uses": [
+          "title",
+          "items[]"
+        ],
+        "as": "Accordion: title is button, description is panel body, image is right side visual"
+      },
+      {
+        "component": "CareersCulture",
+        "file": "src/sections/careers/CareersCulture.tsx",
+        "uses": [
+          "items[]"
+        ],
+        "as": "Future: reuse same items in Careers page culture section"
+      }
+    ],
+    "title": "Our philosophy",
+    "items": [
+      {
+        "id": "talent-education",
+        "title": "Talent education",
+        "description": "We attach great importance to the cultivation of talent. Talents are the solid foundation for long-term sustainable development. We organise internal and external training programmes annually — face-to-face courses, online learning, on-the-job learning, and cross-company exchange learning.",
+        "image": "https://picsum.photos/seed/team-training/1200/800",
+        "imageAlt": "Team training session"
+      },
+      {
+        "id": "work-life-balance",
+        "title": "Work-life balance",
+        "description": "Committed to assisting employees to achieve balance between work and family. Regular cultural and recreational activities such as sports events, birthday parties, parent-child activities, and festive evenings create our unique 'home culture'.",
+        "image": "https://picsum.photos/seed/team-culture/1200/800",
+        "imageAlt": "Team celebrating together"
+      },
+      {
+        "id": "integrity-pragmatism",
+        "title": "Integrity and pragmatism",
+        "description": "In product quality, production process, product safety, human resources, environmental protection, corporate governance, and risk management — we strictly manage according to established systems, regulations, procedures, and standard guidelines.",
+        "image": "https://picsum.photos/seed/integrity-work/1200/800",
+        "imageAlt": "Documentation and processes"
+      }
+    ]
+  },
+  "founder": {
+    "consumedBy": [
+      {
+        "component": "FounderSection",
+        "file": "src/sections/about/FounderSection.tsx",
+        "uses": [
+          "name",
+          "title",
+          "photo",
+          "credentials[]",
+          "biography",
+          "quote"
+        ],
+        "as": "Full-width section: photo left, text right (desktop) / stacked mobile"
+      },
+      {
+        "component": "FooterCredit",
+        "file": "src/components/common/Footer.tsx",
+        "uses": [
+          "name"
+        ],
+        "as": "Optional 'Founded by X' line in footer"
+      }
+    ],
+    "name": "[REPLACE] Founder Name",
+    "title": "Founder & Chairman",
+    "photo": "https://picsum.photos/seed/founder-portrait/800/800",
+    "photoAlt": "Portrait of the founder",
+    "credentials": [
+      "[REPLACE] Master's degree from [University]",
+      "[REPLACE] Founded the company in [year]",
+      "Chairman of the company since founding",
+      "[REPLACE] Industry association role 1",
+      "[REPLACE] Industry association role 2"
+    ],
+    "biography": "[REPLACE] Brief 2-3 sentence biography in third person. Highlight academic background, industry experience, and leadership achievements relevant to Australian B2B audience.",
+    "quote": "Pursue excellence — success will catch up with you inadvertently."
+  },
+  "chairmanMessage": {
+    "consumedBy": [
+      {
+        "component": "ChairmanMessageSection",
+        "file": "src/sections/about/ChairmanMessageSection.tsx",
+        "uses": [
+          "title",
+          "photo",
+          "name",
+          "position",
+          "body"
+        ],
+        "as": "Quote-style layout: signature photo at top, body below"
+      }
+    ],
+    "title": "Message from the Chairman",
+    "photo": "https://picsum.photos/seed/chairman-portrait/800/800",
+    "photoAlt": "Portrait of the chairman",
+    "name": "[REPLACE] Chairman Name",
+    "position": "Chairman",
+    "body": "[REPLACE] 2-3 paragraph message. Tone: professional, forward-looking, sincere. Topics: company purpose, commitment to Australian customers, vision for the next 5 years, gratitude to partners. Keep under 300 words."
+  },
+  "homepageSlides": {
+    "consumedBy": [
+      {
+        "component": "HomeHero",
+        "file": "src/sections/homepage/HomeHero.tsx",
+        "uses": [
+          "items[]"
+        ],
+        "as": "Swiper.js slideshow, each slide uses eyebrow/headlineLine1/headlineLine2/description/image/primaryCta/secondaryCta. Auto-play 6s."
+      }
+    ],
+    "items": [
+      {
+        "id": "slide-1",
+        "eyebrow": "001 / FERMENTATION",
+        "headlineLine1": "Own fermentation base.",
+        "headlineLine2": "Full range of yeast products.",
+        "description": "Three facilities. End-to-end control from culture to packaging.",
+        "image": "https://picsum.photos/seed/fermentation-tank/2000/1000",
+        "imageAlt": "Industrial fermentation tank",
+        "primaryCta": {
+          "label": "Explore products",
+          "url": "/products"
+        },
+        "secondaryCta": {
+          "label": "Our facilities",
+          "url": "/about/facilities"
+        }
+      },
+      {
+        "id": "slide-2",
+        "eyebrow": "002 / QUALITY",
+        "headlineLine1": "Purely cultured yeast.",
+        "headlineLine2": "Stable product.",
+        "description": "Complete certification. Customers across Australia, New Zealand, and beyond.",
+        "image": "https://picsum.photos/seed/quality-control/2000/1000",
+        "imageAlt": "Quality control in laboratory",
+        "primaryCta": {
+          "label": "View certifications",
+          "url": "/about/certifications"
+        },
+        "secondaryCta": {
+          "label": "Request a quote",
+          "url": "/contact"
+        }
+      },
+      {
+        "id": "slide-3",
+        "eyebrow": "003 / INNOVATION",
+        "headlineLine1": "Continuous R&D.",
+        "headlineLine2": "30+ years experience.",
+        "description": "Sustained investment in technology and research for animal nutrition.",
+        "image": "https://picsum.photos/seed/research-lab/2000/1000",
+        "imageAlt": "Scientist conducting research",
+        "primaryCta": {
+          "label": "About us",
+          "url": "/about"
+        },
+        "secondaryCta": {
+          "label": "Innovation lab",
+          "url": "/about/laboratory"
+        }
+      }
+    ]
+  },
+  "stats": {
+    "consumedBy": [
+      {
+        "component": "StatsRow",
+        "file": "src/components/ui/StatsRow.tsx",
+        "uses": [
+          "items[]"
+        ],
+        "as": "Reusable component: each item renders value (mono font + suffix) + label (eyebrow style)"
+      },
+      {
+        "component": "AboutSnippet",
+        "file": "src/sections/homepage/AboutSnippet.tsx",
+        "uses": [
+          "items[0..3]"
+        ],
+        "as": "First 4 stats shown on homepage"
+      },
+      {
+        "component": "AboutStatsBlock",
+        "file": "src/sections/about/AboutStatsBlock.tsx",
+        "uses": [
+          "items[]"
+        ],
+        "as": "All 6 stats on About page"
+      }
+    ],
+    "items": [
+      {
+        "id": "established",
+        "value": "2003",
+        "label": "Established",
+        "suffix": null
+      },
+      {
+        "id": "facilities",
+        "value": "3",
+        "label": "Facilities",
+        "suffix": null
+      },
+      {
+        "id": "experience",
+        "value": "30",
+        "label": "Years experience",
+        "suffix": "+"
+      },
+      {
+        "id": "countries",
+        "value": "12",
+        "label": "Countries served",
+        "suffix": null
+      },
+      {
+        "id": "employees",
+        "value": "130",
+        "label": "Employees",
+        "suffix": "+"
+      },
+      {
+        "id": "products",
+        "value": "4",
+        "label": "Core products",
+        "suffix": null
+      }
+    ]
+  },
+  "certifications": {
+    "consumedBy": [
+      {
+        "component": "TrustBadgesRow",
+        "file": "src/components/ui/TrustBadgesRow.tsx",
+        "uses": [
+          "items[0..3]"
+        ],
+        "as": "Hero trust signals — only show first 4 (most recognized)"
+      },
+      {
+        "component": "CertificationsGrid",
+        "file": "src/sections/about/CertificationsGrid.tsx",
+        "uses": [
+          "items[]"
+        ],
+        "as": "All 8 certs in 4-column grid with iconUrl + code + fullName + description"
+      },
+      {
+        "component": "FooterTrustStrip",
+        "file": "src/components/common/Footer.tsx",
+        "uses": [
+          "items[0..2]"
+        ],
+        "as": "Above copyright — first 3 cert codes"
+      },
+      {
+        "component": "CertificationBadges",
+        "file": "src/components/ui/CertificationBadges.tsx",
+        "uses": [
+          "items[] filter by product.certifications"
+        ],
+        "as": "On product detail page: lookup cert by id, render badge"
+      }
+    ],
+    "items": [
+      {
+        "id": "iso-22000",
+        "code": "ISO 22000",
+        "fullName": "ISO 22000:2005 Food Safety Management",
+        "category": "food-safety",
+        "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/ISO_Logo_%28Red_square%29.svg/240px-ISO_Logo_%28Red_square%29.svg.png",
+        "description": "International food safety management system standard incorporating HACCP principles."
+      },
+      {
+        "id": "haccp",
+        "code": "HACCP",
+        "fullName": "Hazard Analysis Critical Control Points",
+        "category": "food-safety",
+        "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/HACCP-logo.svg/240px-HACCP-logo.svg.png",
+        "description": "Systematic preventive approach to food safety hazards."
+      },
+      {
+        "id": "brc",
+        "code": "BRC",
+        "fullName": "BRC Global Standard for Food Safety",
+        "category": "food-safety",
+        "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/BRCGS_logo.svg/240px-BRCGS_logo.svg.png",
+        "description": "European supply chain quality management standard, recognised by Australian retailers."
+      },
+      {
+        "id": "iso-9001",
+        "code": "ISO 9001",
+        "fullName": "ISO 9001 Quality Management",
+        "category": "quality",
+        "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/ISO_Logo_%28Red_square%29.svg/240px-ISO_Logo_%28Red_square%29.svg.png",
+        "description": "Quality management system certification."
+      },
+      {
+        "id": "gmp-plus",
+        "code": "GMP+",
+        "fullName": "GMP+ Feed Safety Assurance",
+        "category": "feed-safety",
+        "iconUrl": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FFFFFF' stroke='%23D4D4CE' stroke-width='1'/><text x='50' y='55' font-family='Inter,sans-serif' font-size='22' font-weight='500' fill='%231F4D3D' text-anchor='middle'>GMP+</text></svg>",
+        "description": "Feed industry safety assurance required for EU export and recognised in Australia."
+      },
+      {
+        "id": "bap",
+        "code": "BAP",
+        "fullName": "Best Aquaculture Practices",
+        "category": "aquaculture",
+        "iconUrl": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FFFFFF' stroke='%23D4D4CE' stroke-width='1'/><text x='50' y='55' font-family='Inter,sans-serif' font-size='24' font-weight='500' fill='%231F4D3D' text-anchor='middle'>BAP</text></svg>",
+        "description": "Responsible aquaculture standard — critical for shrimp products entering Australia.",
+        "highlightForAudience": [
+          "shrimp",
+          "australia"
+        ]
+      },
+      {
+        "id": "halal",
+        "code": "HALAL",
+        "fullName": "HALAL Certification",
+        "category": "religious",
+        "iconUrl": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FFFFFF' stroke='%23D4D4CE' stroke-width='1'/><text x='50' y='58' font-family='Inter,sans-serif' font-size='18' font-weight='500' fill='%231F4D3D' text-anchor='middle'>HALAL</text></svg>",
+        "description": "Certified suitable for Muslim consumers and markets."
+      },
+      {
+        "id": "kosher",
+        "code": "KOSHER",
+        "fullName": "Kosher Certification",
+        "category": "religious",
+        "iconUrl": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FFFFFF' stroke='%23D4D4CE' stroke-width='1'/><text x='50' y='58' font-family='Inter,sans-serif' font-size='16' font-weight='500' fill='%231F4D3D' text-anchor='middle'>KOSHER</text></svg>",
+        "description": "Certified compliant with Jewish dietary requirements."
+      }
+    ]
+  },
+  "honors": {
+    "consumedBy": [
+      {
+        "component": "HonorsSection",
+        "file": "src/sections/about/HonorsSection.tsx",
+        "uses": [
+          "items[]"
+        ],
+        "as": "List with title + year + issuer per row"
+      },
+      {
+        "component": "FooterRecognition",
+        "file": "src/components/common/Footer.tsx",
+        "uses": [
+          "items[0..1]"
+        ],
+        "as": "Optional: top 2 most prestigious honors"
+      }
+    ],
+    "items": [
+      {
+        "id": "high-tech",
+        "title": "National High-Tech Enterprise",
+        "year": "[REPLACE]",
+        "issuer": "National authority"
+      },
+      {
+        "id": "research",
+        "title": "Yeast Derivative Products Engineering Research Centre",
+        "year": "[REPLACE]",
+        "issuer": "Provincial government"
+      },
+      {
+        "id": "innovation",
+        "title": "Innovation and Industrialisation Demonstration Base",
+        "year": "[REPLACE]",
+        "issuer": "City government"
+      },
+      {
+        "id": "specialised",
+        "title": "Specialised and Unique Enterprise designation",
+        "year": "[REPLACE]",
+        "issuer": "Provincial authority"
+      }
+    ]
+  },
+  "facilities": {
+    "consumedBy": [
+      {
+        "component": "FacilitiesGallery",
+        "file": "src/sections/about/FacilitiesGallery.tsx",
+        "uses": [
+          "items[]"
+        ],
+        "as": "Image gallery with caption — masonry or 2x2 grid"
+      },
+      {
+        "component": "FacilityTeaser",
+        "file": "src/sections/homepage/FacilityTeaser.tsx",
+        "uses": [
+          "items[0..1]"
+        ],
+        "as": "1-2 hero facility images on homepage"
+      },
+      {
+        "component": "EquipmentShowcase",
+        "file": "src/sections/innovation/EquipmentShowcase.tsx",
+        "uses": [
+          "items[]"
+        ],
+        "as": "Same images repurposed in Innovation page"
+      }
+    ],
+    "items": [
+      {
+        "id": "fermentation-tank",
+        "name": "Fully automatic fermentation tank",
+        "image": "https://picsum.photos/seed/fermentation-tank/1600/1000",
+        "imageAlt": "Stainless steel fermentation tanks",
+        "description": "End-to-end automated yeast culture and propagation in stainless steel bioreactors."
+      },
+      {
+        "id": "spray-drying",
+        "name": "Spray drying line",
+        "image": "https://picsum.photos/seed/spray-drying/1600/1000",
+        "imageAlt": "Spray drying equipment",
+        "description": "Industrial spray drying for stable powdered products with consistent particle size."
+      },
+      {
+        "id": "extraction-tank",
+        "name": "Concentrated extraction tank",
+        "image": "https://picsum.photos/seed/extraction-tank/1600/1000",
+        "imageAlt": "Extraction processing equipment",
+        "description": "Liquid extraction and concentration for yeast derivatives."
+      },
+      {
+        "id": "membrane-filtration",
+        "name": "Membrane filtration system",
+        "image": "https://picsum.photos/seed/filtration/1600/1000",
+        "imageAlt": "Membrane filtration system",
+        "description": "Purification of biological extracts through controlled membrane separation."
+      }
+    ]
+  },
+  "laboratory": {
+    "consumedBy": [
+      {
+        "component": "LaboratoryPage",
+        "file": "src/pages/LaboratoryPage.tsx",
+        "uses": [
+          "title",
+          "description",
+          "heroImage",
+          "instruments[]"
+        ],
+        "as": "Full page: hero on top, instrument grid below"
+      },
+      {
+        "component": "RDCapabilityTeaser",
+        "file": "src/sections/about/RDCapabilityTeaser.tsx",
+        "uses": [
+          "title",
+          "description"
+        ],
+        "as": "Snippet on About page linking to Lab page"
+      }
+    ],
+    "title": "Laboratory & analytical capability",
+    "description": "Our laboratory uses industry-standard instruments for quality control and product development.",
+    "heroImage": "https://picsum.photos/seed/laboratory/2000/1200",
+    "heroImageAlt": "Modern laboratory with analytical instruments",
+    "instruments": [
+      {
+        "id": "hplc",
+        "name": "High performance liquid chromatography",
+        "purpose": "Identification and quantification of organic compounds",
+        "iconName": "test-tube"
+      },
+      {
+        "id": "amino-analyzer",
+        "name": "Amino acid analyzer",
+        "purpose": "Profile of amino acids in yeast extracts",
+        "iconName": "atom"
+      },
+      {
+        "id": "uv-spectrophotometer",
+        "name": "UV-visible spectrophotometer",
+        "purpose": "Concentration measurement of biological samples",
+        "iconName": "scan"
+      },
+      {
+        "id": "nucleic-detector",
+        "name": "Nucleic acid and protein detector",
+        "purpose": "Detection of nucleic acids and proteins",
+        "iconName": "dna"
+      }
+    ]
+  },
+  "rdResults": {
+    "consumedBy": [
+      {
+        "component": "RDResultsSection",
+        "file": "src/sections/innovation/RDResultsSection.tsx",
+        "uses": [
+          "intro",
+          "patents",
+          "publications",
+          "heroImage",
+          "milestones[]"
+        ],
+        "as": "Stats banner (patents + publications) + timeline of milestones"
+      },
+      {
+        "component": "AboutRDSnippet",
+        "file": "src/sections/about/AboutRDSnippet.tsx",
+        "uses": [
+          "intro",
+          "patents"
+        ],
+        "as": "Short paragraph + 1 stat"
+      }
+    ],
+    "intro": "Continuous research and development drives our product innovation. Our R&D team works alongside production engineers to bring advanced fermentation science to commercial products.",
+    "patents": "[REPLACE] e.g. 'X patents filed since 2018'",
+    "publications": "[REPLACE] e.g. 'X peer-reviewed publications'",
+    "heroImage": "https://picsum.photos/seed/research-lab/2000/1000",
+    "heroImageAlt": "R&D scientists at work",
+    "milestones": [
+      {
+        "id": "rd-1",
+        "year": "[REPLACE]",
+        "title": "[REPLACE] R&D milestone or patent title",
+        "description": "[REPLACE] Brief description"
+      },
+      {
+        "id": "rd-2",
+        "year": "[REPLACE]",
+        "title": "[REPLACE] R&D milestone or patent title",
+        "description": "[REPLACE] Brief description"
+      },
+      {
+        "id": "rd-3",
+        "year": "[REPLACE]",
+        "title": "[REPLACE] R&D milestone or patent title",
+        "description": "[REPLACE] Brief description"
+      }
+    ]
+  },
+  "productCategories": {
+    "consumedBy": [
+      {
+        "component": "ProductCategoriesGrid",
+        "file": "src/sections/homepage/ProductCategoriesGrid.tsx",
+        "uses": [
+          "items[]"
+        ],
+        "as": "Grid: each item = image + name + tagline + productCount, featured items prominent"
+      },
+      {
+        "component": "HeaderMegaMenu",
+        "file": "src/components/common/Header.tsx",
+        "uses": [
+          "items[]"
+        ],
+        "as": "Dropdown under 'Products' nav item"
+      },
+      {
+        "component": "CategoryFilterSidebar",
+        "file": "src/sections/products/CategoryFilterSidebar.tsx",
+        "uses": [
+          "items[] where featured=true"
+        ],
+        "as": "Only show categories with products"
+      }
+    ],
+    "items": [
+      {
+        "id": "animal-nutrition",
+        "slug": "animal-nutrition",
+        "name": "Animal nutrition",
+        "tagline": "Feed additives for shrimp and poultry",
+        "description": "Yeast-derived additives for aquaculture and poultry — gut health, immunity, organic minerals, and digestible protein.",
+        "image": "https://picsum.photos/seed/animal-nutrition/1600/1200",
+        "imageAlt": "Shrimp and poultry farming",
+        "featured": true,
+        "productCount": 4
+      },
+      {
+        "id": "food-ingredient",
+        "slug": "food-ingredient",
+        "name": "Food ingredient",
+        "tagline": "Yeast extracts for food manufacturing",
+        "description": "Natural savoury yeast extracts for soups, sauces, snacks, plant-based meat, and industrial cooking. Available in powder and paste.",
+        "image": "https://picsum.photos/seed/food-ingredient/1600/1200",
+        "imageAlt": "Food ingredients in production",
+        "featured": true,
+        "productCount": 2
+      },
+      {
+        "id": "food-premium",
+        "slug": "food-premium",
+        "name": "Food premium",
+        "tagline": "I+G enriched and kokumi specialty",
+        "description": "Premium yeast extracts engineered for plant-based meat, gourmet seasoning, ramen, and vegan dairy — featuring 5'-nucleotides and γ-glutamyl peptides.",
+        "image": "https://picsum.photos/seed/food-ingredient/1600/1200",
+        "imageAlt": "Premium food applications",
+        "featured": true,
+        "productCount": 2
+      },
+      {
+        "id": "industrial",
+        "slug": "industrial",
+        "name": "Industrial",
+        "tagline": "Yeast extracts for bioprocessing",
+        "description": "Pharma-grade yeast extracts for antibiotic, probiotic, enzyme, vaccine, and recombinant protein production. Sustained-release and fast-acting options.",
+        "image": "https://picsum.photos/seed/microbial/1600/1200",
+        "imageAlt": "Industrial fermentation bioreactor",
+        "featured": true,
+        "productCount": 4
+      }
+    ]
+  },
+  "species": {
+    "consumedBy": [
+      {
+        "component": "SpeciesFilterChip",
+        "file": "src/components/ui/SpeciesFilterChip.tsx",
+        "uses": [
+          "items[]"
+        ],
+        "as": "Pill buttons: All / Shrimp / Broiler / Layer with iconName"
+      },
+      {
+        "component": "DosageTable",
+        "file": "src/components/ui/DosageTable.tsx",
+        "uses": [
+          "items[] for label lookup"
+        ],
+        "as": "Resolve species id → display label in dosage rows"
+      },
+      {
+        "component": "HomepageSpeciesSelector",
+        "file": "src/sections/homepage/SpeciesSelector.tsx",
+        "uses": [
+          "items[]"
+        ],
+        "as": "Optional: 'I farm...' big buttons on homepage"
+      }
+    ],
+    "items": [
+      {
+        "id": "shrimp",
+        "slug": "shrimp",
+        "label": "Shrimp",
+        "iconName": "fish",
+        "category": "aquaculture"
+      },
+      {
+        "id": "broiler",
+        "slug": "broiler",
+        "label": "Broiler",
+        "iconName": "drumstick",
+        "category": "poultry"
+      },
+      {
+        "id": "layer",
+        "slug": "layer",
+        "label": "Laying hen",
+        "iconName": "egg",
+        "category": "poultry"
+      }
+    ]
+  },
+  "products": [
+    {
+      "id": "yeast-cell-wall-mos",
+      "slug": "yeast-cell-wall-mos",
+      "name": "Yeast Cell Wall (MOS)",
+      "tagline": "Gut health and immunity",
+      "category": "animal-nutrition",
+      "image": "/images/products/yeast-cell-wall-mos/card.png",
+      "gallery": [
+        "/images/products/yeast-cell-wall-mos/card.png",
+        "/images/products/yeast-cell-wall-mos/3d-angle.png"
+      ],
+      "shortDescription": "Mannan-oligosaccharide and beta-glucan complex that binds pathogens, supports beneficial gut flora, and modulates immune response.",
+      "fullDescription": "Yeast cell wall is derived from a yeast extraction process and accounts for approximately 25% of the total cell mass. It is composed primarily of cell wall proteins, mannoproteins, glucans, chitin, and N-acetylglucosamine. The two functional ingredients are mannan-oligosaccharides (MOS) and beta-glucans, which together deliver multiple gut and immune benefits in shrimp and poultry.",
+      "functions": [
+        "Binds and reduces pathogenic bacteria in the gut",
+        "Supports beneficial gut microflora",
+        "Increases intestinal villus height for better nutrient absorption",
+        "Modulates and strengthens the immune response"
+      ],
+      "specifications": [
+        {
+          "label": "Beta-glucan",
+          "value": "≥20%"
+        },
+        {
+          "label": "MOS",
+          "value": "≥20%"
+        },
+        {
+          "label": "Crude protein",
+          "value": "≤35%"
+        },
+        {
+          "label": "Other components",
+          "value": "Mannoproteins · Chitin · N-acetylglucosamine"
+        },
+        {
+          "label": "Appearance",
+          "value": "Light yellow to brown powder"
+        }
+      ],
+      "composition": [
+        { "label": "β-glucan",     "value": 20 },
+        { "label": "MOS",          "value": 20 },
+        { "label": "Crude protein", "value": 30 },
+        { "label": "Others",       "value": 30 }
+      ],
+      "modeOfAction": {
+        "steps": [
+          { "title": "Bind",  "body": "MOS molecules attach to fimbriae of pathogenic bacteria such as E. coli and Salmonella." },
+          { "title": "Block", "body": "Bound bacteria can no longer adhere to intestinal villi — colonisation is prevented." },
+          { "title": "Flush", "body": "Bacteria pass through the gut with faeces; no infection establishes in the host." }
+        ]
+      },
+      "dosages": [
+        {
+          "species": "shrimp",
+          "label": "Shrimp",
+          "value": "1.0",
+          "unit": "kg/tonne",
+          "note": null
+        },
+        {
+          "species": "broiler",
+          "label": "Broiler",
+          "value": "1.0",
+          "unit": "kg/tonne",
+          "note": null
+        },
+        {
+          "species": "layer",
+          "label": "Laying hen",
+          "value": "1.0",
+          "unit": "kg/tonne",
+          "note": null
+        }
+      ],
+      "certifications": [
+        "iso-9001",
+        "gmp-plus"
+      ],
+      "packaging": "25 kg paper bag with polyethylene liner",
+      "shelfLife": "24 months",
+      "storage": "Store in a cool, dry place in original packaging",
+      "datasheetUrl": "/datasheets/yeast-cell-wall-mos.pdf",
+      "primaryFor": ["shrimp", "broiler", "layer"],
+      "relatedProducts": [
+        "yeast-beta-glucan",
+        "autolyzed-yeast"
+      ]
+    },
+    {
+      "id": "yeast-beta-glucan",
+      "slug": "yeast-beta-glucan",
+      "name": "Yeast Beta-Glucan",
+      "tagline": "Potent immune modulator",
+      "category": "animal-nutrition",
+      "image": "/images/products/yeast-beta-glucan/card.png",
+      "gallery": [
+        "/images/products/yeast-beta-glucan/card.png",
+        "/images/products/yeast-beta-glucan/3d-angle.png"
+      ],
+      "shortDescription": "Purified beta-(1,3)-D-glucan from baker's yeast cell walls — one of the most potent anti-infective immunomodulators available.",
+      "fullDescription": "Yeast beta-glucan, also known as beta-(1,3)-D-glucan, is a specialised polysaccharide derived from the cell walls of baker's yeast (Saccharomyces cerevisiae). Purified to 70–90% concentration, it ranks among the most potent anti-infective immunomodulators in the beta-(1,3)-glucan family.",
+      "functions": [
+        "Reduces stress response in shrimp and poultry",
+        "Enhances natural disease resistance",
+        "Provides immunoprophylaxis against viral and bacterial challenges",
+        "Improves overall immune status"
+      ],
+      "specifications": [
+        {
+          "label": "Beta-glucan",
+          "value": "70–90%"
+        },
+        {
+          "label": "Fat",
+          "value": "4–6%"
+        },
+        {
+          "label": "Protein",
+          "value": "<3.5%"
+        }
+      ],
+      "composition": [
+        { "label": "β-glucan", "value": 80 },
+        { "label": "Fat",      "value": 5 },
+        { "label": "Protein",  "value": 3 },
+        { "label": "Others",   "value": 12 }
+      ],
+      "modeOfAction": {
+        "steps": [
+          { "title": "Recognise", "body": "β-glucan binds to Dectin-1 receptors on macrophages and neutrophils." },
+          { "title": "Activate",  "body": "Receptor binding triggers cytokine release and primes the innate immune response." },
+          { "title": "Defend",    "body": "Enhanced systemic resistance to viral, bacterial, and parasitic challenges." }
+        ]
+      },
+      "dosages": [
+        {
+          "species": "shrimp",
+          "label": "Shrimp",
+          "value": "100",
+          "unit": "g/tonne",
+          "note": null
+        },
+        {
+          "species": "broiler",
+          "label": "Broiler",
+          "value": "200",
+          "unit": "g/tonne",
+          "note": null
+        },
+        {
+          "species": "layer",
+          "label": "Laying hen",
+          "value": "200",
+          "unit": "g/tonne",
+          "note": null
+        }
+      ],
+      "certifications": [
+        "iso-9001",
+        "gmp-plus"
+      ],
+      "packaging": "25 kg paper drum with polyethylene liner",
+      "shelfLife": "24 months",
+      "storage": "Store in a cool, dry place in original packaging",
+      "datasheetUrl": "/datasheets/yeast-beta-glucan.pdf",
+      "primaryFor": ["shrimp", "broiler"],
+      "relatedProducts": [
+        "yeast-cell-wall-mos",
+        "selenium-yeast"
+      ]
+    },
+    {
+      "id": "selenium-yeast",
+      "slug": "selenium-yeast",
+      "name": "Selenium Yeast",
+      "tagline": "Organic selenium source",
+      "category": "animal-nutrition",
+      "image": "/images/products/selenium-yeast/card.png",
+      "gallery": [
+        "/images/products/selenium-yeast/card.png",
+        "/images/products/selenium-yeast/3d-angle.png"
+      ],
+      "shortDescription": "High-bioavailability organic selenium enriched in yeast cells through submerged fermentation.",
+      "fullDescription": "Selenium yeast is produced by culturing specially selected strains of Saccharomyces cerevisiae in a selenium-enriched medium. The resulting product contains selenium predominantly in organic form (selenomethionine), offering significantly higher bioavailability and safety than inorganic sodium selenite.",
+      "functions": [
+        "Improves reproductive performance in breeders",
+        "Reduces stress response and oxidative damage",
+        "Improves meat quality and shelf life",
+        "Enhances antioxidant capacity"
+      ],
+      "specifications": [
+        {
+          "label": "Appearance",
+          "value": "Light yellow to brown powder"
+        },
+        {
+          "label": "Moisture",
+          "value": "≤6.0%"
+        },
+        {
+          "label": "Selenium content",
+          "value": "≥2000 ppm or ≥3000 ppm"
+        },
+        {
+          "label": "Organic selenium ratio",
+          "value": "≥98%"
+        },
+        {
+          "label": "Protein",
+          "value": "≥40%"
+        }
+      ],
+      "composition": [
+        { "label": "Crude protein", "value": 40 },
+        { "label": "Moisture",      "value": 6 },
+        { "label": "Others",        "value": 54 }
+      ],
+      "modeOfAction": {
+        "steps": [
+          { "title": "Absorb",  "body": "Organic selenium (selenomethionine) is absorbed via amino acid transporters in the gut." },
+          { "title": "Convert", "body": "Selenium is incorporated into selenoproteins like glutathione peroxidase (GPx)." },
+          { "title": "Protect", "body": "Selenoproteins scavenge free radicals and reduce oxidative damage in tissues." }
+        ]
+      },
+      "dosages": [
+        {
+          "species": "shrimp",
+          "label": "Shrimp",
+          "value": "100–150",
+          "unit": "g/tonne",
+          "note": "Use 50–100 g/tonne if basal diet already contains 0.1–0.3 ppm Na₂SeO₃"
+        },
+        {
+          "species": "broiler",
+          "label": "Broiler",
+          "value": "50–150",
+          "unit": "g/tonne",
+          "note": "Use 50–100 g/tonne if basal diet already contains 0.1–0.3 ppm Na₂SeO₃"
+        },
+        {
+          "species": "layer",
+          "label": "Laying hen",
+          "value": "50–150",
+          "unit": "g/tonne",
+          "note": "Use 50–100 g/tonne if basal diet already contains 0.1–0.3 ppm Na₂SeO₃"
+        }
+      ],
+      "certifications": [
+        "iso-9001",
+        "gmp-plus"
+      ],
+      "packaging": "25 kg bag with polyethylene liner",
+      "shelfLife": "24 months",
+      "storage": "Store in a cool, dry place in original packaging",
+      "datasheetUrl": "/datasheets/selenium-yeast.pdf",
+      "primaryFor": ["layer", "shrimp"],
+      "relatedProducts": [
+        "yeast-beta-glucan",
+        "autolyzed-yeast"
+      ]
+    },
+    {
+      "id": "autolyzed-yeast",
+      "slug": "autolyzed-yeast",
+      "name": "Autolyzed Yeast",
+      "tagline": "Digestible protein and nucleic acids",
+      "category": "animal-nutrition",
+      "image": "/images/products/autolyzed-yeast/card.png",
+      "gallery": [
+        "/images/products/autolyzed-yeast/card.png",
+        "/images/products/autolyzed-yeast/3d-angle.png"
+      ],
+      "shortDescription": "Highly digestible protein, free amino acids, peptides, nucleic acids, beta-glucans, mannans, and flavor nucleotides — ideal for early-stage growth.",
+      "fullDescription": "Autolyzed yeast is derived from baker's yeast (Saccharomyces cerevisiae) broken down through controlled autolysis. The process releases protein as free amino acids and peptides while retaining the full functional profile of the cell — including beta-glucans for immune support, mannans for pathogen binding, functional nucleic acids for growth, and flavor nucleotides for feed palatability. The result is significantly more digestible than intact yeast cells, making it ideal for early-stage growth in shrimp post-larvae and broiler chicks.",
+      "functions": [
+        "Nucleic acids support growth and intestinal development",
+        "Functional peptides and flavour nucleotides improve feed intake",
+        "Beta-glucans stimulate the immune system",
+        "Mannans bind pathogens and balance gut microflora"
+      ],
+      "specifications": [
+        {
+          "label": "Crude protein",
+          "value": "≥45%"
+        },
+        {
+          "label": "Other components",
+          "value": "Free amino acids · Peptides · Nucleic acids · Beta-glucans · Mannans · Flavor nucleotides"
+        },
+        {
+          "label": "Appearance",
+          "value": "Light brown powder"
+        }
+      ],
+      "composition": [
+        { "label": "Crude protein",       "value": 45 },
+        { "label": "Functional fraction", "value": 55 }
+      ],
+      "modeOfAction": {
+        "steps": [
+          { "title": "Release", "body": "Controlled autolysis breaks yeast cells into free amino acids, peptides, and nucleotides." },
+          { "title": "Absorb",  "body": "Highly bioavailable peptides absorbed faster than intact protein — no enzymatic step needed." },
+          { "title": "Drive",   "body": "Nucleotides support gut development; flavour nucleotides boost feed palatability." }
+        ]
+      },
+      "dosages": [
+        {
+          "species": "shrimp",
+          "label": "Shrimp",
+          "value": "1.0",
+          "unit": "kg/tonne",
+          "note": null
+        },
+        {
+          "species": "broiler",
+          "label": "Broiler",
+          "value": "2.0",
+          "unit": "kg/tonne",
+          "note": "Higher dosage recommended for chicks under 21 days"
+        },
+        {
+          "species": "layer",
+          "label": "Laying hen",
+          "value": "1.0",
+          "unit": "kg/tonne",
+          "note": null
+        }
+      ],
+      "certifications": [
+        "iso-9001",
+        "gmp-plus"
+      ],
+      "packaging": "25 kg paper bag with polyethylene liner",
+      "shelfLife": "24 months",
+      "storage": "Store in a cool, dry place in original packaging",
+      "datasheetUrl": "/datasheets/autolyzed-yeast.pdf",
+      "primaryFor": ["shrimp", "broiler"],
+      "relatedProducts": [
+        "yeast-cell-wall-mos",
+        "selenium-yeast"
+      ]
+    },
+
+    {
+      "id": "ye-standard-powder",
+      "slug": "ye-standard-powder",
+      "name": "YE Standard Powder",
+      "tagline": "Natural savoury ingredient",
+      "category": "food-ingredient",
+      "itemCode": "TXY-YE-SP",
+      "form": "Powder",
+      "audienceTag": "Food ingredient",
+      "image": "/images/products/ye-standard-powder/card.png",
+      "gallery": [
+        "/images/products/ye-standard-powder/card.png",
+        "/images/products/ye-standard-powder/3d-angle.png"
+      ],
+      "shortDescription": "Natural savoury yeast extract for soups, sauces, snacks, bouillon, and vegan cooking — non-GMO, gluten-free.",
+      "fullDescription": "YE Standard Powder is a versatile yeast extract designed for food manufacturing. Provides clean-label umami and savoury notes for soups, sauces, seasonings, snacks, bouillon, and plant-based dishes. Suitable for vegan applications.",
+      "functions": [
+        "Adds natural savoury umami flavour",
+        "Clean label — vegan and gluten-free",
+        "Highly soluble in aqueous formulations",
+        "Compatible with industrial cooking processes"
+      ],
+      "keyActives": [
+        "Total Nitrogen 10%",
+        "FAN 4%",
+        "Moisture <6%",
+        "NaCl ≤5%",
+        "Ash 15%"
+      ],
+      "keyBenefits": [
+        "Vegan suitable",
+        "Savoury umami",
+        "Clean label"
+      ],
+      "specifications": [
+        { "label": "Total Nitrogen", "value": "10%" },
+        { "label": "FAN", "value": "4%" },
+        { "label": "Moisture", "value": "<6%" },
+        { "label": "NaCl", "value": "≤5%" },
+        { "label": "Ash", "value": "15%" },
+        { "label": "pH", "value": "4.0–7.0" },
+        { "label": "Appearance", "value": "Light brown powder" }
+      ],
+      "dosages": [],
+      "inclusionRate": "Per product formulation requirements",
+      "certifications": ["iso-22000", "brc", "halal", "kosher"],
+      "packaging": "20 kg paper bag",
+      "shelfLife": "24 months",
+      "storage": "Cool dry place, ≤25°C, sealed",
+      "datasheetUrl": "/datasheets/ye-standard-powder.pdf",
+      "primaryFor": [],
+      "relatedProducts": ["ye-standard-paste", "ye-umami"]
+    },
+
+    {
+      "id": "ye-standard-paste",
+      "slug": "ye-standard-paste",
+      "name": "YE Standard Paste",
+      "tagline": "Concentrated savoury paste",
+      "category": "food-ingredient",
+      "itemCode": "TXY-YE-SPP",
+      "form": "Paste",
+      "audienceTag": "Food ingredient",
+      "image": "/images/products/ye-standard-paste/card.png",
+      "gallery": [
+        "/images/products/ye-standard-paste/card.png",
+        "/images/products/ye-standard-paste/3d-angle.png"
+      ],
+      "shortDescription": "Concentrated savoury yeast paste for sauces, ready meals, marinades, soup bases, and plant-based meat applications.",
+      "fullDescription": "YE Standard Paste delivers concentrated yeast extract flavour in liquid form, ideal for industrial cooking applications. Used in sauces, ready meals, marinades, soup bases, and plant-based meat formulations where viscous form is preferred.",
+      "functions": [
+        "Concentrated savoury notes for industrial cooking",
+        "Easy dispersion in liquid formulations",
+        "Vegan and plant-based meat suitable",
+        "Maintains umami profile through thermal processing"
+      ],
+      "keyActives": [
+        "Total Nitrogen ≥9%",
+        "FAN ≥3%",
+        "Moisture 35%",
+        "NaCl 5%",
+        "Ash ≤15%"
+      ],
+      "keyBenefits": [
+        "Concentrated paste",
+        "Vegan suitable",
+        "Plant-based meat ready"
+      ],
+      "specifications": [
+        { "label": "Total Nitrogen", "value": "≥9%" },
+        { "label": "FAN", "value": "≥3%" },
+        { "label": "Moisture", "value": "35%" },
+        { "label": "NaCl", "value": "5%" },
+        { "label": "Ash", "value": "≤15%" },
+        { "label": "pH", "value": "4.5–7.0" },
+        { "label": "Appearance", "value": "Light to medium brown paste" }
+      ],
+      "dosages": [],
+      "inclusionRate": "Per product formulation requirements",
+      "certifications": ["iso-22000", "brc", "halal", "kosher"],
+      "packaging": "25 kg HDPE pail",
+      "shelfLife": "18 months",
+      "storage": "4–25°C, refrigerate after opening",
+      "datasheetUrl": "/datasheets/ye-standard-paste.pdf",
+      "primaryFor": [],
+      "relatedProducts": ["ye-standard-powder", "ye-umami"]
+    },
+
+    {
+      "id": "ye-umami",
+      "slug": "ye-umami",
+      "name": "YE Umami Type",
+      "tagline": "Premium I+G enriched umami",
+      "category": "food-premium",
+      "itemCode": "TXY-YE-UMI",
+      "form": "Powder",
+      "audienceTag": "Food ingredient",
+      "image": "/images/products/ye-umami/card.png",
+      "gallery": [
+        "/images/products/ye-umami/card.png",
+        "/images/products/ye-umami/3d-angle.png"
+      ],
+      "shortDescription": "Premium yeast extract enriched with 5'-nucleotides (I+G) at 8–12% — superior umami booster for plant-based meat, ramen, and gourmet seasoning.",
+      "fullDescription": "YE Umami Type is a premium yeast extract enriched with naturally-occurring 5'-nucleotides (IMP + GMP, collectively 'I+G') at 8–12%. Delivers superior umami depth and synergistic flavour enhancement without added MSG. Designed for plant-based meat, premium snacks, gourmet seasoning, ramen, and bouillon applications.",
+      "functions": [
+        "Premium umami enhancement via 5'-nucleotides (I+G)",
+        "Synergistic flavour amplification with glutamate",
+        "No added MSG — natural umami source",
+        "Effective at low inclusion rates (0.1–0.5%)"
+      ],
+      "keyActives": [
+        "Protein 60–70%",
+        "I+G (IMP+GMP) 8–12%",
+        "Glutamic acid ≤12%",
+        "pH 5.0–6.5"
+      ],
+      "keyBenefits": [
+        "Premium umami",
+        "I+G 8–12%",
+        "No added MSG"
+      ],
+      "specifications": [
+        { "label": "Protein", "value": "60–70%" },
+        { "label": "I+G (IMP+GMP)", "value": "8–12%" },
+        { "label": "Glutamic acid", "value": "≤12%" },
+        { "label": "pH", "value": "5.0–6.5" },
+        { "label": "Moisture", "value": "≤6%" },
+        { "label": "Appearance", "value": "Light yellow to brown powder" }
+      ],
+      "dosages": [],
+      "inclusionRate": "0.1–0.5% of total formulation",
+      "certifications": ["iso-22000", "brc", "halal", "kosher"],
+      "packaging": "20 kg paper bag",
+      "shelfLife": "24 months",
+      "storage": "Cool dry place, ≤25°C",
+      "datasheetUrl": "/datasheets/ye-umami.pdf",
+      "primaryFor": [],
+      "relatedProducts": ["ye-kokumi", "ye-standard-powder"]
+    },
+
+    {
+      "id": "ye-kokumi",
+      "slug": "ye-kokumi",
+      "name": "YE Kokumi Type",
+      "tagline": "Mouthfulness and continuity",
+      "category": "food-premium",
+      "itemCode": "TXY-YE-KKM",
+      "form": "Powder",
+      "audienceTag": "Food ingredient",
+      "image": "/images/products/ye-kokumi/card.png",
+      "gallery": [
+        "/images/products/ye-kokumi/card.png",
+        "/images/products/ye-kokumi/3d-angle.png"
+      ],
+      "shortDescription": "Specialty yeast extract rich in γ-glutamyl peptides — delivers kokumi (mouthfulness and flavour continuity) for plant-based dairy, vegan cheese, and low-salt applications.",
+      "fullDescription": "YE Kokumi Type is a specialty yeast extract rich in γ-glutamyl peptides that delivers 'kokumi' — the Japanese flavour concept of mouthfulness, body, and continuity. Particularly effective in plant-based dairy, vegan cheese, dairy-free desserts, low-salt food, and artisanal sauce applications.",
+      "functions": [
+        "Adds kokumi sensation (mouthfulness, body, continuity)",
+        "Enhances perception of saltiness — enables low-salt formulations",
+        "Brings depth to plant-based dairy and meat",
+        "No artificial flavour enhancers required"
+      ],
+      "keyActives": [
+        "Protein 65–75%",
+        "γ-glutamyl peptides (signature)",
+        "Total Nitrogen ≥5%",
+        "FAN ≥2%"
+      ],
+      "keyBenefits": [
+        "Kokumi sensation",
+        "Plant-based ready",
+        "Low-salt ready"
+      ],
+      "specifications": [
+        { "label": "Protein", "value": "65–75%" },
+        { "label": "Total Nitrogen", "value": "≥5%" },
+        { "label": "FAN", "value": "≥2%" },
+        { "label": "Moisture", "value": "≤6%" },
+        { "label": "pH", "value": "5.0–6.5" },
+        { "label": "Appearance", "value": "Light brown powder" }
+      ],
+      "dosages": [],
+      "inclusionRate": "Per product formulation requirements",
+      "certifications": ["iso-22000", "brc", "halal", "kosher"],
+      "packaging": "20 kg paper bag",
+      "shelfLife": "24 months",
+      "storage": "Cool dry place, ≤25°C",
+      "datasheetUrl": "/datasheets/ye-kokumi.pdf",
+      "primaryFor": [],
+      "relatedProducts": ["ye-umami", "ye-standard-powder"]
+    },
+
+    {
+      "id": "ye-ce-powder",
+      "slug": "ye-ce-powder",
+      "name": "YE Continuously Effective Powder",
+      "tagline": "Sustained-release nitrogen for industrial fermentation",
+      "category": "industrial",
+      "itemCode": "TXY-YE-CEP",
+      "form": "Powder",
+      "audienceTag": "Industrial use only",
+      "image": "/images/products/ye-ce-powder/card.png",
+      "gallery": [
+        "/images/products/ye-ce-powder/card.png",
+        "/images/products/ye-ce-powder/3d-angle.png"
+      ],
+      "shortDescription": "Sustained-release yeast nitrogen source for 5–7 day industrial fermentation campaigns — antibiotic, probiotic, enzyme, vaccine, and recombinant protein production.",
+      "fullDescription": "YE Continuously Effective Powder delivers sustained nitrogen release optimised for long bioprocess campaigns (5–7 days). Designed for antibiotic, probiotic, enzyme, vaccine, and recombinant protein production where consistent nitrogen availability throughout fermentation drives yield and reproducibility.",
+      "functions": [
+        "Sustained nitrogen release across long fermentation campaigns",
+        "High nitrogen content ≥11% — efficient on-cost",
+        "Consistent batch-to-batch performance for biopharm process",
+        "Compatible with sterile filter systems"
+      ],
+      "keyActives": [
+        "Total Nitrogen ≥11%",
+        "FAN ≥4%",
+        "Moisture ≤8%",
+        "Ash ≤10%"
+      ],
+      "keyBenefits": [
+        "Sustained release",
+        "High nitrogen ≥11%",
+        "5–7 day campaign ready"
+      ],
+      "specifications": [
+        { "label": "Total Nitrogen", "value": "≥11%" },
+        { "label": "FAN", "value": "≥4%" },
+        { "label": "Moisture", "value": "≤8%" },
+        { "label": "Ash", "value": "≤10%" },
+        { "label": "Appearance", "value": "Light yellow to brown powder" }
+      ],
+      "dosages": [],
+      "inclusionRate": "Per bioprocess specification",
+      "certifications": ["iso-22000", "brc", "halal", "kosher"],
+      "packaging": "25 kg paper bag",
+      "shelfLife": "24 months",
+      "storage": "Cool dry place, ≤25°C, sealed",
+      "datasheetUrl": "/datasheets/ye-ce-powder.pdf",
+      "primaryFor": [],
+      "relatedProducts": ["ye-ce-paste", "ye-microbial-nutrition"]
+    },
+
+    {
+      "id": "ye-fa-paste",
+      "slug": "ye-fa-paste",
+      "name": "YE Fast-Acting Paste",
+      "tagline": "Rapid-release liquid nitrogen for short-cycle bioprocess",
+      "category": "industrial",
+      "itemCode": "TXY-YE-FAP",
+      "form": "Paste",
+      "audienceTag": "Industrial use only",
+      "image": "/images/products/ye-fa-paste/card.png",
+      "gallery": [
+        "/images/products/ye-fa-paste/card.png",
+        "/images/products/ye-fa-paste/3d-angle.png"
+      ],
+      "shortDescription": "Rapid-release liquid yeast nitrogen for 24–48 hour fermentation cycles — probiotic, enzyme, starter cultures, and short-cycle bioprocess.",
+      "fullDescription": "YE Fast-Acting Paste delivers rapid nitrogen release in liquid form, optimised for short-cycle bioprocesses (24–48 hours). Particularly effective for probiotic propagation, enzyme production, starter culture activation, and rapid-turnaround commercial fermentation.",
+      "functions": [
+        "Rapid nitrogen release for short fermentation cycles",
+        "High bioavailability — quick microbial uptake",
+        "Liquid form for ease of dispensing in fed-batch process",
+        "24–48h cycle ready"
+      ],
+      "keyActives": [
+        "Total Nitrogen ≥10%",
+        "FAN ≥4%",
+        "Moisture ≤40%",
+        "Ash ≤10%"
+      ],
+      "keyBenefits": [
+        "Rapid release",
+        "High bioavailability",
+        "24–48h cycle ready"
+      ],
+      "specifications": [
+        { "label": "Total Nitrogen", "value": "≥10%" },
+        { "label": "FAN", "value": "≥4%" },
+        { "label": "Moisture", "value": "≤40%" },
+        { "label": "Ash", "value": "≤10%" },
+        { "label": "Appearance", "value": "Light brown paste" }
+      ],
+      "dosages": [],
+      "inclusionRate": "Per bioprocess specification",
+      "certifications": ["iso-22000", "brc", "halal", "kosher"],
+      "packaging": "20 kg HDPE pail",
+      "shelfLife": "18 months",
+      "storage": "4–25°C, refrigerate after opening",
+      "datasheetUrl": "/datasheets/ye-fa-paste.pdf",
+      "primaryFor": [],
+      "relatedProducts": ["ye-ce-paste", "ye-microbial-nutrition"]
+    },
+
+    {
+      "id": "ye-microbial-nutrition",
+      "slug": "ye-microbial-nutrition",
+      "name": "YE for Microbial Nutrition",
+      "tagline": "Universal-grade nutrient source for bioprocessing",
+      "category": "industrial",
+      "itemCode": "TXY-YE-MN",
+      "form": "Powder / Paste",
+      "audienceTag": "Industrial use only",
+      "image": "/images/products/ye-microbial-nutrition/card.png",
+      "gallery": [
+        "/images/products/ye-microbial-nutrition/card.png",
+        "/images/products/ye-microbial-nutrition/3d-angle.png"
+      ],
+      "shortDescription": "Universal-grade pharma-quality yeast extract for R&D, pilot fermentation, cell culture, vaccine, and probiotic production. Available in powder or paste form.",
+      "fullDescription": "YE for Microbial Nutrition is a universal-grade yeast extract designed for the breadth of bioprocessing applications: laboratory R&D, pilot fermentation, cell culture media, vaccine production, and commercial probiotic manufacturing. Available in both powder and paste forms. Rich in B-vitamins.",
+      "functions": [
+        "Universal nutrient source compatible with diverse microbes",
+        "Rich in B-vitamins (niacin, biotin)",
+        "Pharma-grade quality consistency batch-to-batch",
+        "Powder and paste options for different process needs"
+      ],
+      "keyActives": [
+        "Total Nitrogen ≥10%",
+        "FAN ≥4%",
+        "B-vitamins (Niacin, Biotin)",
+        "Moisture ≤6% (powder) / 25–35% (paste)"
+      ],
+      "keyBenefits": [
+        "Pharma grade",
+        "B-vitamin rich",
+        "Powder & paste options"
+      ],
+      "specifications": [
+        { "label": "Total Nitrogen", "value": "≥10%" },
+        { "label": "FAN", "value": "≥4%" },
+        { "label": "B-vitamins", "value": "Niacin · Biotin" },
+        { "label": "Moisture (powder)", "value": "≤6%" },
+        { "label": "Moisture (paste)", "value": "25–35%" },
+        { "label": "Appearance", "value": "Light yellow powder or brown paste" }
+      ],
+      "dosages": [],
+      "inclusionRate": "Per bioprocess specification",
+      "certifications": ["iso-22000", "brc", "halal", "kosher"],
+      "packaging": "20 kg bag (powder) or 20 kg HDPE pail (paste)",
+      "shelfLife": "24 months (powder) / 18 months (paste)",
+      "storage": "≤25°C (powder) / 4–25°C (paste)",
+      "datasheetUrl": "/datasheets/ye-microbial-nutrition.pdf",
+      "primaryFor": [],
+      "relatedProducts": ["ye-ce-powder", "ye-fa-paste"]
+    },
+
+    {
+      "id": "ye-ce-paste",
+      "slug": "ye-ce-paste",
+      "name": "YE Continuously Effective Paste",
+      "tagline": "Liquid-form bioreactor feed for large-scale production",
+      "category": "industrial",
+      "itemCode": "TXY-YE-CEPP",
+      "form": "Paste",
+      "audienceTag": "Industrial use only",
+      "image": "/images/products/ye-ce-paste/card.png",
+      "gallery": [
+        "/images/products/ye-ce-paste/card.png",
+        "/images/products/ye-ce-paste/3d-angle.png"
+      ],
+      "shortDescription": "Liquid-form yeast extract for sustained-release feed in large-scale continuous bioreactors — antibiotic, biofuel, and biopharmaceutical production.",
+      "fullDescription": "YE Continuously Effective Paste delivers sustained nitrogen release in liquid form, optimised for large-scale continuous bioreactor operations. Designed for antibiotic, biofuel, and biopharmaceutical production where consistent fed-batch supply drives campaign yield.",
+      "functions": [
+        "Sustained release in liquid form for continuous fed-batch",
+        "Large-scale ready — designed for industrial bioreactor sizes",
+        "Compatible with continuous bioreactor process control",
+        "High nitrogen content per litre"
+      ],
+      "keyActives": [
+        "Total Nitrogen ≥10%",
+        "FAN ≥4%",
+        "Moisture ≤40%",
+        "Ash ≤10%"
+      ],
+      "keyBenefits": [
+        "Sustained release",
+        "Large-scale ready",
+        "Continuous bioreactor"
+      ],
+      "specifications": [
+        { "label": "Total Nitrogen", "value": "≥10%" },
+        { "label": "FAN", "value": "≥4%" },
+        { "label": "Moisture", "value": "≤40%" },
+        { "label": "Ash", "value": "≤10%" },
+        { "label": "Appearance", "value": "Light brown paste" }
+      ],
+      "dosages": [],
+      "inclusionRate": "Per bioprocess specification",
+      "certifications": ["iso-22000", "brc", "halal", "kosher"],
+      "packaging": "20 kg HDPE pail",
+      "shelfLife": "18 months",
+      "storage": "4–25°C, sealed",
+      "datasheetUrl": "/datasheets/ye-ce-paste.pdf",
+      "primaryFor": [],
+      "relatedProducts": ["ye-ce-powder", "ye-fa-paste"]
+    }
+  ],
+  "heroes": {
+    "consumedBy": [
+      {
+        "component": "PageHero",
+        "file": "src/components/common/PageHero.tsx",
+        "uses": [
+          "eyebrow",
+          "headlineLine1",
+          "headlineLine2",
+          "description",
+          "backgroundImage"
+        ],
+        "as": "Reusable hero for non-homepage pages — pass which key (about/products/contact/news/innovation)"
+      },
+      {
+        "component": "HomePage",
+        "file": "src/pages/HomePage.tsx",
+        "uses": [
+          "heroes.homepage",
+          "but actually uses homepageSlides instead"
+        ],
+        "as": "Homepage uses slideshow, this static hero data is fallback"
+      }
+    ],
+    "homepage": {
+      "eyebrow": "001 / YEAST BIOTECH",
+      "headlineLine1": "Yeast biotech.",
+      "headlineLine2": "For nutrition and fermentation.",
+      "description": "Fermentation-based ingredients across animal nutrition, food, and industrial bioprocessing — manufactured in China, certified for global export.",
+      "backgroundImage": "https://picsum.photos/seed/fermentation-tank/2000/1000",
+      "primaryCta": {
+        "label": "Request a quote",
+        "url": "/contact"
+      },
+      "secondaryCta": {
+        "label": "View specifications",
+        "url": "/products"
+      }
+    },
+    "products": {
+      "eyebrow": "002 / PRODUCT CATALOGUE",
+      "headlineLine1": "A full yeast portfolio.",
+      "headlineLine2": "From animal feed to food flavour to industrial fermentation.",
+      "description": "{productCount} yeast-derived products across animal nutrition, food ingredients, and industrial fermentation. Each one certified for export and supported by full technical documentation.",
+      "backgroundImage": "https://picsum.photos/seed/laboratory/2000/1200"
+    },
+    "about": {
+      "eyebrow": "003 / COMPANY",
+      "headlineLine1": "Chinese biotech.",
+      "headlineLine2": "Australian standards.",
+      "description": "Pioneer in yeast fermentation since 2003. Three facilities. 130+ employees. Exporting to 12 countries.",
+      "backgroundImage": "https://picsum.photos/seed/company-about/2000/1000"
+    },
+    "contact": {
+      "eyebrow": "004 / GET IN TOUCH",
+      "headlineLine1": "Tell us about",
+      "headlineLine2": "your operation.",
+      "description": "Quotes within 48 hours. Lead time 4–6 weeks port-to-port. MOQ from 1 tonne.",
+      "backgroundImage": "https://picsum.photos/seed/contact-hero/2000/1000"
+    },
+    "news": {
+      "eyebrow": "005 / NEWS",
+      "headlineLine1": "Latest updates.",
+      "headlineLine2": "From our facilities.",
+      "description": "Product certifications, industry insights, and company announcements.",
+      "backgroundImage": "https://picsum.photos/seed/news-hero/2000/1000"
+    },
+    "innovation": {
+      "eyebrow": "006 / INNOVATION",
+      "headlineLine1": "R&D investment",
+      "headlineLine2": "since 2003.",
+      "description": "Continuous research drives our product innovation. Industry experience over 30 years.",
+      "backgroundImage": "https://picsum.photos/seed/research-lab/2000/1000"
+    }
+  },
+  "homepageSections": {
+    "consumedBy": [
+      {
+        "component": "SectionHeader",
+        "file": "src/components/ui/SectionHeader.tsx",
+        "uses": [
+          "eyebrow",
+          "title",
+          "description",
+          "ctaLabel",
+          "ctaUrl"
+        ],
+        "as": "Reusable section header for each homepage section"
+      }
+    ],
+    "aboutSnippet": {
+      "eyebrow": "About us",
+      "title": "Pioneer in the yeast fermentation industry.",
+      "description": "Established 2003. Three fermentation facilities. 130+ employees. Exporting since 2018.",
+      "ctaLabel": "Learn more about us",
+      "ctaUrl": "/about"
+    },
+    "productsTeaser": {
+      "eyebrow": "Products",
+      "title": "{productCount} products. Feed, food, fermentation.",
+      "description": "Across animal nutrition, food ingredients, and industrial fermentation — each product certified for export and supported by full technical documentation.",
+      "ctaLabel": "View all products",
+      "ctaUrl": "/products"
+    },
+    "certificationsStrip": {
+      "eyebrow": "Certifications",
+      "title": "Certified for export.",
+      "description": "ISO 22000, HACCP, BRC, GMP+, BAP and more."
+    },
+    "newsTeaser": {
+      "eyebrow": "News",
+      "title": "Latest from our facilities.",
+      "ctaLabel": "View all news",
+      "ctaUrl": "/news"
+    }
+  },
+  "navigation": {
+    "consumedBy": [
+      {
+        "component": "Header",
+        "file": "src/components/common/Header.tsx",
+        "uses": [
+          "main[]",
+          "mainWithMega"
+        ],
+        "as": "Main nav array for simple links, mainWithMega for dropdowns"
+      },
+      {
+        "component": "MegaMenu",
+        "file": "src/components/common/MegaMenu.tsx",
+        "uses": [
+          "mainWithMega"
+        ],
+        "as": "Dropdown panels under About + Products"
+      },
+      {
+        "component": "Footer",
+        "file": "src/components/common/Footer.tsx",
+        "uses": [
+          "footer.products[]",
+          "footer.company[]",
+          "footer.support[]",
+          "footer.legal[]"
+        ],
+        "as": "4 link columns in footer"
+      },
+      {
+        "component": "Breadcrumb",
+        "file": "src/components/ui/Breadcrumb.tsx",
+        "uses": [
+          "main[] for label resolution"
+        ],
+        "as": "Resolve path → label (vd /products/yeast-cell-wall-mos → Products > Yeast Cell Wall)"
+      }
+    ],
+    "main": [
+      {
+        "id": "products",
+        "label": "Products",
+        "url": "/products"
+      },
+      {
+        "id": "about",
+        "label": "About",
+        "url": "/about"
+      },
+      {
+        "id": "news",
+        "label": "News",
+        "url": "/news"
+      },
+      {
+        "id": "contact",
+        "label": "Contact",
+        "url": "/contact"
+      }
+    ],
+    "mainWithMega": {
+      "about": {
+        "label": "About",
+        "url": "/about",
+        "subitems": [
+          {
+            "label": "Company profile",
+            "url": "/about"
+          },
+          {
+            "label": "Founder",
+            "url": "/about/founder"
+          },
+          {
+            "label": "Mission & vision",
+            "url": "/about/vision"
+          },
+          {
+            "label": "Honors & awards",
+            "url": "/about/honors"
+          },
+          {
+            "label": "Facilities",
+            "url": "/about/facilities"
+          },
+          {
+            "label": "Innovation lab",
+            "url": "/about/laboratory"
+          },
+          {
+            "label": "Certifications",
+            "url": "/about/certifications"
+          }
+        ]
+      },
+      "products": {
+        "label": "Products",
+        "url": "/products",
+        "subitems": [
+          {
+            "label": "All products",
+            "url": "/products"
+          },
+          {
+            "label": "Yeast Cell Wall (MOS)",
+            "url": "/products/yeast-cell-wall-mos"
+          },
+          {
+            "label": "Yeast Beta-Glucan",
+            "url": "/products/yeast-beta-glucan"
+          },
+          {
+            "label": "Selenium Yeast",
+            "url": "/products/selenium-yeast"
+          },
+          {
+            "label": "Autolyzed Yeast",
+            "url": "/products/autolyzed-yeast"
+          }
+        ]
+      }
+    },
+    "footer": {
+      "products": [
+        {
+          "label": "Yeast Cell Wall (MOS)",
+          "url": "/products/yeast-cell-wall-mos"
+        },
+        {
+          "label": "Yeast Beta-Glucan",
+          "url": "/products/yeast-beta-glucan"
+        },
+        {
+          "label": "Selenium Yeast",
+          "url": "/products/selenium-yeast"
+        },
+        {
+          "label": "Autolyzed Yeast",
+          "url": "/products/autolyzed-yeast"
+        },
+        {
+          "label": "All products",
+          "url": "/products"
+        }
+      ],
+      "company": [
+        {
+          "label": "About",
+          "url": "/about"
+        },
+        {
+          "label": "Founder",
+          "url": "/about/founder"
+        },
+        {
+          "label": "Certifications",
+          "url": "/about/certifications"
+        },
+        {
+          "label": "News",
+          "url": "/news"
+        },
+        {
+          "label": "Careers",
+          "url": "/careers"
+        }
+      ],
+      "support": [
+        {
+          "label": "Contact",
+          "url": "/contact"
+        },
+        {
+          "label": "Request quote",
+          "url": "/contact?type=quote"
+        },
+        {
+          "label": "Datasheets",
+          "url": "/datasheets"
+        },
+        {
+          "label": "FAQ",
+          "url": "/faq"
+        }
+      ],
+      "legal": [
+        {
+          "label": "Privacy",
+          "url": "/privacy"
+        },
+        {
+          "label": "Terms",
+          "url": "/terms"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "consumedBy": [
+      {
+        "component": "AddressBlock",
+        "file": "src/sections/contact/AddressBlock.tsx",
+        "uses": [
+          "address.*"
+        ],
+        "as": "Display full address + Google Maps link"
+      },
+      {
+        "component": "PhoneList",
+        "file": "src/sections/contact/PhoneList.tsx",
+        "uses": [
+          "phones[]"
+        ],
+        "as": "List sales + support numbers"
+      },
+      {
+        "component": "EmailList",
+        "file": "src/sections/contact/EmailList.tsx",
+        "uses": [
+          "emails"
+        ],
+        "as": "Display general/sales/support emails as mailto links"
+      },
+      {
+        "component": "BusinessHours",
+        "file": "src/sections/contact/BusinessHours.tsx",
+        "uses": [
+          "businessHours"
+        ],
+        "as": "CST hours + Aussie time note"
+      },
+      {
+        "component": "ExportInfoBlock",
+        "file": "src/sections/contact/ExportInfoBlock.tsx",
+        "uses": [
+          "exportInfo"
+        ],
+        "as": "Lead time + MOQ + Incoterms + Ports trust block"
+      },
+      {
+        "component": "FooterContactColumn",
+        "file": "src/components/common/Footer.tsx",
+        "uses": [
+          "address.displayShort",
+          "phones[0]",
+          "emails.general"
+        ],
+        "as": "Compact contact in footer"
+      },
+      {
+        "component": "InquiryForm",
+        "file": "src/sections/contact/InquiryForm.tsx",
+        "uses": [
+          "inquiryFormFields.fields[]",
+          "businessTypes"
+        ],
+        "as": "Render form fields dynamically from schema"
+      }
+    ],
+    "address": {
+      "line1": "Headquartered in Shanghai · Pudong District",
+      "line2": "",
+      "city": "Shanghai",
+      "state": "",
+      "country": "China",
+      "postalCode": "",
+      "displayShort": "Pudong, Shanghai",
+      "displayFull": "Pudong District, Shanghai, China · full address shared after first contact",
+      "googleMapsUrl": "",
+      "mapEmbedUrl": ""
+    },
+    "phones": [
+      {
+        "label": "Sales · Australia desk",
+        "number": "",
+        "display": "Direct line shared in quote response — Mon–Fri 09:00–18:00 AEST"
+      },
+      {
+        "label": "Support · email-first",
+        "number": "",
+        "display": "support@txybio.com · 48-hour response window"
+      }
+    ],
+    "businessLicense": {
+      "label": "Business registration",
+      "value": "",
+      "show": false,
+      "note": "[REPLACE: Chinese business license number — flip show:true when ready]"
+    },
+    "emails": {
+      "general": "hello@txybio.com",
+      "sales": "sales@txybio.com",
+      "support": "support@txybio.com",
+      "hr": "hr@txybio.com"
+    },
+    "socialMedia": [
+      {
+        "platform": "LinkedIn",
+        "url": "[REPLACE] https://linkedin.com/company/...",
+        "handle": "[REPLACE]",
+        "iconName": "linkedin"
+      },
+      {
+        "platform": "Facebook",
+        "url": "[REPLACE]",
+        "handle": "[REPLACE]",
+        "iconName": "facebook"
+      }
+    ],
+    "businessHours": {
+      "weekdaysLocal": "Mon–Fri 9:00–18:00 CST (UTC+8)",
+      "weekend": "Closed",
+      "noteForAustralia": "Australian business hours overlap: Mon–Fri 11:00–20:00 AEST (UTC+10)"
+    },
+    "exportInfo": {
+      "leadTime": "4–6 weeks port-to-port",
+      "minOrderQty": "1 tonne",
+      "responseTime": "Quotes within 48 business hours",
+      "incoterms": [
+        "FOB",
+        "CIF",
+        "CFR"
+      ],
+      "ports": [
+        "Sydney",
+        "Melbourne",
+        "Brisbane",
+        "Fremantle"
+      ],
+      "samplePolicy": "Samples available on request for qualified buyers"
+    },
+    "businessTypes": [
+      {
+        "id": "distributor",
+        "label": "Distributor"
+      },
+      {
+        "id": "farmer-poultry",
+        "label": "Farmer · Poultry"
+      },
+      {
+        "id": "farmer-shrimp",
+        "label": "Farmer · Shrimp"
+      },
+      {
+        "id": "feed-mill",
+        "label": "Feed mill"
+      },
+      {
+        "id": "trader",
+        "label": "Trader"
+      },
+      {
+        "id": "other",
+        "label": "Other"
+      }
+    ],
+    "inquiryFormFields": {
+      "fields": [
+        {
+          "id": "companyName",
+          "label": "Company name",
+          "type": "text",
+          "required": true,
+          "placeholder": "e.g. Pacific Aqua Pty Ltd"
+        },
+        {
+          "id": "contactName",
+          "label": "Contact name",
+          "type": "text",
+          "required": true,
+          "placeholder": "Full name"
+        },
+        {
+          "id": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "placeholder": "name@company.com"
+        },
+        {
+          "id": "phone",
+          "label": "Phone",
+          "type": "tel",
+          "required": false,
+          "placeholder": "Include country code"
+        },
+        {
+          "id": "country",
+          "label": "Country",
+          "type": "select",
+          "required": true,
+          "default": "Australia"
+        },
+        {
+          "id": "businessType",
+          "label": "Business type",
+          "type": "select",
+          "required": true,
+          "optionsRef": "businessTypes"
+        },
+        {
+          "id": "product",
+          "label": "Product of interest",
+          "type": "select",
+          "required": false,
+          "optionsRef": "products"
+        },
+        {
+          "id": "quantity",
+          "label": "Estimated annual quantity (tonnes)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "id": "port",
+          "label": "Port of destination",
+          "type": "text",
+          "required": false,
+          "placeholder": "e.g. Sydney"
+        },
+        {
+          "id": "message",
+          "label": "Additional notes",
+          "type": "textarea",
+          "required": false,
+          "placeholder": "Tell us about your operation"
+        }
+      ]
+    }
+  },
+  "newsArticles": {
+    "consumedBy": [
+      {
+        "component": "NewsListPage",
+        "file": "src/pages/NewsListPage.tsx",
+        "uses": [
+          "items[]",
+          "categories[]"
+        ],
+        "as": "Grid of articles + category filter"
+      },
+      {
+        "component": "NewsArticlePage",
+        "file": "src/pages/NewsArticlePage.tsx",
+        "uses": [
+          "items.find(slug)"
+        ],
+        "as": "Single article by slug param"
+      },
+      {
+        "component": "NewsTeaser",
+        "file": "src/sections/homepage/NewsTeaser.tsx",
+        "uses": [
+          "items[0..2]"
+        ],
+        "as": "Latest 3 articles on homepage"
+      }
+    ],
+    "items": [
+      {
+        "id": "news-001",
+        "slug": "bap-certification-renewal-2026",
+        "category": "company",
+        "title": "BAP certification renewed for shrimp products",
+        "excerpt": "We have successfully renewed our Best Aquaculture Practices certification, maintaining compliance for Australian shrimp import requirements.",
+        "body": "[REPLACE] Full article body. Topics: scope of audit, sustainability practices, what this means for customers.",
+        "image": "https://picsum.photos/seed/news-certification/1600/900",
+        "imageAlt": "Certification audit in progress",
+        "author": "[REPLACE] Author Name",
+        "publishedAt": "2026-03-15",
+        "readTimeMinutes": 4,
+        "tags": [
+          "certification",
+          "shrimp",
+          "bap"
+        ]
+      },
+      {
+        "id": "news-002",
+        "slug": "new-fermentation-line-2026",
+        "category": "facilities",
+        "title": "New fermentation line increases production capacity by 40%",
+        "excerpt": "Third fermentation facility comes online, lifting our annual production capacity to support growing Australian demand.",
+        "body": "[REPLACE] Full article body.",
+        "image": "https://picsum.photos/seed/fermentation-tank/1600/900",
+        "imageAlt": "New fermentation facility",
+        "author": "[REPLACE] Author Name",
+        "publishedAt": "2026-02-08",
+        "readTimeMinutes": 3,
+        "tags": [
+          "facilities",
+          "expansion"
+        ]
+      },
+      {
+        "id": "news-003",
+        "slug": "yeast-beta-glucan-shrimp-trial",
+        "category": "industry",
+        "title": "Trial results: Beta-glucan reduces stress mortality in Pacific white shrimp",
+        "excerpt": "Independent trial conducted with Australian aquaculture partner shows significant reduction in stress-related mortality.",
+        "body": "[REPLACE] Full article body. Include trial methodology, results, scientific references.",
+        "image": "https://picsum.photos/seed/news-shrimp/1600/900",
+        "imageAlt": "Shrimp farming research",
+        "author": "[REPLACE] Author Name",
+        "publishedAt": "2026-01-22",
+        "readTimeMinutes": 6,
+        "tags": [
+          "research",
+          "shrimp",
+          "beta-glucan"
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "id": "company",
+        "label": "Company"
+      },
+      {
+        "id": "industry",
+        "label": "Industry insights"
+      },
+      {
+        "id": "facilities",
+        "label": "Facilities"
+      },
+      {
+        "id": "products",
+        "label": "Products"
+      }
+    ]
+  },
+  "faq": {
+    "consumedBy": [
+      {
+        "component": "FAQPage",
+        "file": "src/pages/FAQPage.tsx",
+        "uses": [
+          "categories[]"
+        ],
+        "as": "Full FAQ page with category accordion"
+      },
+      {
+        "component": "ContactInlineFAQ",
+        "file": "src/sections/contact/ContactInlineFAQ.tsx",
+        "uses": [
+          "categories[0].items[0..2]"
+        ],
+        "as": "Top 3 FAQ on contact page above form"
+      },
+      {
+        "component": "ProductContextualFAQ",
+        "file": "src/sections/product/ProductContextualFAQ.tsx",
+        "uses": [
+          "categories[1].items[]"
+        ],
+        "as": "Product-specific FAQs on detail page"
+      }
+    ],
+    "categories": [
+      {
+        "id": "ordering",
+        "label": "Ordering & shipping",
+        "items": [
+          {
+            "id": "faq-1",
+            "question": "What is the minimum order quantity?",
+            "answer": "Our MOQ is 1 tonne for all products. Smaller sample quantities (5–25 kg) are available for qualified buyers conducting trials."
+          },
+          {
+            "id": "faq-2",
+            "question": "How long is the lead time to Australia?",
+            "answer": "Typically 4–6 weeks port-to-port from Chinese ports (Shanghai, Ningbo, Shenzhen) to major Australian ports (Sydney, Melbourne, Brisbane, Fremantle)."
+          },
+          {
+            "id": "faq-3",
+            "question": "What Incoterms do you offer?",
+            "answer": "We work with FOB, CIF, and CFR terms. Talk to our sales team about the best arrangement for your import workflow."
+          }
+        ]
+      },
+      {
+        "id": "products",
+        "label": "Products & application",
+        "items": [
+          {
+            "id": "faq-4",
+            "question": "Can I use the same product for both shrimp and poultry?",
+            "answer": "Yes. All four of our Animal Nutrition products are formulated for both species. Only the dosage rate differs — see the dosage table on each product page."
+          },
+          {
+            "id": "faq-5",
+            "question": "How are dosages determined?",
+            "answer": "Dosages are based on our internal trials and published industry standards. For specific feed formulations, our technical team can provide tailored recommendations."
+          },
+          {
+            "id": "faq-6",
+            "question": "Are samples available?",
+            "answer": "Yes. Samples are available for qualified buyers planning a trial. Contact our sales team with your operation details to request samples."
+          }
+        ]
+      },
+      {
+        "id": "compliance",
+        "label": "Compliance & certifications",
+        "items": [
+          {
+            "id": "faq-7",
+            "question": "Are your products certified for Australian import?",
+            "answer": "Yes. Our products carry ISO 22000, HACCP, BRC, GMP+ and (for shrimp products) BAP certifications, which align with AQIS biosecurity and FSANZ requirements."
+          },
+          {
+            "id": "faq-8",
+            "question": "Can you provide a Certificate of Analysis (CoA) per batch?",
+            "answer": "Yes. A Certificate of Analysis is provided with every shipment and is available in advance on request."
+          }
+        ]
+      }
+    ]
+  },
+  "ctaTexts": {
+    "consumedBy": [
+      {
+        "component": "Button",
+        "file": "src/components/ui/Button.tsx",
+        "uses": [
+          "* (all keys)"
+        ],
+        "as": "Reference for button labels to ensure consistency across site"
+      }
+    ],
+    "primary": "Request a quote",
+    "secondary": "View specifications",
+    "ghost": "Learn more",
+    "submitForm": "Submit request",
+    "downloadDatasheet": "Download datasheet",
+    "exploreProducts": "Explore products",
+    "contactSales": "Contact sales",
+    "viewAll": "View all",
+    "readMore": "Read more",
+    "backToTop": "Back to top",
+    "backToHome": "Back to home"
+  },
+  "taglines": {
+    "consumedBy": [
+      {
+        "component": "Header logo tooltip",
+        "file": "src/components/common/Header.tsx",
+        "uses": [
+          "items[0]"
+        ],
+        "as": "Hover tooltip on logo"
+      },
+      {
+        "component": "FooterBrand",
+        "file": "src/components/common/Footer.tsx",
+        "uses": [
+          "items[0..2]"
+        ],
+        "as": "Rotating tagline above contact"
+      },
+      {
+        "component": "AboutQuotes",
+        "file": "src/sections/about/AboutQuotes.tsx",
+        "uses": [
+          "items[]"
+        ],
+        "as": "Optional rotating quote section"
+      }
+    ],
+    "items": [
+      "Yeast biotech.",
+      "Pure culture. Stable product.",
+      "Pioneer in yeast fermentation.",
+      "Built for feed, food, and fermentation.",
+      "Certified for export.",
+      "Biotechnology for the benefit of agriculture."
+    ]
+  },
+  "trustSignals": {
+    "consumedBy": [
+      {
+        "component": "TrustSignalsRow",
+        "file": "src/components/ui/TrustSignalsRow.tsx",
+        "uses": [
+          "items[]"
+        ],
+        "as": "Horizontal row of 4 stat-style trust indicators with iconName + label + sublabel"
+      },
+      {
+        "component": "HomeHero",
+        "file": "src/sections/homepage/HomeHero.tsx",
+        "uses": [
+          "items[]"
+        ],
+        "as": "Below CTA buttons in hero"
+      },
+      {
+        "component": "Footer",
+        "file": "src/components/common/Footer.tsx",
+        "uses": [
+          "items[]"
+        ],
+        "as": "Above copyright line"
+      },
+      {
+        "component": "ContactPage",
+        "file": "src/pages/ContactPage.tsx",
+        "uses": [
+          "items[]"
+        ],
+        "as": "Above inquiry form to reassure buyers"
+      }
+    ],
+    "items": [
+      {
+        "iconName": "shield-check",
+        "label": "8 certifications",
+        "sublabel": "ISO, HACCP, BRC, BAP"
+      },
+      {
+        "iconName": "globe",
+        "label": "12 countries served",
+        "sublabel": "since 2018"
+      },
+      {
+        "iconName": "factory",
+        "label": "Own fermentation",
+        "sublabel": "3 facilities"
+      },
+      {
+        "iconName": "flask",
+        "label": "30+ years R&D",
+        "sublabel": "since 2003"
+      }
+    ]
+  },
+  "languages": {
+    "consumedBy": [
+      {
+        "component": "LanguageSwitcher",
+        "file": "src/components/common/LanguageSwitcher.tsx",
+        "uses": [
+          "items[]"
+        ],
+        "as": "Dropdown / link pair (EN / VI). Only items where active=true are clickable."
+      }
+    ],
+    "items": [
+      {
+        "code": "en",
+        "label": "EN",
+        "name": "English",
+        "default": true,
+        "active": true
+      }
+    ]
+  },
+  "seo": {
+    "consumedBy": [
+      {
+        "component": "useSEO hook",
+        "file": "src/hooks/useSEO.ts",
+        "uses": [
+          "default",
+          "<page>"
+        ],
+        "as": "Set title, meta description, og:image via react-helmet-async per route"
+      }
+    ],
+    "default": {
+      "siteName": "TXYbio",
+      "titleSeparator": "·",
+      "defaultOgImage": "/images/og/default.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    "homepage": {
+      "title": "Yeast biotech for nutrition and fermentation · TXYbio",
+      "description": "Fermentation-based ingredients across animal nutrition, food, and industrial bioprocessing. ISO 22000, HACCP, BRC, GMP+, BAP certified. Manufactured in China for global export.",
+      "ogImage": "/images/og/homepage.jpg",
+      "keywords": [
+        "yeast biotech",
+        "feed additive",
+        "shrimp",
+        "poultry",
+        "MOS",
+        "beta-glucan",
+        "selenium yeast",
+        "australia"
+      ]
+    },
+    "products": {
+      "title": "Products · Yeast for feed, food, and industrial fermentation",
+      "description": "{productCount} yeast-derived products spanning feed additives (MOS, β-glucan, selenium, autolyzed), food ingredients (umami, kokumi, savoury extracts), and industrial fermentation media. ISO 22000, HACCP, BRC, GMP+ certified.",
+      "ogImage": "/images/og/products.jpg"
+    },
+    "about": {
+      "title": "About us · Pioneer in yeast fermentation since 2003",
+      "description": "Chinese yeast biotech company. Three fermentation facilities, 130+ employees, exporting to 12 countries including Australia. Certified ISO 22000, BAP, GMP+.",
+      "ogImage": "/images/og/about.jpg"
+    },
+    "contact": {
+      "title": "Contact · Request a quote for shrimp & poultry feed",
+      "description": "Get a quote within 48 hours. MOQ 1 tonne, lead time 4–6 weeks to international ports. Yeast products across feed, food, and industrial fermentation.",
+      "ogImage": "/images/og/contact.jpg"
+    },
+    "news": {
+      "title": "News · Updates from our yeast biotech facilities",
+      "description": "Read updates on certifications, R&D milestones, industry insights, and yeast biotech innovations across feed, food, and fermentation.",
+      "ogImage": "/images/og/news.jpg"
+    }
+  },
+  "legal": {
+    "consumedBy": [
+      {
+        "component": "PrivacyPage",
+        "file": "src/pages/PrivacyPage.tsx",
+        "uses": [
+          "privacyPolicy.title",
+          "privacyPolicy.lastUpdated",
+          "privacyPolicy.body"
+        ],
+        "as": "Full privacy policy page"
+      },
+      {
+        "component": "TermsPage",
+        "file": "src/pages/TermsPage.tsx",
+        "uses": [
+          "termsOfUse.*"
+        ],
+        "as": "Full terms of use page"
+      },
+      {
+        "component": "FooterLegal",
+        "file": "src/components/common/Footer.tsx",
+        "uses": [
+          "copyright"
+        ],
+        "as": "Copyright line at bottom"
+      }
+    ],
+    "privacyPolicy": {
+      "title": "Privacy policy",
+      "lastUpdated": "2026-05-19",
+      "body": "[REPLACE — must be drafted by legal counsel] Standard sections to cover: information collected (form data, cookies, analytics), how it is used, third-party services (Google Analytics, Microsoft Clarity), data retention, user rights under Australian Privacy Act 1988, contact for privacy concerns."
+    },
+    "termsOfUse": {
+      "title": "Terms of use",
+      "lastUpdated": "2026-05-19",
+      "body": "[REPLACE — must be drafted by legal counsel] Standard sections: scope of service (informational only, not a contract for sale), intellectual property, disclaimers, governing law (suggest Chinese law or AU jurisdiction depending on customer base), limitation of liability."
+    },
+    "copyright": "© 2026 TXYbio. All rights reserved."
+  },
+  "cookieConsent": {
+    "consumedBy": [
+      {
+        "component": "CookieBanner",
+        "file": "src/components/common/CookieBanner.tsx",
+        "uses": [
+          "title",
+          "body",
+          "acceptLabel",
+          "declineLabel",
+          "learnMoreLabel",
+          "learnMoreUrl"
+        ],
+        "as": "Banner shown on first visit. Choice persists in localStorage 'cookie-consent' key."
+      }
+    ],
+    "title": "We use cookies",
+    "body": "We use cookies to improve your experience and analyse site traffic. By continuing, you accept our cookie policy.",
+    "acceptLabel": "Accept",
+    "declineLabel": "Decline",
+    "learnMoreLabel": "Cookie policy",
+    "learnMoreUrl": "/privacy#cookies"
+  }
+}

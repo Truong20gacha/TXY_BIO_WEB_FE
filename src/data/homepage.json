@@ -1,0 +1,223 @@
+{
+  "_meta": {
+    "purpose": "Self-contained data for homepage 9 sections. Tách khỏi information.json để homepage có single source.",
+    "source": "homepage-context.md Part 3"
+  },
+
+  "hero": {
+    "eyebrow": "001 / YEAST BIOTECH",
+    "headlineLine1": "Yeast biotech.",
+    "headlineLine2": "For nutrition and fermentation.",
+    "description": "Fermentation-based ingredients across animal nutrition, food, and industrial bioprocessing — manufactured in China, certified for global export.",
+    "backgroundImage": "/images/packaging.jpg",
+    "backgroundImageAlt": "Yeast product packaging",
+    "primaryCta":   { "label": "Request a quote",     "url": "/contact" },
+    "secondaryCta": { "label": "View specifications", "url": "/products" },
+    "trustBadges":  ["BAP", "HACCP", "ISO 22000", "GMP+"]
+  },
+
+  "stats": {
+    "eyebrow": "002 / NUMBERS THAT MATTER",
+    "items": [
+      { "value": 2003, "label": "Established",       "suffix": null, "isYear": true },
+      { "value": 3,    "label": "Facilities",        "suffix": null, "isYear": false },
+      { "value": 30,   "label": "Years experience",  "suffix": "+",  "isYear": false },
+      { "value": 12,   "label": "Countries served",  "suffix": null, "isYear": false },
+      { "value": 130,  "label": "Employees",         "suffix": "+",  "isYear": false },
+      { "value": 4,    "label": "Core products",     "suffix": null, "isYear": false }
+    ]
+  },
+
+  "process": {
+    "eyebrow": "003 / OUR PROCESS",
+    "title": "The science behind every batch.",
+    "steps": [
+      {
+        "id": "01",
+        "title": "Strain selection",
+        "description": "Carefully selected Saccharomyces cerevisiae cultures.",
+        "image": "",
+        "imageAlt": "Yeast strain microscopy"
+      },
+      {
+        "id": "02",
+        "title": "Fermentation",
+        "description": "Fully automated bioreactors across three facilities.",
+        "image": "",
+        "imageAlt": "Fermentation bioreactors"
+      },
+      {
+        "id": "03",
+        "title": "Extraction",
+        "description": "Concentrated extraction and membrane filtration.",
+        "image": "",
+        "imageAlt": "Extraction and filtration equipment"
+      },
+      {
+        "id": "04",
+        "title": "Quality control",
+        "description": "HPLC, amino acid analyzer, full lab verification per batch.",
+        "image": "",
+        "imageAlt": "Quality control laboratory"
+      }
+    ]
+  },
+
+  "speciesSelector": {
+    "eyebrow": "004 / WHAT DO YOU FARM?",
+    "title": "Tell us what you farm.",
+    "subtitle": "We'll show you what's relevant.",
+    "options": [
+      {
+        "id": "shrimp",
+        "label": "Shrimp",
+        "trustLine": "Trusted by Australian shrimp farms · BAP certified",
+        "products": [
+          { "name": "Yeast Cell Wall (MOS)", "dosage": "1.0 kg/tonne",    "slug": "yeast-cell-wall-mos" },
+          { "name": "Yeast Beta-Glucan",     "dosage": "100 g/tonne",    "slug": "yeast-beta-glucan" },
+          { "name": "Selenium Yeast",        "dosage": "100–150 g/tonne", "slug": "selenium-yeast" },
+          { "name": "Autolyzed Yeast",       "dosage": "1.0 kg/tonne",    "slug": "autolyzed-yeast" }
+        ]
+      },
+      {
+        "id": "broiler",
+        "label": "Broiler",
+        "trustLine": "Trusted by Australian broiler producers",
+        "products": [
+          { "name": "Yeast Cell Wall (MOS)", "dosage": "1.0 kg/tonne",   "slug": "yeast-cell-wall-mos" },
+          { "name": "Yeast Beta-Glucan",     "dosage": "200 g/tonne",   "slug": "yeast-beta-glucan" },
+          { "name": "Selenium Yeast",        "dosage": "50–150 g/tonne", "slug": "selenium-yeast" },
+          { "name": "Autolyzed Yeast",       "dosage": "2.0 kg/tonne",   "slug": "autolyzed-yeast" }
+        ]
+      },
+      {
+        "id": "layer",
+        "label": "Laying hen",
+        "trustLine": "Trusted by Australian egg producers",
+        "products": [
+          { "name": "Yeast Cell Wall (MOS)", "dosage": "1.0 kg/tonne",   "slug": "yeast-cell-wall-mos" },
+          { "name": "Yeast Beta-Glucan",     "dosage": "200 g/tonne",   "slug": "yeast-beta-glucan" },
+          { "name": "Selenium Yeast",        "dosage": "50–150 g/tonne", "slug": "selenium-yeast" },
+          { "name": "Autolyzed Yeast",       "dosage": "1.0 kg/tonne",   "slug": "autolyzed-yeast" }
+        ]
+      }
+    ]
+  },
+
+  "products": {
+    "eyebrow": "005 / FEATURED PRODUCTS",
+    "title": "Yeast biotech across nutrition and fermentation.",
+    "intro": "Featured here: our 4 flagship Animal Nutrition products. Our full catalogue also covers Food Ingredient, Food Premium, and Industrial-grade yeast extracts — supported by full technical documentation and export-ready certifications.",
+    "items": [
+      {
+        "code": "Y.MOS.001",
+        "name": "Yeast Cell Wall (MOS)",
+        "tagline": "Gut health and immunity",
+        "description": "Cell wall fraction extracted from baker's yeast (Saccharomyces cerevisiae) — rich in mannoproteins, beta-glucans (≥20%), MOS (≥20%), chitin, and N-acetylglucosamine. Binds pathogenic bacteria in the gut and supports beneficial microflora.",
+        "species": ["Shrimp", "Broiler", "Layer"],
+        "slug": "yeast-cell-wall-mos"
+      },
+      {
+        "code": "Y.BG.002",
+        "name": "Yeast Beta-Glucan",
+        "tagline": "Potent immune modulator",
+        "description": "Purified beta-(1,3)-D-glucan (70–90%) extracted from yeast cell walls. One of the most potent natural immune modulators in feed science — effective against viral and bacterial challenges.",
+        "species": ["Shrimp", "Broiler", "Layer"],
+        "slug": "yeast-beta-glucan"
+      },
+      {
+        "code": "Y.SE.003",
+        "name": "Selenium Yeast",
+        "tagline": "Organic selenium source",
+        "description": "Organic selenium (≥2000–3000 ppm) produced by enriching baker's yeast in selenium-rich fermentation media. Up to 98% selenomethionine — significantly higher bioavailability than inorganic sodium selenite.",
+        "species": ["Shrimp", "Broiler", "Layer"],
+        "slug": "selenium-yeast"
+      },
+      {
+        "code": "Y.AY.004",
+        "name": "Autolyzed Yeast",
+        "tagline": "Digestible protein and nucleic acids",
+        "description": "Yeast cells (Saccharomyces cerevisiae) broken down through controlled autolysis. Releases free amino acids, peptides, nucleic acids, beta-glucans, mannans, and flavor nucleotides — high digestibility (crude protein ≥45%).",
+        "species": ["Shrimp", "Broiler", "Layer"],
+        "slug": "autolyzed-yeast"
+      }
+    ],
+    "ctaLabel": "View all products",
+    "ctaUrl": "/products"
+  },
+
+  "globalReach": {
+    "eyebrow": "006 / GLOBAL REACH",
+    "title": "Exported to 12 countries.",
+    "subtitle": "Australia is our primary export market.",
+    "regions": [
+      { "name": "Australia",      "highlight": true,  "lat": -25.0, "lng": 135.0 },
+      { "name": "New Zealand",    "highlight": true,  "lat": -41.0, "lng": 174.0 },
+      { "name": "Europe",         "highlight": false, "lat":  50.0, "lng":  10.0 },
+      { "name": "Americas",       "highlight": false, "lat":  40.0, "lng": -100.0 },
+      { "name": "Southeast Asia", "highlight": false, "lat":  10.0, "lng": 105.0 }
+    ],
+    "dotCount": 12
+  },
+
+  "certifications": {
+    "eyebrow": "007 / CERTIFICATIONS",
+    "title": "Certified every step of the way.",
+    "items": [
+      { "code": "ISO 22000", "category": "Food safety",  "description": "International food safety management system." },
+      { "code": "HACCP",     "category": "Food safety",  "description": "Systematic preventive food safety approach." },
+      { "code": "BRC",       "category": "Food safety",  "description": "European supply chain quality standard." },
+      { "code": "ISO 9001",  "category": "Quality",      "description": "Quality management system certification." },
+      { "code": "GMP+",      "category": "Feed safety",  "description": "Feed industry safety for EU export." },
+      { "code": "BAP",       "category": "Aquaculture",  "description": "Best Aquaculture Practices — critical for shrimp." },
+      { "code": "HALAL",     "category": "Religious",    "description": "Suitable for Muslim markets." },
+      { "code": "KOSHER",    "category": "Religious",    "description": "Jewish dietary compliance." }
+    ],
+    "ctaLabel": "Learn about our certifications",
+    "ctaUrl": "/about"
+  },
+
+  "news": {
+    "eyebrow": "008 / NEWS",
+    "title": "From our facilities.",
+    "featured": {
+      "category": "COMPANY",
+      "date": "15 / 03 / 2026",
+      "title": "BAP certification renewed for shrimp products",
+      "excerpt": "We have successfully renewed our Best Aquaculture Practices certification, maintaining compliance for Australian shrimp import requirements.",
+      "image": "",
+      "imageAlt": "Certification audit visual",
+      "slug": "bap-certification-renewal-2026"
+    },
+    "compact": [
+      {
+        "category": "FACILITIES",
+        "date": "08 / 02 / 2026",
+        "title": "New fermentation line increases production capacity by 40%",
+        "slug": "new-fermentation-line-2026"
+      },
+      {
+        "category": "INDUSTRY",
+        "date": "22 / 01 / 2026",
+        "title": "Trial results: Beta-glucan reduces stress mortality in Pacific white shrimp",
+        "slug": "yeast-beta-glucan-shrimp-trial"
+      }
+    ],
+    "ctaLabel": "View all news",
+    "ctaUrl": "/news"
+  },
+
+  "inquiryBanner": {
+    "eyebrow": "009 / GET IN TOUCH",
+    "title": "Tell us about your operation.",
+    "subtitle": "Quotes within 48 business hours.",
+    "trustSignals": [
+      { "value": "4–6 weeks", "label": "Lead time" },
+      { "value": "1 tonne",   "label": "Minimum order" },
+      { "value": "48 hours",  "label": "Quote response" }
+    ],
+    "cta":             { "label": "Request a quote", "url": "/contact" },
+    "backgroundImage": "",
+    "backgroundImageAlt": "Industrial fermentation facility"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "_meta": {
+    "purpose": "Single source of truth for all image URLs. Other files reference images by key (e.g. 'IMG.hero.fermentation') instead of URL.",
+    "howToUse": "When you need to swap images (Picsum → real photos), edit only this file. The information.json references images by key, so no need to touch it.",
+    "currentStrategy": "Picsum (random seeded) for photos, inline SVG for logos and cert badges. All hotlink-friendly.",
+    "lastUpdated": "2026-05-19"
+  },
+
+  "logo": {
+    "primary": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 28'><rect width='22' height='22' x='2' y='3' fill='%231F4D3D'/><text x='30' y='20' font-family='Inter,sans-serif' font-size='13' font-weight='500' letter-spacing='0.05em' fill='%231A1A1A'>YEAST.BIO</text></svg>",
+    "white":   "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 28'><rect width='22' height='22' x='2' y='3' fill='%23FFFFFF'/><text x='30' y='20' font-family='Inter,sans-serif' font-size='13' font-weight='500' letter-spacing='0.05em' fill='%23FFFFFF'>YEAST.BIO</text></svg>"
+  },
+
+  "hero": {
+    "homepage":    "https://picsum.photos/seed/fermentation-tank/2000/1000",
+    "products":    "https://picsum.photos/seed/laboratory/2000/1200",
+    "about":       "https://picsum.photos/seed/company-about/2000/1000",
+    "contact":     "https://picsum.photos/seed/contact-hero/2000/1000",
+    "news":        "https://picsum.photos/seed/news-hero/2000/1000",
+    "innovation":  "https://picsum.photos/seed/research-lab/2000/1000"
+  },
+
+  "slideshow": {
+    "fermentation": "https://picsum.photos/seed/fermentation-tank/2000/1000",
+    "quality":      "https://picsum.photos/seed/quality-control/2000/1000",
+    "innovation":   "https://picsum.photos/seed/research-lab/2000/1000"
+  },
+
+  "facility": {
+    "fermentationTank":   "https://picsum.photos/seed/fermentation-tank/1600/1000",
+    "sprayDrying":        "https://picsum.photos/seed/spray-drying/1600/1000",
+    "extractionTank":     "https://picsum.photos/seed/extraction-tank/1600/1000",
+    "membraneFiltration": "https://picsum.photos/seed/filtration/1600/1000"
+  },
+
+  "lab": {
+    "heroBanner":  "https://picsum.photos/seed/laboratory/2000/1200",
+    "researchTeam":"https://picsum.photos/seed/research-lab/2000/1000"
+  },
+
+  "team": {
+    "training":  "https://picsum.photos/seed/team-training/1200/800",
+    "culture":   "https://picsum.photos/seed/team-culture/1200/800",
+    "integrity": "https://picsum.photos/seed/integrity-work/1200/800"
+  },
+
+  "portrait": {
+    "founder":  "https://picsum.photos/seed/founder-portrait/800/800",
+    "chairman": "https://picsum.photos/seed/chairman-portrait/800/800"
+  },
+
+  "productCategory": {
+    "animalNutrition":   "https://picsum.photos/seed/animal-nutrition/1600/1200",
+    "humanNutrition":    "https://picsum.photos/seed/human-nutrition/1600/1200",
+    "foodIngredient":    "https://picsum.photos/seed/food-ingredient/1600/1200",
+    "microbialNutrition":"https://picsum.photos/seed/microbial/1600/1200"
+  },
+
+  "news": {
+    "bapRenewal":   "https://picsum.photos/seed/news-certification/1600/900",
+    "newFacility":  "https://picsum.photos/seed/fermentation-tank/1600/900",
+    "shrimpTrial":  "https://picsum.photos/seed/news-shrimp/1600/900"
+  },
+
+  "product": {
+    "_note": "Product images intentionally use local paths — replace with studio shots before launch",
+    "yeastCellWallMos":   "/images/products/yeast-cell-wall-mos.jpg",
+    "yeastCellWallMos1":  "/images/products/yeast-cell-wall-mos-1.jpg",
+    "yeastCellWallMos2":  "/images/products/yeast-cell-wall-mos-2.jpg",
+    "yeastCellWallMosPack":"/images/products/yeast-cell-wall-mos-pack.jpg",
+    "yeastBetaGlucan":    "/images/products/yeast-beta-glucan.jpg",
+    "yeastBetaGlucan1":   "/images/products/yeast-beta-glucan-1.jpg",
+    "yeastBetaGlucan2":   "/images/products/yeast-beta-glucan-2.jpg",
+    "yeastBetaGlucanPack":"/images/products/yeast-beta-glucan-pack.jpg",
+    "seleniumYeast":      "/images/products/selenium-yeast.jpg",
+    "seleniumYeast1":     "/images/products/selenium-yeast-1.jpg",
+    "seleniumYeast2":     "/images/products/selenium-yeast-2.jpg",
+    "seleniumYeastPack":  "/images/products/selenium-yeast-pack.jpg",
+    "autolyzedYeast":     "/images/products/autolyzed-yeast.jpg",
+    "autolyzedYeast1":    "/images/products/autolyzed-yeast-1.jpg",
+    "autolyzedYeast2":    "/images/products/autolyzed-yeast-2.jpg",
+    "autolyzedYeastPack": "/images/products/autolyzed-yeast-pack.jpg"
+  },
+
+  "ogImage": {
+    "_note": "Open Graph images for social sharing — need custom design with brand colors before launch",
+    "default":  "/images/og/default.jpg",
+    "homepage": "/images/og/homepage.jpg",
+    "products": "/images/og/products.jpg",
+    "about":    "/images/og/about.jpg",
+    "contact":  "/images/og/contact.jpg",
+    "news":     "/images/og/news.jpg"
+  },
+
+  "certBadge": {
+    "_note": "Inline SVG badges with cert code text. Always work, no external dependency.",
+    "iso22000": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FFFFFF' stroke='%23D4D4CE' stroke-width='1'/><text x='50' y='58' font-family='Inter,sans-serif' font-size='14' font-weight='500' fill='%231F4D3D' text-anchor='middle'>ISO 22000</text></svg>",
+    "haccp":    "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FFFFFF' stroke='%23D4D4CE' stroke-width='1'/><text x='50' y='58' font-family='Inter,sans-serif' font-size='18' font-weight='500' fill='%231F4D3D' text-anchor='middle'>HACCP</text></svg>",
+    "brc":      "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FFFFFF' stroke='%23D4D4CE' stroke-width='1'/><text x='50' y='58' font-family='Inter,sans-serif' font-size='22' font-weight='500' fill='%231F4D3D' text-anchor='middle'>BRC</text></svg>",
+    "iso9001":  "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FFFFFF' stroke='%23D4D4CE' stroke-width='1'/><text x='50' y='58' font-family='Inter,sans-serif' font-size='14' font-weight='500' fill='%231F4D3D' text-anchor='middle'>ISO 9001</text></svg>",
+    "gmpPlus":  "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FFFFFF' stroke='%23D4D4CE' stroke-width='1'/><text x='50' y='58' font-family='Inter,sans-serif' font-size='22' font-weight='500' fill='%231F4D3D' text-anchor='middle'>GMP+</text></svg>",
+    "bap":      "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FFFFFF' stroke='%23D4D4CE' stroke-width='1'/><text x='50' y='58' font-family='Inter,sans-serif' font-size='24' font-weight='500' fill='%231F4D3D' text-anchor='middle'>BAP</text></svg>",
+    "halal":    "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FFFFFF' stroke='%23D4D4CE' stroke-width='1'/><text x='50' y='58' font-family='Inter,sans-serif' font-size='18' font-weight='500' fill='%231F4D3D' text-anchor='middle'>HALAL</text></svg>",
+    "kosher":   "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FFFFFF' stroke='%23D4D4CE' stroke-width='1'/><text x='50' y='58' font-family='Inter,sans-serif' font-size='16' font-weight='500' fill='%231F4D3D' text-anchor='middle'>KOSHER</text></svg>"
+  }
+}

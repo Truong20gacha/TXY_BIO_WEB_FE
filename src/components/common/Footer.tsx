@@ -14,10 +14,10 @@ export function Footer() {
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-2.5">
               <img
-                src="/images/logo.webp"
+                src="/images/logo.webp?v=3"
                 alt=""
                 aria-hidden="true"
-                className="block flex-shrink-0 h-7 w-auto bg-[#F0F4F1] mix-blend-multiply"
+                className="block flex-shrink-0 h-7 w-auto "
               />
               <span className="text-body-sm font-medium tracking-[0.12em] uppercase text-surface-white">
                 TXYbio

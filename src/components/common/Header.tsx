@@ -36,10 +36,10 @@ export function Header() {
         <div className="container-x flex items-center justify-between py-5 md:py-6">
           <Link to="/" className="flex items-center gap-2.5">
             <img
-              src="/images/logo.webp"
+              src="/images/logo.webp?v=3"
               alt=""
               aria-hidden="true"
-              className="block flex-shrink-0 h-7 w-auto bg-[#F0F4F1] mix-blend-multiply"
+              className="block flex-shrink-0 h-7 w-auto "
             />
             <span className="text-body-sm font-medium tracking-[0.12em] uppercase text-ink-primary">
               TXYbio
@@ -108,10 +108,10 @@ export function Header() {
         <div className="flex items-center justify-between px-6 py-5 border-b border-line-hair">
           <div className="flex items-center gap-2.5">
             <img
-              src="/images/logo.webp"
+              src="/images/logo.webp?v=3"
               alt=""
               aria-hidden="true"
-              className="block flex-shrink-0 h-6 w-auto bg-[#F0F4F1] mix-blend-multiply"
+              className="block flex-shrink-0 h-6 w-auto "
             />
             <span className="text-body-sm font-medium tracking-[0.12em] uppercase text-ink-primary">
               TXYbio

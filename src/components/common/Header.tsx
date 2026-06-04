@@ -34,7 +34,7 @@ export function Header() {
         )}
       >
         <div className="container-x flex items-center justify-between py-5 md:py-6">
-          <Link to="/" className="flex items-center gap-2.5">
+          <Link to="/" className="flex items-center gap-1.5">
             <img
               src="/images/logo.webp?v=3"
               alt=""
@@ -106,7 +106,7 @@ export function Header() {
         )}
       >
         <div className="flex items-center justify-between px-6 py-5 border-b border-line-hair">
-          <div className="flex items-center gap-2.5">
+          <div className="flex items-center gap-1.5">
             <img
               src="/images/logo.webp?v=3"
               alt=""

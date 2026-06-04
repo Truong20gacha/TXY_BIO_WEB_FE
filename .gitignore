@@ -27,3 +27,8 @@ dist-ssr
 _backup_pre_*
 src/data/*.bak
 src/data/*.bak-*
+
+# Source reference binaries (kept locally, not tracked)
+src/data/*.pdf
+src/data/*.pptx
+public/images/certs_image/

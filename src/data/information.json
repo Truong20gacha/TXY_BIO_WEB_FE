@@ -66,20 +66,24 @@
         "as": "og:site_name, schema.org Organization"
       }
     ],
-    "legalName": "TXYbio Co., Ltd",
+    "legalName": "Zhuhai TXY Biotech Holding Co., Ltd.",
     "shortName": "TXYbio",
     "brandPrimary": "TXYbio",
-    "brandSecondary": "",
-    "tagline": "Yeast biotech for nutrition and fermentation.",
-    "shortDescription": "Pioneer in yeast fermentation for animal nutrition.",
-    "fullDescription": "TXYbio is a yeast biotechnology enterprise operating across three product lines: feed additives for shrimp and poultry, food ingredients for umami and savoury flavour, and yeast extracts for industrial fermentation. From three fermentation facilities in China, we serve global distributors with certified, export-ready products — each supported by full technical documentation and traceable quality control.",
+    "brandSecondary": "TianXiangYuan",
+    "tagline": "Focus on the Yeast Industry for 30 Years",
+    "shortDescription": "National high-tech yeast enterprise for food, health-care, animal nutrition, and fermentation.",
+    "fullDescription": "TXY (TianXiangYuan) is a national high-tech enterprise focused on yeast derivatives, operating across four application fields: food seasoning, health-care food, animal nutrition, and microbial culture media. From its own fermentation base in China — equipped with German environmental treatment systems — TXY serves domestic and international markets with certified, export-ready products, each backed by full technical documentation and traceable quality control.",
     "industryPosition": "Pioneer in the yeast fermentation industry",
-    "established": "2003",
+    "established": "2010",
     "yearsInBusiness": "30+",
     "headquarters": {
-      "city": "Shanghai",
-      "country": "China"
+      "city": "Zhuhai",
+      "region": "Guangdong",
+      "country": "China",
+      "address": "No. 8 Jingwei Road, Baijiao Industrial Development Zone, Doumen District, Zhuhai City, Guangdong Province"
     },
+    "hotline": "4006-0756-16",
+    "website": "http://www.txybio.com",
     "logoUrl": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 28'><rect width='22' height='22' x='2' y='3' fill='%231F4D3D'/><text x='30' y='20' font-family='Inter,sans-serif' font-size='13' font-weight='500' letter-spacing='0.05em' fill='%231A1A1A'>TXYbio</text></svg>",
     "logoUrlWhite": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 28'><rect width='22' height='22' x='2' y='3' fill='%23FFFFFF'/><text x='30' y='20' font-family='Inter,sans-serif' font-size='13' font-weight='500' letter-spacing='0.05em' fill='%23FFFFFF'>TXYbio</text></svg>",
     "marketsServed": [
@@ -106,19 +110,28 @@
     ],
     "subsidiaries": [
       {
-        "name": "TXYbio Biology Engineering Co., Ltd",
-        "type": "Research & Development",
-        "location": "Suzhou, China"
+        "name": "Guangdong Wuzhou Pharmaceutical Co., Ltd.",
+        "type": "Pharmaceutical & yeast medical applications",
+        "location": "Guangdong, China",
+        "ownership": "80%",
+        "acquired": null,
+        "annualCapacity": null
       },
       {
-        "name": "TXYbio Biotechnology Co., Ltd",
-        "type": "Production & Fermentation",
-        "location": "Shanghai, China"
+        "name": "Zhanjiang Wuzhou Biology Engineering Co., Ltd.",
+        "type": "Production & fermentation base",
+        "location": "Zhanjiang, China",
+        "ownership": "100%",
+        "acquired": "2015",
+        "annualCapacity": "8,000 tonnes/year"
       },
       {
-        "name": "TXYbio Australia Pty Ltd",
-        "type": "Distribution & Customer Service",
-        "location": "Sydney, Australia"
+        "name": "Zhuhai WanFuKang Biotechnology Co., Ltd.",
+        "type": "Animal feed biotech (Wan Fu Kang brand)",
+        "location": "Zhuhai, China",
+        "ownership": "100%",
+        "acquired": null,
+        "annualCapacity": null
       }
     ]
   },
@@ -286,19 +299,194 @@
         "as": "Optional 'Founded by X' line in footer"
       }
     ],
-    "name": "[REPLACE] Founder Name",
+    "name": "Ye Zhi Li",
     "title": "Founder & Chairman",
-    "photo": "https://picsum.photos/seed/founder-portrait/800/800",
-    "photoAlt": "Portrait of the founder",
+    "photo": "/images/about/founder-ye-zhi-li.jpg",
+    "photoAlt": "Portrait of Ye Zhi Li, Founder and Chairman of Zhuhai TXY Biotech Holding Co., Ltd.",
     "credentials": [
-      "[REPLACE] Master's degree from [University]",
-      "[REPLACE] Founded the company in [year]",
-      "Chairman of the company since founding",
-      "[REPLACE] Industry association role 1",
-      "[REPLACE] Industry association role 2"
+      "Master's degree from Peking University",
+      "Founded Guangdong Wuzhou Pharmaceutical Co., Ltd. in April 2003 and served as Chairman",
+      "Chairman of Zhuhai TXY Biotech Holding Co., Ltd.",
+      "Deputy to the 12th, 13th, 14th and 15th Zhanjiang Municipal People's Congress",
+      "Standing Committee of the 17th Suixi County People's Congress",
+      "8th and 9th CPPCC Standing Committee of Suixi County",
+      "Executive Committee of Guangdong Federation of Industry and Commerce",
+      "Vice Chairman of Zhanjiang Federation of Industry and Commerce",
+      "Honorary Chairman of Suixi County Federation of Industry and Commerce"
     ],
-    "biography": "[REPLACE] Brief 2-3 sentence biography in third person. Highlight academic background, industry experience, and leadership achievements relevant to Australian B2B audience.",
+    "biography": "Ye Zhi Li holds a Master's degree from Peking University and founded Guangdong Wuzhou Pharmaceutical Co., Ltd. in 2003 before establishing Zhuhai TXY Biotech Holding Co., Ltd. Across three decades in the yeast fermentation industry, he has led the group's growth into food seasoning, health-care food, animal nutrition, and microbial culture media. He also holds numerous regional industry and government advisory roles across Guangdong and Zhanjiang provinces.",
     "quote": "Pursue excellence — success will catch up with you inadvertently."
+  },
+  "applicationFields": {
+    "consumedBy": [
+      {
+        "component": "ApplicationFields",
+        "file": "src/sections/about/ApplicationFields.tsx",
+        "uses": [
+          "eyebrow",
+          "title",
+          "intro",
+          "items[]"
+        ],
+        "as": "4-field grid bridging trust → catalogue; each card links to its product category"
+      }
+    ],
+    "eyebrow": "Application fields",
+    "title": "Four fields, one yeast platform",
+    "intro": "From a single fermentation platform, TXY serves four application fields — each backed by a dedicated product line and the same certified quality system.",
+    "items": [
+      {
+        "id": "food-seasoning",
+        "name": "Food Seasoning",
+        "categorySlug": "food-ingredient",
+        "categoryName": "Food Ingredient",
+        "description": "Natural savoury and premium yeast extracts — standard, Umami (I+G), and Kokumi grades — for soups, sauces, snacks, plant-based meat, and gourmet seasoning."
+      },
+      {
+        "id": "health-care-food",
+        "name": "Health-care Food",
+        "categorySlug": "human-nutrition",
+        "categoryName": "Human Nutrition",
+        "description": "Selenium yeast and yeast beta-glucan with high bioavailability for health-care food, dietary supplements, and functional beverages."
+      },
+      {
+        "id": "animal-nutrition",
+        "name": "Animal Nutrition",
+        "categorySlug": "animal-nutrition",
+        "categoryName": "Animal Nutrition",
+        "description": "Yeast-derived additives for aquaculture, poultry, and ruminants — gut health, immunity, organic minerals, and digestible protein."
+      },
+      {
+        "id": "culture-medium",
+        "name": "Culture Medium",
+        "categorySlug": "microbial-nutrition",
+        "categoryName": "Microbial Nutrition",
+        "description": "Yeast extracts engineered for industrial fermentation — antibiotic, probiotic, enzyme, vaccine, and recombinant protein production."
+      }
+    ]
+  },
+  "licenses": {
+    "consumedBy": [
+      {
+        "component": "CertificationsLicenses",
+        "file": "src/sections/about/CertificationsLicenses.tsx",
+        "uses": [
+          "eyebrow",
+          "title",
+          "intro",
+          "filingHighlight",
+          "items[]"
+        ],
+        "as": "Section 06 anchor: Export Filing highlight + 9 authorised products + 4 license doc gallery (lightbox)"
+      }
+    ],
+    "eyebrow": "Government licenses & filings",
+    "title": "Licensed and export-ready",
+    "intro": "Every TXY product line is backed by Chinese government production and export licenses — verifiable documents, not claims.",
+    "filingHighlight": {
+      "titleEn": "Export Food Production Enterprise Filing Certificate",
+      "titleCn": "出口食品生产企业备案证明",
+      "filingNo": "4400/19061",
+      "entity": "Zhanjiang Wuzhou Biology Engineering Co., Ltd.",
+      "issuer": "General Administration of Customs, P.R. China",
+      "validUntil": "Perpetual",
+      "image": "/images/about/licenses/export-filing-cert.jpg",
+      "note": "Filed for export of nine yeast product categories — the foundation of TXY's international B2B supply.",
+      "authorisedProducts": [
+        { "cn": "高活性干酵母", "en": "Active Dry Yeast", "slug": "active-dry-yeast" },
+        { "cn": "食用酵母", "en": "Edible Yeast", "slug": null },
+        { "cn": "营养酵母", "en": "Nutritional Yeast", "slug": null },
+        { "cn": "酵母抽提物", "en": "Yeast Extract", "slug": "ye-standard-powder" },
+        { "cn": "酵母自溶物", "en": "Yeast Autolysate", "slug": "autolyzed-yeast" },
+        { "cn": "培养基用酵母加工制品", "en": "Yeast for Culture Medium", "slug": "ye-microbial-nutrition" },
+        { "cn": "酵母细胞壁", "en": "Yeast Cell Wall", "slug": "yeast-cell-wall-mos" },
+        { "cn": "酵母粉/酵母β-葡聚糖", "en": "Yeast Powder / Yeast β-Glucan", "slug": "yeast-beta-glucan" },
+        { "cn": "富营养酵母", "en": "Nutrient-rich Yeast", "slug": null }
+      ]
+    },
+    "items": [
+      {
+        "id": "business-license",
+        "titleEn": "Business License",
+        "titleCn": "营业执照",
+        "issuer": "State Administration for Market Regulation",
+        "entity": "Zhuhai TXY Biotech Holding Co., Ltd.",
+        "image": "/images/about/licenses/business-license.png"
+      },
+      {
+        "id": "food-production-license",
+        "titleEn": "Food Production License",
+        "titleCn": "食品生产许可证",
+        "issuer": "State Administration for Market Regulation",
+        "entity": "Zhanjiang Wuzhou Biology Engineering Co., Ltd.",
+        "image": "/images/about/licenses/food-production-license.png"
+      },
+      {
+        "id": "food-production-catalogue",
+        "titleEn": "Food Production License — Product Catalogue",
+        "titleCn": "食品生产许可品种明细表",
+        "issuer": "State Administration for Market Regulation",
+        "entity": "Zhanjiang Wuzhou Biology Engineering Co., Ltd.",
+        "image": "/images/about/licenses/food-production-catalogue.png"
+      },
+      {
+        "id": "export-filing-cert",
+        "titleEn": "Export Food Production Enterprise Filing Certificate",
+        "titleCn": "出口食品生产企业备案证明",
+        "issuer": "General Administration of Customs, P.R. China",
+        "entity": "Zhanjiang Wuzhou Biology Engineering Co., Ltd.",
+        "filingNo": "4400/19061",
+        "image": "/images/about/licenses/export-filing-cert.jpg"
+      }
+    ]
+  },
+  "honorsGallery": {
+    "consumedBy": [
+      {
+        "component": "HonorsGallery",
+        "file": "src/sections/about/HonorsGallery.tsx",
+        "uses": [
+          "eyebrow",
+          "title",
+          "intro",
+          "items[]"
+        ],
+        "as": "Recognition wall — grid of honour/qualification/membership certificate thumbnails with hover-zoom"
+      }
+    ],
+    "eyebrow": "Honours & recognition",
+    "title": "A wall of recognition",
+    "intro": "Qualifications, awards, research-centre designations, and industry memberships earned across three decades — each a verifiable certificate.",
+    "items": [
+      { "image": "/images/about/honors/high-tech-enterprise.jpg", "title": "National High-Tech Enterprise" },
+      { "image": "/images/about/honors/national-ip-advantage.jpg", "title": "National Intellectual Property Advantage Enterprise" },
+      { "image": "/images/about/honors/guangdong-eng-research-center.jpg", "title": "Guangdong Engineering Technology Research Centre" },
+      { "image": "/images/about/honors/guangdong-ip-demonstration.jpg", "title": "Guangdong IP Demonstration Enterprise" },
+      { "image": "/images/about/honors/guangdong-famous-brand.png", "title": "Guangdong Famous Brand" },
+      { "image": "/images/about/honors/zhuhai-yeast-rd-center.jpg", "title": "Zhuhai Yeast Application R&D Centre" },
+      { "image": "/images/about/honors/zhuhai-key-tech-center.jpg", "title": "Zhuhai Key Enterprise Technology Centre" },
+      { "image": "/images/about/honors/contract-creditworthy-2016-2020.jpg", "title": "Guangdong Contract-Abiding & Creditworthy Enterprise 2016–2020" },
+      { "image": "/images/about/honors/strategic-emerging-product.png", "title": "Zhuhai Strategic Emerging Industry Key Product" },
+      { "image": "/images/about/honors/zhuhai-ip-protection.jpg", "title": "Zhuhai Key Enterprise for IP Protection" },
+      { "image": "/images/about/honors/gold-award-expo-2013.jpg", "title": "Gold Award — China Int'l Seasoning & Food Ingredients Expo 2013" },
+      { "image": "/images/about/honors/gold-award-expo-2014.jpg", "title": "Gold Award — China Int'l Seasoning & Food Ingredients Expo 2014" },
+      { "image": "/images/about/honors/innovation-competition-5th-excellent-gd.jpg", "title": "5th China Innovation & Entrepreneurship Competition — Excellent Enterprise (Guangdong)" },
+      { "image": "/images/about/honors/innovation-competition-5th-winner-gd.jpg", "title": "5th China Innovation & Entrepreneurship Competition — Award Winner (Guangdong)" },
+      { "image": "/images/about/honors/innovation-competition-4th-excellent-gd.jpg", "title": "4th China Innovation & Entrepreneurship Competition — Excellent Enterprise (Guangdong)" },
+      { "image": "/images/about/honors/innovation-competition-5th-honor-2016.jpg", "title": "5th Innovation & Entrepreneurship Competition Honour Certificate (Guangdong) 2016" },
+      { "image": "/images/about/honors/honor-brewing-yeast.jpg", "title": "Honour Certificate — Brewing Yeast Cultivation" },
+      { "image": "/images/about/honors/membership-cfaa-cert.jpg", "title": "Membership Certificate — China Food Additives & Ingredients Association" },
+      { "image": "/images/about/honors/top10-doumen-cert.jpg", "title": "Top 10 Enterprises of Doumen District 2014–2015 (Certificate)" },
+      { "image": "/images/about/honors/alliance-antibiotic-alt-standing-2.jpg", "title": "Standing Council Member — China Strategic Alliance for Antibiotic Alternatives in Feed" },
+      { "image": "/images/about/honors/alliance-antibiotic-alt-standing.png", "title": "Standing Council Member — China Alliance for Antibiotic Alternatives in Feed" },
+      { "image": "/images/about/honors/member-gd-antibiotic-free-feed.png", "title": "Member — Guangdong Antibiotic-Free Feed Industry Alliance" },
+      { "image": "/images/about/honors/honor-yeast-cultivation-feed.jpg", "title": "Honour Certificate — S. cerevisiae Yeast Cultivation (Feed)" },
+      { "image": "/images/about/honors/top10-doumen.jpg", "title": "Top 10 Enterprises of Doumen District 2014–2015" },
+      { "image": "/images/about/honors/member-zhuhai-foreign-econ.jpg", "title": "Member — Zhuhai Foreign Economic Cooperation Enterprise Association" },
+      { "image": "/images/about/honors/member-cfaa.png", "title": "Member — China Food Additives & Ingredients Association" },
+      { "image": "/images/about/honors/member-jinwan-sme.jpg", "title": "Member — Jinwan District SME Development Association, Zhuhai" },
+      { "image": "/images/about/honors/member-zhuhai-quarantine.jpg", "title": "Member — Zhuhai Import-Export Quarantine Service Association" }
+    ]
   },
   "chairmanMessage": {
     "consumedBy": [
@@ -417,14 +605,20 @@
     "items": [
       {
         "id": "established",
-        "value": "2003",
-        "label": "Established",
+        "value": "2010",
+        "label": "Holding established",
         "suffix": null
       },
       {
         "id": "facilities",
         "value": "3",
-        "label": "Facilities",
+        "label": "Group entities",
+        "suffix": null
+      },
+      {
+        "id": "capacity",
+        "value": "8,000",
+        "label": "Tonnes / year",
         "suffix": null
       },
       {
@@ -491,10 +685,13 @@
     "items": [
       {
         "id": "iso-22000",
-        "code": "ISO 22000",
-        "fullName": "ISO 22000:2005 Food Safety Management",
+        "code": "ISO 22000:2018",
+        "fullName": "ISO 22000:2018 Food Safety Management",
         "category": "food-safety",
         "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/ISO_Logo_%28Red_square%29.svg/240px-ISO_Logo_%28Red_square%29.svg.png",
+        "badgeImage": "/images/certs/cert-iso22000.jpg",
+        "authority": "UCC",
+        "scope": "Food Safety Management System",
         "description": "International food safety management system standard incorporating HACCP principles."
       },
       {
@@ -511,6 +708,9 @@
         "fullName": "BRC Global Standard for Food Safety",
         "category": "food-safety",
         "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/BRCGS_logo.svg/240px-BRCGS_logo.svg.png",
+        "badgeImage": "/images/certs/cert-brc.jpg",
+        "authority": "British Retail Consortium",
+        "scope": "European Supply Chain Quality Management",
         "description": "European supply chain quality management standard, recognised by Australian retailers."
       },
       {
@@ -547,6 +747,9 @@
         "fullName": "HALAL Certification",
         "category": "religious",
         "iconUrl": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FFFFFF' stroke='%23D4D4CE' stroke-width='1'/><text x='50' y='58' font-family='Inter,sans-serif' font-size='18' font-weight='500' fill='%231F4D3D' text-anchor='middle'>HALAL</text></svg>",
+        "badgeImage": "/images/certs/cert-halal.png",
+        "authority": "ARA Halal Certification Services",
+        "scope": "Halal Food Certification",
         "description": "Certified suitable for Muslim consumers and markets."
       },
       {
@@ -555,7 +758,32 @@
         "fullName": "Kosher Certification",
         "category": "religious",
         "iconUrl": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FFFFFF' stroke='%23D4D4CE' stroke-width='1'/><text x='50' y='58' font-family='Inter,sans-serif' font-size='16' font-weight='500' fill='%231F4D3D' text-anchor='middle'>KOSHER</text></svg>",
+        "badgeImage": "/images/certs/cert-kosher.jpg",
+        "authority": "SKS Badatz Shatz",
+        "scope": "Kosher Food Certification",
         "description": "Certified compliant with Jewish dietary requirements."
+      },
+      {
+        "id": "cnas",
+        "code": "CNAS C024-M",
+        "fullName": "China National Accreditation Service — Management System",
+        "category": "accreditation",
+        "iconUrl": null,
+        "badgeImage": null,
+        "authority": "China National Accreditation Service for Conformity Assessment",
+        "scope": "Management System Accreditation",
+        "description": "Accredited management system under China's national conformity assessment body, recognised by the International Accreditation Forum (IAF)."
+      },
+      {
+        "id": "sedex",
+        "code": "SEDEX",
+        "fullName": "Sedex Member — Ethical Trade",
+        "category": "ethical",
+        "iconUrl": null,
+        "badgeImage": null,
+        "authority": "Supplier Ethical Data Exchange",
+        "scope": "Ethical & Responsible Sourcing",
+        "description": "Member of the Supplier Ethical Data Exchange, demonstrating responsible and ethical supply-chain practices."
       }
     ]
   },
@@ -796,44 +1024,44 @@
     ],
     "items": [
       {
-        "id": "animal-nutrition",
-        "slug": "animal-nutrition",
-        "name": "Animal nutrition",
-        "tagline": "Feed additives for shrimp and poultry",
-        "description": "Yeast-derived additives for aquaculture and poultry — gut health, immunity, organic minerals, and digestible protein.",
-        "image": "https://picsum.photos/seed/animal-nutrition/1600/1200",
-        "imageAlt": "Shrimp and poultry farming",
+        "id": "human-nutrition",
+        "slug": "human-nutrition",
+        "name": "Human Nutrition",
+        "tagline": "Functional ingredients for human health",
+        "description": "Yeast-derived ingredients for human health-care food, supplements, and functional beverages — selenium yeast and beta glucan with high bioavailability.",
+        "image": "https://picsum.photos/seed/human-nutrition/1600/1200",
+        "imageAlt": "Functional food and nutritional supplements",
         "featured": true,
-        "productCount": 4
+        "productCount": 2
       },
       {
         "id": "food-ingredient",
         "slug": "food-ingredient",
-        "name": "Food ingredient",
+        "name": "Food Ingredient",
         "tagline": "Yeast extracts for food manufacturing",
-        "description": "Natural savoury yeast extracts for soups, sauces, snacks, plant-based meat, and industrial cooking. Available in powder and paste.",
+        "description": "Natural savoury and premium yeast extracts for soups, sauces, snacks, plant-based meat, ramen, and gourmet seasoning — including standard, Umami (I+G), and Kokumi specialty grades.",
         "image": "https://picsum.photos/seed/food-ingredient/1600/1200",
         "imageAlt": "Food ingredients in production",
         "featured": true,
-        "productCount": 2
+        "productCount": 4
       },
       {
-        "id": "food-premium",
-        "slug": "food-premium",
-        "name": "Food premium",
-        "tagline": "I+G enriched and kokumi specialty",
-        "description": "Premium yeast extracts engineered for plant-based meat, gourmet seasoning, ramen, and vegan dairy — featuring 5'-nucleotides and γ-glutamyl peptides.",
-        "image": "https://picsum.photos/seed/food-ingredient/1600/1200",
-        "imageAlt": "Premium food applications",
+        "id": "animal-nutrition",
+        "slug": "animal-nutrition",
+        "name": "Animal Nutrition",
+        "tagline": "Feed additives for shrimp, poultry, and ruminants",
+        "description": "Yeast-derived additives for aquaculture, poultry, and ruminants — gut health, immunity, organic minerals, digestible protein, and live probiotics for dairy and beef cattle.",
+        "image": "https://picsum.photos/seed/animal-nutrition/1600/1200",
+        "imageAlt": "Shrimp, poultry, and cattle farming",
         "featured": true,
-        "productCount": 2
+        "productCount": 5
       },
       {
-        "id": "industrial",
-        "slug": "industrial",
-        "name": "Industrial",
-        "tagline": "Yeast extracts for bioprocessing",
-        "description": "Pharma-grade yeast extracts for antibiotic, probiotic, enzyme, vaccine, and recombinant protein production. Sustained-release and fast-acting options.",
+        "id": "microbial-nutrition",
+        "slug": "microbial-nutrition",
+        "name": "Microbial Nutrition",
+        "tagline": "Yeast extracts for fermentation industry",
+        "description": "Yeast extracts engineered for industrial fermentation — antibiotic, probiotic, enzyme, vaccine, and recombinant protein production. Continuously-effective and fast-acting options in powder and paste.",
         "image": "https://picsum.photos/seed/microbial/1600/1200",
         "imageAlt": "Industrial fermentation bioreactor",
         "featured": true,
@@ -889,6 +1117,27 @@
         "label": "Laying hen",
         "iconName": "egg",
         "category": "poultry"
+      },
+      {
+        "id": "dairy-cow",
+        "slug": "dairy-cow",
+        "label": "Dairy cow",
+        "iconName": "cow",
+        "category": "ruminant"
+      },
+      {
+        "id": "beef-cattle",
+        "slug": "beef-cattle",
+        "label": "Beef cattle",
+        "iconName": "cow",
+        "category": "ruminant"
+      },
+      {
+        "id": "goat-sheep",
+        "slug": "goat-sheep",
+        "label": "Goat / Sheep",
+        "iconName": "sheep",
+        "category": "ruminant"
       }
     ]
   },
@@ -896,6 +1145,7 @@
     {
       "id": "yeast-cell-wall-mos",
       "slug": "yeast-cell-wall-mos",
+      "productCode": "PG6893976",
       "name": "Yeast Cell Wall (MOS)",
       "tagline": "Gut health and immunity",
       "category": "animal-nutrition",
@@ -915,15 +1165,15 @@
       "specifications": [
         {
           "label": "Beta-glucan",
-          "value": "≥20%"
+          "value": "≥20.0%"
         },
         {
           "label": "MOS",
-          "value": "≥20%"
+          "value": "≥20.0%"
         },
         {
           "label": "Crude protein",
-          "value": "≤35%"
+          "value": "≤35.0%"
         },
         {
           "label": "Other components",
@@ -972,22 +1222,29 @@
         {
           "species": "shrimp",
           "label": "Shrimp",
-          "value": "1.0",
-          "unit": "kg/tonne",
+          "value": "1000",
+          "unit": "g/tonne",
           "note": null
         },
         {
           "species": "broiler",
           "label": "Broiler",
-          "value": "1.0",
-          "unit": "kg/tonne",
+          "value": "1000",
+          "unit": "g/tonne",
           "note": null
         },
         {
           "species": "layer",
           "label": "Laying hen",
-          "value": "1.0",
-          "unit": "kg/tonne",
+          "value": "1000",
+          "unit": "g/tonne",
+          "note": null
+        },
+        {
+          "species": "piglet",
+          "label": "Piglet",
+          "value": "2000",
+          "unit": "g/tonne",
           "note": null
         }
       ],
@@ -1012,6 +1269,7 @@
     {
       "id": "yeast-beta-glucan",
       "slug": "yeast-beta-glucan",
+      "productCode": "PG6893974",
       "name": "Yeast Beta-Glucan",
       "tagline": "Potent immune modulator",
       "category": "animal-nutrition",
@@ -1031,11 +1289,11 @@
       "specifications": [
         {
           "label": "Beta-glucan",
-          "value": "70–90%"
+          "value": "70.0–90.0%"
         },
         {
           "label": "Fat",
-          "value": "4–6%"
+          "value": "4.0–6.0%"
         },
         {
           "label": "Protein",
@@ -1119,16 +1377,17 @@
     {
       "id": "selenium-yeast",
       "slug": "selenium-yeast",
+      "productCode": "PG6893977",
       "name": "Selenium Yeast",
-      "tagline": "Organic selenium source",
+      "tagline": "Organic selenium source for feed",
       "category": "animal-nutrition",
       "image": "/images/products/selenium-yeast/card.png",
       "gallery": [
         "/images/products/selenium-yeast/3d-angle.png",
         "/images/products/selenium-yeast/card.png"
       ],
-      "shortDescription": "High-bioavailability organic selenium enriched in yeast cells through submerged fermentation.",
-      "fullDescription": "Selenium yeast is produced by culturing specially selected strains of Saccharomyces cerevisiae in a selenium-enriched medium. The resulting product contains selenium predominantly in organic form (selenomethionine), offering significantly higher bioavailability and safety than inorganic sodium selenite.",
+      "shortDescription": "High-bioavailability organic selenium enriched in yeast cells through submerged fermentation — for poultry, aquaculture, breeders, piglets, and dairy/beef cattle.",
+      "fullDescription": "Selenium Yeast (Animal) is produced by culturing specially selected strains of Saccharomyces cerevisiae in a selenium-enriched medium. Selenium is accumulated predominantly as selenomethionine, an organic form with significantly higher bioavailability and safety than inorganic sodium selenite. Used to improve reproductive performance, relieve oxidative stress, improve meat quality, and reduce somatic cells in milk.",
       "functions": [
         "Improves reproductive performance in breeders",
         "Reduces stress response and oxidative damage",
@@ -1138,23 +1397,23 @@
       "specifications": [
         {
           "label": "Appearance",
-          "value": "Light yellow to brown powder"
+          "value": "Light yellow to brown yellow powder"
         },
         {
           "label": "Moisture",
           "value": "≤6.0%"
         },
         {
-          "label": "Selenium content",
-          "value": "≥2000 ppm or ≥3000 ppm"
+          "label": "Selenium",
+          "value": "≥2000 ppm / 3000 ppm"
         },
         {
-          "label": "Organic selenium ratio",
-          "value": "≥98%"
+          "label": "Organic Selenium",
+          "value": "≥98.0%"
         },
         {
           "label": "Protein",
-          "value": "≥40%"
+          "value": "≥40.0%"
         }
       ],
       "composition": [
@@ -1230,6 +1489,7 @@
     {
       "id": "autolyzed-yeast",
       "slug": "autolyzed-yeast",
+      "productCode": "PG6893975",
       "name": "Autolyzed Yeast",
       "tagline": "Digestible protein and nucleic acids",
       "category": "animal-nutrition",
@@ -1249,7 +1509,7 @@
       "specifications": [
         {
           "label": "Crude protein",
-          "value": "≥45%"
+          "value": "≥45.0%"
         },
         {
           "label": "Other components",
@@ -1290,22 +1550,22 @@
         {
           "species": "shrimp",
           "label": "Shrimp",
-          "value": "1.0",
-          "unit": "kg/tonne",
+          "value": "1000",
+          "unit": "g/tonne",
           "note": null
         },
         {
           "species": "broiler",
           "label": "Broiler",
-          "value": "2.0",
-          "unit": "kg/tonne",
+          "value": "2000",
+          "unit": "g/tonne",
           "note": "Higher dosage recommended for chicks under 21 days"
         },
         {
           "species": "layer",
           "label": "Laying hen",
-          "value": "1.0",
-          "unit": "kg/tonne",
+          "value": "2000",
+          "unit": "g/tonne",
           "note": null
         }
       ],
@@ -1327,8 +1587,140 @@
       ]
     },
     {
+      "id": "active-dry-yeast",
+      "slug": "active-dry-yeast",
+      "productCode": "PG6893973",
+      "name": "Active Dry Yeast",
+      "tagline": "Live yeast probiotic for ruminants",
+      "category": "animal-nutrition",
+      "image": "/images/products/active-dry-yeast/card.png",
+      "gallery": [
+        "/images/products/active-dry-yeast/3d-angle.png",
+        "/images/products/active-dry-yeast/card.png"
+      ],
+      "shortDescription": "Live Saccharomyces cerevisiae probiotic (≥2.0×10¹⁰ cells/g) for dairy cattle, beef cattle, and small ruminants — stabilises rumen pH, improves fiber digestion, and increases milk and growth performance.",
+      "fullDescription": "Active Dry Yeast is a live Saccharomyces cerevisiae strain specially selected for ruminants. With ≥2.0×10¹⁰ live cells per gram, it stabilises rumen pH, prevents subclinical acidosis, improves fiber digestibility and dry matter intake, and boosts milk yield in dairy cows as well as growth performance in beef cattle, goats, and sheep. Heat-resistant granule form for easy on-farm dosing.",
+      "functions": [
+        "Stabilises rumen pH and prevents subclinical acidosis",
+        "Improves fiber digestibility and dry matter intake",
+        "Increases milk yield in dairy cows and growth in beef cattle",
+        "Supports rumen microbiome balance and overall gut health"
+      ],
+      "keyActives": [
+        "Live yeast cells ≥2.0×10¹⁰ /g",
+        "Moisture ≤6.0%",
+        "Heavy metals: As ≤2.0, Pb ≤1.5 mg/kg",
+        "Total plate count ≤2.0×10⁶ cfu/g"
+      ],
+      "keyBenefits": [
+        "Live probiotic",
+        "Ruminant-specific strain",
+        "Heat-resistant granule"
+      ],
+      "specifications": [
+        {
+          "label": "Appearance",
+          "value": "Light yellow to brown granule"
+        },
+        {
+          "label": "Live yeast quantity",
+          "value": "≥2.0×10¹⁰ /g"
+        },
+        {
+          "label": "Moisture",
+          "value": "≤6.0%"
+        },
+        {
+          "label": "As",
+          "value": "≤2.0 mg/kg"
+        },
+        {
+          "label": "Pb",
+          "value": "≤1.5 mg/kg"
+        },
+        {
+          "label": "Total plate count",
+          "value": "≤2.0×10⁶ cfu/g"
+        },
+        {
+          "label": "Salmonella /25g",
+          "value": "Negative"
+        }
+      ],
+      "composition": [
+        {
+          "label": "Live yeast cells",
+          "value": 85
+        },
+        {
+          "label": "Yeast cell wall material",
+          "value": 9
+        },
+        {
+          "label": "Moisture",
+          "value": 6
+        }
+      ],
+      "modeOfAction": {
+        "steps": [
+          {
+            "title": "Scavenge",
+            "body": "Live yeast cells scavenge residual oxygen entering the rumen — restoring an anaerobic environment that favors fiber-degrading bacteria."
+          },
+          {
+            "title": "Stabilise",
+            "body": "Yeast metabolites stimulate lactate-utilising bacteria, preventing lactate accumulation and stabilising rumen pH against subclinical acidosis from high-concentrate diets."
+          },
+          {
+            "title": "Stimulate",
+            "body": "Cell-wall components and B-vitamins enhance growth of cellulolytic bacteria, improving fiber digestion, dry matter intake, and nutrient absorption."
+          }
+        ]
+      },
+      "dosages": [
+        {
+          "species": "dairy-cow",
+          "label": "Dairy cow",
+          "value": "4–5",
+          "unit": "g/head/day",
+          "note": "Lactation / Perinatal phase 4–5 g; Dry period 4 g"
+        },
+        {
+          "species": "beef-cattle",
+          "label": "Beef cattle",
+          "value": "3–4",
+          "unit": "g/head/day",
+          "note": "Same dose for Growing and Fattening phases"
+        },
+        {
+          "species": "goat-sheep",
+          "label": "Goat / Sheep",
+          "value": "2",
+          "unit": "g/head/day",
+          "note": "Fattening phase"
+        }
+      ],
+      "certifications": [
+        "iso-9001",
+        "gmp-plus"
+      ],
+      "packaging": "20 kg carton (5 kg × 4 bags) with vacuum packing",
+      "shelfLife": "24 months",
+      "storage": "Store in a cool, dry place; keep packaging vacuum-sealed and away from direct sunlight",
+      "datasheetUrl": "/datasheets/active-dry-yeast.pdf",
+      "primaryFor": [
+        "dairy-cow",
+        "beef-cattle"
+      ],
+      "relatedProducts": [
+        "yeast-cell-wall-mos",
+        "autolyzed-yeast"
+      ]
+    },
+    {
       "id": "ye-standard-powder",
       "slug": "ye-standard-powder",
+      "productCode": "PG7331811",
       "name": "YE Standard Powder",
       "tagline": "Natural savoury ingredient",
       "category": "food-ingredient",
@@ -1349,11 +1741,11 @@
         "Compatible with industrial cooking processes"
       ],
       "keyActives": [
-        "Total Nitrogen 10%",
-        "FAN 4%",
-        "Moisture <6%",
-        "NaCl ≤5%",
-        "Ash 15%"
+        "Total Nitrogen 10.0%",
+        "FAN 4.0%",
+        "Moisture <6.0%",
+        "NaCl ≤5.0%",
+        "Ash 15.0%"
       ],
       "keyBenefits": [
         "Vegan suitable",
@@ -1362,28 +1754,32 @@
       ],
       "specifications": [
         {
-          "label": "Total Nitrogen",
-          "value": "10%"
+          "label": "Dry Matter (min)",
+          "value": "94.0%"
         },
         {
-          "label": "FAN",
-          "value": "4%"
+          "label": "Total Nitrogen (salt-free dry matter)",
+          "value": "10.0%"
         },
         {
-          "label": "Moisture",
-          "value": "<6%"
+          "label": "Amino Nitrogen (salt-free dry matter)",
+          "value": "4.0%"
         },
         {
-          "label": "NaCl",
-          "value": "≤5%"
+          "label": "NaCl (salt-free dry matter)",
+          "value": "5.0%"
         },
         {
-          "label": "Ash",
-          "value": "15%"
+          "label": "Ash (salt-free dry matter)",
+          "value": "15.0%"
         },
         {
           "label": "pH",
           "value": "4.0–7.0"
+        },
+        {
+          "label": "Ammonium Salt (base on N, salt-free dry matter)",
+          "value": "1.5%"
         },
         {
           "label": "Appearance",
@@ -1411,6 +1807,7 @@
     {
       "id": "ye-standard-paste",
       "slug": "ye-standard-paste",
+      "productCode": "PG6893963",
       "name": "YE Standard Paste",
       "tagline": "Concentrated savoury paste",
       "category": "food-ingredient",
@@ -1431,11 +1828,11 @@
         "Maintains umami profile through thermal processing"
       ],
       "keyActives": [
-        "Total Nitrogen ≥9%",
-        "FAN ≥3%",
-        "Moisture 35%",
-        "NaCl 5%",
-        "Ash ≤15%"
+        "Total Nitrogen ≥9.0%",
+        "FAN ≥3.0%",
+        "Moisture 35.0%",
+        "NaCl 5.0%",
+        "Ash ≤15.0%"
       ],
       "keyBenefits": [
         "Concentrated paste",
@@ -1445,23 +1842,23 @@
       "specifications": [
         {
           "label": "Total Nitrogen",
-          "value": "≥9%"
+          "value": "≥9.0%"
         },
         {
           "label": "FAN",
-          "value": "≥3%"
+          "value": "≥3.0%"
         },
         {
           "label": "Moisture",
-          "value": "35%"
+          "value": "35.0%"
         },
         {
           "label": "NaCl",
-          "value": "5%"
+          "value": "5.0%"
         },
         {
           "label": "Ash",
-          "value": "≤15%"
+          "value": "≤15.0%"
         },
         {
           "label": "pH",
@@ -1493,9 +1890,10 @@
     {
       "id": "ye-umami",
       "slug": "ye-umami",
+      "productCode": "PG6893964",
       "name": "YE Umami Type",
       "tagline": "Premium I+G enriched umami",
-      "category": "food-premium",
+      "category": "food-ingredient",
       "itemCode": "TXY-YE-UMI",
       "form": "Powder",
       "audienceTag": "Food ingredient",
@@ -1513,9 +1911,9 @@
         "Effective at low inclusion rates (0.1–0.5%)"
       ],
       "keyActives": [
-        "Protein 60–70%",
-        "I+G (IMP+GMP) 8–12%",
-        "Glutamic acid ≤12%",
+        "I+G (IMP+GMP) 8.0–12.0%",
+        "Total Nitrogen ≥7.0%",
+        "Glutamic acid ≤12.0%",
         "pH 5.0–6.5"
       ],
       "keyBenefits": [
@@ -1525,24 +1923,36 @@
       ],
       "specifications": [
         {
-          "label": "Protein",
-          "value": "60–70%"
+          "label": "Dry Matter (min)",
+          "value": "94.0%"
         },
         {
-          "label": "I+G (IMP+GMP)",
-          "value": "8–12%"
+          "label": "Total Nitrogen (salt-free dry matter, min)",
+          "value": "7.0%"
         },
         {
-          "label": "Glutamic acid",
-          "value": "≤12%"
+          "label": "Amino Nitrogen (salt-free dry matter, min)",
+          "value": "2.0%"
         },
         {
-          "label": "pH",
+          "label": "NaCl (salt-free dry matter, max)",
+          "value": "5.0%"
+        },
+        {
+          "label": "I+G (2Na 7aq salt-free dry matter)",
+          "value": "8.0–12.0%"
+        },
+        {
+          "label": "(IMP+GMP):(CMP+UMP) max",
+          "value": "2.1:1"
+        },
+        {
+          "label": "Glutamic acid (salt-free dry matter, max)",
+          "value": "12.0%"
+        },
+        {
+          "label": "pH (2% solution)",
           "value": "5.0–6.5"
-        },
-        {
-          "label": "Moisture",
-          "value": "≤6%"
         },
         {
           "label": "Appearance",
@@ -1570,9 +1980,10 @@
     {
       "id": "ye-kokumi",
       "slug": "ye-kokumi",
+      "productCode": "PG6893965",
       "name": "YE Kokumi Type",
       "tagline": "Mouthfulness and continuity",
-      "category": "food-premium",
+      "category": "food-ingredient",
       "itemCode": "TXY-YE-KKM",
       "form": "Powder",
       "audienceTag": "Food ingredient",
@@ -1590,10 +2001,9 @@
         "No artificial flavour enhancers required"
       ],
       "keyActives": [
-        "Protein 65–75%",
         "γ-glutamyl peptides (signature)",
-        "Total Nitrogen ≥5%",
-        "FAN ≥2%"
+        "Total Nitrogen ≥5.0%",
+        "Amino Nitrogen ≥2.0%"
       ],
       "keyBenefits": [
         "Kokumi sensation",
@@ -1602,24 +2012,32 @@
       ],
       "specifications": [
         {
-          "label": "Protein",
-          "value": "65–75%"
-        },
-        {
-          "label": "Total Nitrogen",
-          "value": "≥5%"
-        },
-        {
-          "label": "FAN",
-          "value": "≥2%"
-        },
-        {
           "label": "Moisture",
-          "value": "≤6%"
+          "value": "≤6.0%"
         },
         {
-          "label": "pH",
+          "label": "pH (2% solution)",
           "value": "5.0–6.5"
+        },
+        {
+          "label": "Total Nitrogen (salt-free matter, min)",
+          "value": "≥5.0%"
+        },
+        {
+          "label": "Amino Nitrogen (salt-free matter, min)",
+          "value": "≥2.0%"
+        },
+        {
+          "label": "Ammonium salt (except NaCl, dry basis)",
+          "value": "≤2.0 g/100g"
+        },
+        {
+          "label": "NaCl",
+          "value": "≤5.0%"
+        },
+        {
+          "label": "Ash (salt-free matter)",
+          "value": "≤15.0%"
         },
         {
           "label": "Appearance",
@@ -1647,9 +2065,10 @@
     {
       "id": "ye-ce-powder",
       "slug": "ye-ce-powder",
+      "productCode": "PG7380565",
       "name": "YE Continuously Effective Powder",
       "tagline": "Sustained-release nitrogen for industrial fermentation",
-      "category": "industrial",
+      "category": "microbial-nutrition",
       "itemCode": "TXY-YE-CEP",
       "form": "Powder",
       "audienceTag": "Industrial use only",
@@ -1667,10 +2086,10 @@
         "Compatible with sterile filter systems"
       ],
       "keyActives": [
-        "Total Nitrogen ≥11%",
-        "FAN ≥4%",
-        "Moisture ≤8%",
-        "Ash ≤10%"
+        "Total Nitrogen ≥11.0%",
+        "FAN ≥4.0%",
+        "Moisture ≤8.0%",
+        "Ash ≤10.0%"
       ],
       "keyBenefits": [
         "Sustained release",
@@ -1680,19 +2099,19 @@
       "specifications": [
         {
           "label": "Total Nitrogen",
-          "value": "≥11%"
+          "value": "≥11.0%"
         },
         {
           "label": "FAN",
-          "value": "≥4%"
+          "value": "≥4.0%"
         },
         {
           "label": "Moisture",
-          "value": "≤8%"
+          "value": "≤8.0%"
         },
         {
           "label": "Ash",
-          "value": "≤10%"
+          "value": "≤10.0%"
         },
         {
           "label": "Appearance",
@@ -1720,9 +2139,10 @@
     {
       "id": "ye-fa-paste",
       "slug": "ye-fa-paste",
+      "productCode": "PG6893987",
       "name": "YE Fast-Acting Paste",
       "tagline": "Rapid-release liquid nitrogen for short-cycle bioprocess",
-      "category": "industrial",
+      "category": "microbial-nutrition",
       "itemCode": "TXY-YE-FAP",
       "form": "Paste",
       "audienceTag": "Industrial use only",
@@ -1740,10 +2160,10 @@
         "24–48h cycle ready"
       ],
       "keyActives": [
-        "Total Nitrogen ≥10%",
-        "FAN ≥4%",
-        "Moisture ≤40%",
-        "Ash ≤10%"
+        "Total Nitrogen ≥10.0%",
+        "FAN ≥4.0%",
+        "Moisture ≤40.0%",
+        "Ash ≤10.0%"
       ],
       "keyBenefits": [
         "Rapid release",
@@ -1753,19 +2173,19 @@
       "specifications": [
         {
           "label": "Total Nitrogen",
-          "value": "≥10%"
+          "value": "≥10.0%"
         },
         {
           "label": "FAN",
-          "value": "≥4%"
+          "value": "≥4.0%"
         },
         {
           "label": "Moisture",
-          "value": "≤40%"
+          "value": "≤40.0%"
         },
         {
           "label": "Ash",
-          "value": "≤10%"
+          "value": "≤10.0%"
         },
         {
           "label": "Appearance",
@@ -1793,9 +2213,10 @@
     {
       "id": "ye-microbial-nutrition",
       "slug": "ye-microbial-nutrition",
+      "productCode": "PG6893988",
       "name": "YE for Microbial Nutrition",
       "tagline": "Universal-grade nutrient source for bioprocessing",
-      "category": "industrial",
+      "category": "microbial-nutrition",
       "itemCode": "TXY-YE-MN",
       "form": "Powder / Paste",
       "audienceTag": "Industrial use only",
@@ -1813,40 +2234,48 @@
         "Powder and paste options for different process needs"
       ],
       "keyActives": [
-        "Total Nitrogen ≥10%",
-        "FAN ≥4%",
-        "B-vitamins (Niacin, Biotin)",
-        "Moisture ≤6% (powder) / 25–35% (paste)"
+        "Beta Glucan ≥70.0%",
+        "Dry Matter ≥92.0%",
+        "Protein ≤3.5%",
+        "Fat ≤10.0%"
       ],
       "keyBenefits": [
-        "Pharma grade",
-        "B-vitamin rich",
-        "Powder & paste options"
+        "Beta-glucan rich",
+        "Allergen-free, non-transgenic",
+        "Lab + industrial fermentation"
       ],
       "specifications": [
         {
-          "label": "Total Nitrogen",
-          "value": "≥10%"
+          "label": "Dry Matter (Powder)",
+          "value": "≥92.0%"
         },
         {
-          "label": "FAN",
-          "value": "≥4%"
+          "label": "Beta Glucan",
+          "value": "≥70.0%"
         },
         {
-          "label": "B-vitamins",
-          "value": "Niacin · Biotin"
+          "label": "Protein",
+          "value": "≤3.5%"
         },
         {
-          "label": "Moisture (powder)",
-          "value": "≤6%"
+          "label": "Fat",
+          "value": "≤10.0%"
         },
         {
-          "label": "Moisture (paste)",
-          "value": "25–35%"
+          "label": "Ash",
+          "value": "≤3.0%"
+        },
+        {
+          "label": "pH",
+          "value": "6.0–8.5"
+        },
+        {
+          "label": "Smell",
+          "value": "Product-specific taste"
         },
         {
           "label": "Appearance",
-          "value": "Light yellow powder or brown paste"
+          "value": "Powder: white to slightly yellow"
         }
       ],
       "dosages": [],
@@ -1857,9 +2286,9 @@
         "halal",
         "kosher"
       ],
-      "packaging": "20 kg bag (powder) or 20 kg HDPE pail (paste)",
-      "shelfLife": "24 months (powder) / 18 months (paste)",
-      "storage": "≤25°C (powder) / 4–25°C (paste)",
+      "packaging": "500 g/bag · 5 kg×2/box · 25 kg/drum",
+      "shelfLife": "24 months",
+      "storage": "Keep away from light, keep in a dry place",
       "datasheetUrl": "/datasheets/ye-microbial-nutrition.pdf",
       "primaryFor": [],
       "relatedProducts": [
@@ -1870,9 +2299,10 @@
     {
       "id": "ye-ce-paste",
       "slug": "ye-ce-paste",
+      "productCode": "PG6893986",
       "name": "YE Continuously Effective Paste",
       "tagline": "Liquid-form bioreactor feed for large-scale production",
-      "category": "industrial",
+      "category": "microbial-nutrition",
       "itemCode": "TXY-YE-CEPP",
       "form": "Paste",
       "audienceTag": "Industrial use only",
@@ -1890,10 +2320,10 @@
         "High nitrogen content per litre"
       ],
       "keyActives": [
-        "Total Nitrogen ≥10%",
-        "FAN ≥4%",
-        "Moisture ≤40%",
-        "Ash ≤10%"
+        "Total Nitrogen ≥10.0%",
+        "FAN ≥4.0%",
+        "Moisture ≤40.0%",
+        "Ash ≤10.0%"
       ],
       "keyBenefits": [
         "Sustained release",
@@ -1903,19 +2333,19 @@
       "specifications": [
         {
           "label": "Total Nitrogen",
-          "value": "≥10%"
+          "value": "≥10.0%"
         },
         {
           "label": "FAN",
-          "value": "≥4%"
+          "value": "≥4.0%"
         },
         {
           "label": "Moisture",
-          "value": "≤40%"
+          "value": "≤40.0%"
         },
         {
           "label": "Ash",
-          "value": "≤10%"
+          "value": "≤10.0%"
         },
         {
           "label": "Appearance",
@@ -1938,6 +2368,226 @@
       "relatedProducts": [
         "ye-ce-powder",
         "ye-fa-paste"
+      ]
+    },
+    {
+      "id": "yeast-beta-glucan-human",
+      "slug": "yeast-beta-glucan-human",
+      "productCode": "PG7331827",
+      "name": "Yeast Beta Glucan (Human Nutrition)",
+      "tagline": "Immune support β-1,3/1,6 glucan",
+      "category": "human-nutrition",
+      "image": "/images/products/yeast-beta-glucan-human/card.png",
+      "gallery": [
+        "/images/products/yeast-beta-glucan-human/3d-angle.png",
+        "/images/products/yeast-beta-glucan-human/card.png"
+      ],
+      "shortDescription": "High-purity yeast β-1,3/1,6 glucan (≥70%, HPLC 70–85%) from baker's yeast cell wall — immune-support ingredient for cereal bars, biscuits, dairy, beverages, supplements, and chocolate.",
+      "fullDescription": "Yeast Beta Glucan (Human Nutrition) is a high-purity β-1,3/1,6-D-glucan extracted from baker's yeast cell wall (Saccharomyces cerevisiae). With Beta Glucan content ≥70% (HPLC 70–85%), it is a well-documented immunomodulator used in functional food and supplements. Heat-stable for cooking, baking and beverage processing. Allergen-free, non-GMO, with low ash, protein and lipid content for clean labeling.",
+      "functions": [
+        "Immune modulation — binds dectin-1 on macrophages and dendritic cells",
+        "Heat-stable for cooking, baking, and thermal beverage processing",
+        "Suitable for cereal bars, biscuits, dairy, soups, chocolate, supplement capsules",
+        "Allergen-free, non-GMO, low ash / protein / lipid"
+      ],
+      "keyActives": [
+        "Beta Glucan ≥70.0% (HPLC 70.0–85.0%)",
+        "Dry Matter ≥92.0%",
+        "Protein ≤3.0%",
+        "Lipid ≤5.0%"
+      ],
+      "keyBenefits": [
+        "Immune support",
+        "Heat-stable, allergen-free",
+        "Functional food + supplements"
+      ],
+      "specifications": [
+        {
+          "label": "Form / Type",
+          "value": "β-1,3/1,6-D-glucan (Yeast Beta 1,3/1,6 Glucan)"
+        },
+        {
+          "label": "Content (HPLC)",
+          "value": "70.0–85.0%"
+        },
+        {
+          "label": "Dry Matter (min)",
+          "value": "92.0%"
+        },
+        {
+          "label": "Beta Glucan (min)",
+          "value": "70.0%"
+        },
+        {
+          "label": "Ash (max)",
+          "value": "3.5%"
+        },
+        {
+          "label": "Protein (max)",
+          "value": "3.0%"
+        },
+        {
+          "label": "Lipid (max)",
+          "value": "5.0%"
+        }
+      ],
+      "composition": [
+        {
+          "label": "Beta Glucan",
+          "value": 70
+        },
+        {
+          "label": "Other dry matter",
+          "value": 19
+        },
+        {
+          "label": "Lipid",
+          "value": 5
+        },
+        {
+          "label": "Ash",
+          "value": 3
+        },
+        {
+          "label": "Protein",
+          "value": 3
+        }
+      ],
+      "modeOfAction": {
+        "steps": [
+          {
+            "title": "Recognize",
+            "body": "β-1,3/1,6 glucan binds dectin-1 receptors on macrophages and dendritic cells in gut-associated lymphoid tissue."
+          },
+          {
+            "title": "Activate",
+            "body": "Receptor binding triggers innate immune cells to release cytokines and chemokines that orchestrate the immune response."
+          },
+          {
+            "title": "Protect",
+            "body": "Activated immune cells enhance pathogen recognition and clearance, supporting respiratory and gut health."
+          }
+        ]
+      },
+      "dosages": [],
+      "inclusionRate": "Per food formulation (typical 0.05–0.5% w/w in functional food)",
+      "applicationAreas": [
+        "Cereal bars",
+        "Biscuits",
+        "Dairy",
+        "Cereals",
+        "Beverages",
+        "Soups",
+        "Chocolate",
+        "Confectionery",
+        "Protein bars and powders",
+        "Supplement capsules"
+      ],
+      "certifications": [
+        "iso-22000",
+        "haccp",
+        "brc",
+        "halal",
+        "kosher"
+      ],
+      "packaging": "25 kg paper round drum with aluminium foil and PE liner",
+      "shelfLife": "24 months",
+      "storage": "Store at temperature ≤25°C, humidity ≤75%, in original packaging away from light",
+      "datasheetUrl": "/datasheets/yeast-beta-glucan-human.pdf",
+      "primaryFor": [],
+      "relatedProducts": [
+        "yeast-beta-glucan",
+        "selenium-yeast-human"
+      ]
+    },
+    {
+      "id": "selenium-yeast-human",
+      "slug": "selenium-yeast-human",
+      "productCode": "PG7331824",
+      "name": "Selenium Yeast (Human Nutrition)",
+      "tagline": "Organic selenium for human supplements",
+      "category": "human-nutrition",
+      "image": "/images/products/selenium-yeast-human/card.png",
+      "gallery": [
+        "/images/products/selenium-yeast-human/3d-angle.png",
+        "/images/products/selenium-yeast-human/card.png"
+      ],
+      "shortDescription": "High-bioavailability organic selenium yeast for human supplements, functional drinks, and health food — fermented Saccharomyces cerevisiae with ≥98% organic Se.",
+      "fullDescription": "Selenium Yeast for human nutrition is produced from Saccharomyces cerevisiae fermented in selenium-rich media. Selenium is accumulated in yeast cells predominantly as selenomethionine, an organic form with significantly higher bioavailability and safety than inorganic selenium sources. Available in two grades (2000 ppm and 3000 ppm) for tablet, capsule, functional beverage, and health-food formulations.",
+      "functions": [
+        "Antioxidant — supports glutathione peroxidase activity",
+        "Supports thyroid and immune function",
+        "Higher bioavailability than inorganic selenium (sodium selenate / selenite)",
+        "Suitable for tablets, capsules, functional drinks, and health food"
+      ],
+      "specifications": [
+        {
+          "label": "Appearance",
+          "value": "Light yellow to brown yellow powder"
+        },
+        {
+          "label": "Dry Matter",
+          "value": "≥92.0%"
+        },
+        {
+          "label": "Selenium",
+          "value": "≥2000 ppm / 3000 ppm"
+        },
+        {
+          "label": "Organic Selenium",
+          "value": "≥98.0%"
+        },
+        {
+          "label": "Protein",
+          "value": "≥40.0%"
+        }
+      ],
+      "composition": [
+        {
+          "label": "Protein",
+          "value": 40
+        },
+        {
+          "label": "Dry matter (other)",
+          "value": 52
+        },
+        {
+          "label": "Moisture",
+          "value": 8
+        }
+      ],
+      "modeOfAction": {
+        "steps": [
+          {
+            "title": "Absorb",
+            "body": "Selenomethionine absorbed via amino acid transporters in the gut — far higher uptake than inorganic Se."
+          },
+          {
+            "title": "Convert",
+            "body": "Incorporated into selenoproteins like glutathione peroxidase (GPx) and thioredoxin reductase."
+          },
+          {
+            "title": "Protect",
+            "body": "Selenoproteins scavenge free radicals and support antioxidant, thyroid, and immune function."
+          }
+        ]
+      },
+      "dosages": [],
+      "certifications": [
+        "iso-22000",
+        "haccp",
+        "brc",
+        "halal",
+        "kosher"
+      ],
+      "packaging": "10 kg paper round drum with aluminium foil and PE liner",
+      "shelfLife": "24 months",
+      "storage": "Store at temperature ≤25°C, humidity ≤75%, in original packaging away from light",
+      "datasheetUrl": "/datasheets/selenium-yeast-human.pdf",
+      "primaryFor": [],
+      "relatedProducts": [
+        "selenium-yeast",
+        "yeast-beta-glucan"
       ]
     }
   ],
@@ -2104,7 +2754,7 @@
       },
       {
         "id": "about",
-        "label": "About",
+        "label": "About us",
         "url": "/about"
       },
       {
@@ -2120,7 +2770,7 @@
     ],
     "mainWithMega": {
       "about": {
-        "label": "About",
+        "label": "About us",
         "url": "/about",
         "subitems": [
           {
@@ -2205,7 +2855,7 @@
       ],
       "company": [
         {
-          "label": "About",
+          "label": "About us",
           "url": "/about"
         },
         {
@@ -2836,7 +3486,7 @@
       "twitterCard": "summary_large_image"
     },
     "homepage": {
-      "title": "Yeast biotech for nutrition and fermentation · TXYbio",
+      "title": "Focus on the Yeast Industry · TXYbio",
       "description": "Fermentation-based ingredients across animal nutrition, food, and industrial bioprocessing. ISO 22000, HACCP, BRC, GMP+, BAP certified. Manufactured in China for global export.",
       "ogImage": "/images/og/homepage.jpg",
       "keywords": [
@@ -2856,8 +3506,8 @@
       "ogImage": "/images/og/products.jpg"
     },
     "about": {
-      "title": "About us · Pioneer in yeast fermentation since 2003",
-      "description": "Chinese yeast biotech company. Three fermentation facilities, 130+ employees, exporting to 12 countries including Australia. Certified ISO 22000, BAP, GMP+.",
+      "title": "About us · Focus on the yeast industry for 30 years",
+      "description": "Zhuhai TXY Biotech Holding — a national high-tech yeast enterprise. Own fermentation base, 8,000 tonnes/year capacity, ISO 22000 / BRC / HALAL / Kosher certified, export-licensed for global B2B supply.",
       "ogImage": "/images/og/about.jpg"
     },
     "contact": {
@@ -2910,7 +3560,7 @@
       "lastUpdated": "2026-05-19",
       "body": "[REPLACE — must be drafted by legal counsel] Standard sections: scope of service (informational only, not a contract for sale), intellectual property, disclaimers, governing law (suggest Chinese law or AU jurisdiction depending on customer base), limitation of liability."
     },
-    "copyright": "© 2026 TXYbio. All rights reserved."
+    "copyright": "© 2026 Zhuhai TXY Biotech Holding Co., Ltd. All rights reserved."
   },
   "cookieConsent": {
     "consumedBy": [

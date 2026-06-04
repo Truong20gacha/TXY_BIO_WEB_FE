@@ -62,7 +62,12 @@ export function ProductCard({ product, index }: ProductCardProps) {
         />
       )}
 
-      <p className="font-mono text-eyebrow text-accent-primary">{eyebrow}</p>
+      <div className="flex items-baseline gap-3">
+        <p className="font-mono text-eyebrow text-accent-primary">{eyebrow}</p>
+        {product.productCode && (
+          <p className="font-mono text-eyebrow text-ink-tertiary">SKU · {product.productCode}</p>
+        )}
+      </div>
 
       <h3 className="mt-4 text-h3 font-medium text-ink-primary leading-snug pr-28">{product.name}</h3>
       <p className="mt-1 text-body-sm text-ink-secondary pr-28">{product.tagline}</p>

@@ -12,7 +12,7 @@ export function Footer() {
       <div className="container-x py-16 md:py-20">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4 md:gap-8">
           <div className="flex flex-col gap-4">
-            <div className="flex items-center gap-2.5">
+            <div className="flex items-center gap-1.5">
               <img
                 src="/images/logo.webp?v=3"
                 alt=""

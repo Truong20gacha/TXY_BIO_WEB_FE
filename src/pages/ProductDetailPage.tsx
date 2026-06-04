@@ -139,9 +139,16 @@ export function ProductDetailPage() {
             <div className="flex flex-col justify-center">
               <div className="flex items-center justify-between gap-4">
                 <p className="text-eyebrow text-accent-primary">{product.tagline.toUpperCase()}</p>
-                <p className="font-mono text-eyebrow text-ink-tertiary">
-                  {productCode}.{String(productIndex).padStart(3, '0')}
-                </p>
+                <div className="flex flex-col items-end gap-1">
+                  <p className="font-mono text-eyebrow text-ink-tertiary">
+                    {productCode}.{String(productIndex).padStart(3, '0')}
+                  </p>
+                  {product.productCode && (
+                    <p className="font-mono text-caption text-ink-tertiary">
+                      SKU · {product.productCode}
+                    </p>
+                  )}
+                </div>
               </div>
               <h1 className="mt-4 text-display-md text-ink-primary">{product.name}</h1>
               <p className="mt-4 text-body-lg text-ink-secondary">{product.shortDescription}</p>

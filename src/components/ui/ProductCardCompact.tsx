@@ -26,7 +26,8 @@ export function ProductCardCompact({ product, index }: ProductCardCompactProps) 
   const code = getProductCode(product.slug)
   const eyebrow = `${code}.${String(index).padStart(3, '0')}`
   const dosagePreview = compactDosage(product.dosages)
-  const meta = dosagePreview ? `${eyebrow} · ${dosagePreview}` : eyebrow
+  const skuLabel = product.productCode ? `SKU ${product.productCode}` : null
+  const meta = [eyebrow, skuLabel, dosagePreview].filter(Boolean).join(' · ')
 
   return (
     <Link

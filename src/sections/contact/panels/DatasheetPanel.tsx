@@ -2,6 +2,7 @@ import { ClipboardCheck, FileText, Lock, Download } from 'lucide-react'
 
 import { datasheetPanelDefaults } from '@/data/ctaPanelDefaults'
 import { getProductCode } from '@/lib/productCode'
+import { generateTdsPdf } from '@/lib/generateTdsPdf'
 
 import type { Product } from '@/types/information'
 
@@ -12,8 +13,6 @@ type DatasheetPanelProps = Readonly<{
 export function DatasheetPanel({ product }: DatasheetPanelProps) {
   const code = getProductCode(product.slug)
   const { headline, sub, gatedFiles, publicFile, contents, confidentialityNote } = datasheetPanelDefaults
-
-  const publicUrl = `/datasheets/${product.slug}/${publicFile.key}.pdf`
 
   return (
     <div className="flex flex-col">
@@ -59,14 +58,14 @@ export function DatasheetPanel({ product }: DatasheetPanelProps) {
             <p className="text-body-sm font-medium text-ink-primary">{publicFile.label}</p>
             <p className="mt-1 text-caption text-ink-secondary">{publicFile.description}</p>
           </div>
-          <a
-            href={publicUrl}
-            download
+          <button
+            type="button"
+            onClick={() => void generateTdsPdf(product, 'summary')}
             className="inline-flex items-center gap-1.5 bg-accent-primary px-3 py-2 text-caption font-medium text-surface-white hover:bg-accent-hover transition-colors duration-200"
           >
             <Download size={14} strokeWidth={1.75} aria-hidden="true" />
             Download
-          </a>
+          </button>
         </div>
       </div>
 

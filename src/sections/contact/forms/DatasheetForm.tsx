@@ -1,8 +1,11 @@
 import { useId, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
-import { Send, User, FileText, Download, CheckCircle2 } from 'lucide-react'
+import { Send, User, FileText, Download, CheckCircle2, ShieldCheck } from 'lucide-react'
+
+import { generateTdsPdf } from '@/lib/generateTdsPdf'
 
 import {
   COUNTRY_OPTIONS,
@@ -109,28 +112,58 @@ export function DatasheetForm({ product }: DatasheetFormProps) {
           Your datasheet pack for <span className="font-medium text-ink-primary">{product.name}</span> is ready.
         </p>
         <p className="mt-2 text-caption text-ink-tertiary">
-          Note: in production, our sales team reviews each request before delivering documents.
-          For this demo, downloads are immediate.
+          The Technical Data Sheet generates instantly from our current product specification.
+          The COA and MSDS are controlled documents — issued per batch / on request by our QA team —
+          so they are not auto-generated.
         </p>
 
         <div className="mt-8 space-y-3">
-          {gatedFiles.map(file => (
-            <a
-              key={file.key}
-              href={`/datasheets/${product.slug}/${file.key}.pdf`}
-              download
-              className="flex items-center gap-3 border border-line-divider p-4 hover:bg-surface-alt transition-colors duration-200 group"
-            >
-              <FileText size={20} strokeWidth={1.5} className="shrink-0 text-ink-tertiary group-hover:text-accent-primary" aria-hidden="true" />
-              <div className="flex-1 min-w-0">
-                <p className="text-body-sm font-medium text-ink-primary">{file.label}</p>
-                <p className="mt-1 font-mono text-eyebrow text-ink-tertiary">
-                  {file.pages.toUpperCase()} · {file.size.toUpperCase()}
-                </p>
+          {gatedFiles.map(file => {
+            // TDS = typical-spec, data-driven → generate a real document on the fly.
+            if (file.key === 'tds') {
+              return (
+                <button
+                  key={file.key}
+                  type="button"
+                  onClick={() => void generateTdsPdf(product, 'tds')}
+                  className="flex w-full items-center gap-3 border border-line-divider p-4 text-left hover:bg-surface-alt transition-colors duration-200 group"
+                >
+                  <FileText size={20} strokeWidth={1.5} className="shrink-0 text-ink-tertiary group-hover:text-accent-primary" aria-hidden="true" />
+                  <div className="flex-1 min-w-0">
+                    <p className="text-body-sm font-medium text-ink-primary">{file.label}</p>
+                    <p className="mt-1 font-mono text-eyebrow text-ink-tertiary">
+                      GENERATED · TYPICAL SPECIFICATION
+                    </p>
+                  </div>
+                  <Download size={18} strokeWidth={1.5} className="shrink-0 text-accent-primary" aria-hidden="true" />
+                </button>
+              )
+            }
+
+            // COA / MSDS = controlled documents → never fabricated; routed to sales.
+            const note =
+              file.key === 'coa'
+                ? 'Batch-specific — issued with your shipment'
+                : 'Controlled document — available on request'
+            return (
+              <div
+                key={file.key}
+                className="flex items-center gap-3 border border-line-divider bg-surface-alt p-4"
+              >
+                <ShieldCheck size={20} strokeWidth={1.5} className="shrink-0 text-ink-tertiary" aria-hidden="true" />
+                <div className="flex-1 min-w-0">
+                  <p className="text-body-sm font-medium text-ink-primary">{file.label}</p>
+                  <p className="mt-1 text-caption text-ink-tertiary">{note}</p>
+                </div>
+                <Link
+                  to={`/request-quote?product=${product.slug}`}
+                  className="shrink-0 text-caption font-medium text-accent-primary border-b border-accent-primary pb-0.5 hover:text-accent-hover hover:border-accent-hover transition-colors duration-200"
+                >
+                  Request via sales →
+                </Link>
               </div>
-              <Download size={18} strokeWidth={1.5} className="shrink-0 text-accent-primary" aria-hidden="true" />
-            </a>
-          ))}
+            )
+          })}
         </div>
       </div>
     )

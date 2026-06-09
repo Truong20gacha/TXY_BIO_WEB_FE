@@ -20,7 +20,7 @@ export function Footer() {
                 className="block flex-shrink-0 h-7 w-auto "
               />
               <span className="text-body-sm font-medium tracking-[0.12em] uppercase text-surface-white">
-                TXYbio
+                TXY Biotech AU
               </span>
             </div>
             <p className="max-w-[220px] text-body-sm text-ink-muted">

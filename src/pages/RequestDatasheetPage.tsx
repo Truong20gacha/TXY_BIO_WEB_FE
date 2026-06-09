@@ -5,6 +5,7 @@ import { SEO } from '@/components/common/SEO'
 import { CtaPanelLayout } from '@/sections/contact/CtaPanelLayout'
 import { DatasheetPanel } from '@/sections/contact/panels/DatasheetPanel'
 import { DatasheetForm } from '@/sections/contact/forms/DatasheetForm'
+import { generateTdsPdf } from '@/lib/generateTdsPdf'
 import data from '@/data/information.json'
 
 import type { Product } from '@/types/information'
@@ -78,6 +79,13 @@ export function RequestDatasheetPage() {
             Get the complete documentation set for {product.name} — TDS, COA, and MSDS.
             Free 1-page summary available without a form.
           </p>
+          <button
+            type="button"
+            onClick={() => void generateTdsPdf(product)}
+            className="mt-6 inline-flex items-center gap-2 border border-accent-primary px-5 py-2.5 text-body-sm font-medium text-accent-primary hover:bg-accent-bg transition-colors duration-200"
+          >
+            ⬇ Download TDS (generated preview)
+          </button>
         </div>
       </section>
 

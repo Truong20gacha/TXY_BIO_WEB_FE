@@ -13,7 +13,7 @@ const heroData = data.heroes.news
 const articles = newsData as NewsArticle[]
 
 const SEO_TITLE = 'News · Yeast biotech for shrimp and poultry'
-const SEO_DESCRIPTION = 'Product certifications, industry insights, and company announcements from our Vietnamese fermentation facilities.'
+const SEO_DESCRIPTION = 'Product certifications, industry insights, and company announcements for Australian shrimp and poultry buyers.'
 
 function formatMasthead(): string {
   if (articles.length === 0) return ''

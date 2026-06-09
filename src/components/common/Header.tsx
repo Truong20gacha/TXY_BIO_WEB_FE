@@ -42,7 +42,7 @@ export function Header() {
               className="block flex-shrink-0 h-7 w-auto "
             />
             <span className="text-body-sm font-medium tracking-[0.12em] uppercase text-ink-primary">
-              TXYbio
+              TXY Biotech AU
             </span>
           </Link>
 
@@ -114,7 +114,7 @@ export function Header() {
               className="block flex-shrink-0 h-6 w-auto "
             />
             <span className="text-body-sm font-medium tracking-[0.12em] uppercase text-ink-primary">
-              TXYbio
+              TXY Biotech AU
             </span>
           </div>
           <button

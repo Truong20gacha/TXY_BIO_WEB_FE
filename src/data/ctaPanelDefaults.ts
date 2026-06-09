@@ -47,9 +47,24 @@ export const SAMPLE_VOLUME_OPTIONS = [
   '50+ tonnes / year',
 ] as const
 
+// Why the buyer wants the sample — lab spec-check vs in-animal trial.
+// Drives sample size: a lab check needs 100 g, a feed trial needs kilos.
+export const SAMPLE_USE_OPTIONS = [
+  'Lab evaluation — analysis / spec verification',
+  'Feed trial — in-animal performance test',
+  'Mixability / processing test',
+  'Other (describe below)',
+] as const
+
+export const SAMPLE_SIZE_OPTIONS = [
+  '100 g — lab evaluation (free)',
+  '500 g — extended lab work',
+  '2–5 kg — small feed trial',
+  'Other (specify in notes)',
+] as const
+
 export const COUNTRY_OPTIONS = [
   'Australia',
-  'Vietnam',
   'China',
   'India',
   'Indonesia',

@@ -62,9 +62,9 @@ export function TermsPage() {
             <div>
               <h2 className="text-h2 font-medium text-ink-primary">Governing law</h2>
               <p className="mt-4">
-                Use of this site is governed by the laws of the Socialist Republic of Vietnam. Any
+                Use of this site is governed by the terms specified by the operating company. Any
                 commercial transaction arising from inquiries submitted through this site is
-                governed by the terms specified in the corresponding quotation and sales contract.
+                governed by the corresponding quotation and sales contract.
               </p>
             </div>
 

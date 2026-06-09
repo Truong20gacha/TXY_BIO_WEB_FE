@@ -13,8 +13,8 @@ export function AboutSnippet() {
       <div className="container-x py-32 md:py-48">
         <p className="text-eyebrow text-accent-primary">002 / COMPANY</p>
         <h2 className="mt-6">
-          <span className="block text-display-lg text-ink-primary">Vietnamese biotech.</span>
-          <span className="block text-display-lg text-ink-secondary">Australian standards.</span>
+          <span className="block text-display-lg text-ink-primary">Yeast biotech.</span>
+          <span className="block text-display-lg text-ink-secondary">Built for Australian buyers.</span>
         </h2>
         <div className="grid grid-cols-2 gap-8 mt-16 md:grid-cols-4">
           {stats.map(stat => (

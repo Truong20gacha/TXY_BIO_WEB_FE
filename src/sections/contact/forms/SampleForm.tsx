@@ -6,7 +6,8 @@ import { Send, User, Package } from 'lucide-react'
 
 import {
   COUNTRY_OPTIONS,
-  SAMPLE_APPLICATION_OPTIONS,
+  SAMPLE_USE_OPTIONS,
+  SAMPLE_SIZE_OPTIONS,
   SAMPLE_VOLUME_OPTIONS,
 } from '@/data/ctaPanelDefaults'
 
@@ -18,7 +19,9 @@ const sampleSchema = z.object({
   workEmail: z.string().email('Enter a valid work email'),
   companyName: z.string().min(2, 'Company name is required'),
   country: z.string().min(1, 'Country is required'),
-  intendedApplication: z.string().min(1, 'Please select an application'),
+  targetSpecies: z.string().min(1, 'Please select a target species'),
+  intendedUse: z.string().min(1, 'Please select intended use'),
+  sampleSize: z.string().min(1, 'Please select a sample size'),
   estimatedVolume: z.string().min(1, 'Please select an estimated volume'),
   shippingAddress: z.string().min(10, 'Full address with postal code is required'),
   specialRequirements: z.string().optional(),
@@ -76,6 +79,14 @@ function SectionHeading({ icon, children }: Readonly<{ icon: ReactNode; children
 export function SampleForm({ product }: SampleFormProps) {
   const [isSubmitted, setIsSubmitted] = useState(false)
 
+  // Target-species options are derived from THIS product's dosage data —
+  // the buyer never re-types what the catalogue already knows. Falls back to
+  // a generic list if a product has no dosage rows yet.
+  const speciesFromProduct = [...new Set(product.dosages.map(d => d.label))]
+  const speciesOptions = speciesFromProduct.length > 0
+    ? [...speciesFromProduct, 'Other']
+    : ['Shrimp', 'Broiler', 'Layer', 'Piglet', 'Other']
+
   const {
     register,
     handleSubmit,
@@ -84,6 +95,7 @@ export function SampleForm({ product }: SampleFormProps) {
     resolver: zodResolver(sampleSchema),
     defaultValues: {
       country: 'Australia',
+      targetSpecies: speciesFromProduct[0] ?? '',
     },
   })
 
@@ -178,18 +190,58 @@ export function SampleForm({ product }: SampleFormProps) {
         <SectionHeading icon={<Package size={14} strokeWidth={1.5} />}>SAMPLE QUALIFICATION</SectionHeading>
       </div>
 
-      <Field label="Intended application" required error={errors.intendedApplication?.message}>
+      <Field
+        label="Target species"
+        required
+        helper="pre-filled from this product"
+        error={errors.targetSpecies?.message}
+      >
         {({ fieldId, errorId }) => (
           <select
             id={fieldId}
-            aria-invalid={!!errors.intendedApplication}
-            aria-describedby={errors.intendedApplication ? errorId : undefined}
+            aria-invalid={!!errors.targetSpecies}
+            aria-describedby={errors.targetSpecies ? errorId : undefined}
+            className={inputClass}
+            {...register('targetSpecies')}
+          >
+            {speciesOptions.map(o => <option key={o} value={o}>{o}</option>)}
+          </select>
+        )}
+      </Field>
+
+      <Field label="Intended use" required error={errors.intendedUse?.message}>
+        {({ fieldId, errorId }) => (
+          <select
+            id={fieldId}
+            aria-invalid={!!errors.intendedUse}
+            aria-describedby={errors.intendedUse ? errorId : undefined}
             defaultValue=""
             className={inputClass}
-            {...register('intendedApplication')}
+            {...register('intendedUse')}
           >
-            <option value="" disabled>Select an application…</option>
-            {SAMPLE_APPLICATION_OPTIONS.map(o => <option key={o} value={o}>{o}</option>)}
+            <option value="" disabled>How will you evaluate it?…</option>
+            {SAMPLE_USE_OPTIONS.map(o => <option key={o} value={o}>{o}</option>)}
+          </select>
+        )}
+      </Field>
+
+      <Field
+        label="Sample size"
+        required
+        helper="100 g is free"
+        error={errors.sampleSize?.message}
+      >
+        {({ fieldId, errorId }) => (
+          <select
+            id={fieldId}
+            aria-invalid={!!errors.sampleSize}
+            aria-describedby={errors.sampleSize ? errorId : undefined}
+            defaultValue=""
+            className={inputClass}
+            {...register('sampleSize')}
+          >
+            <option value="" disabled>Select sample size…</option>
+            {SAMPLE_SIZE_OPTIONS.map(o => <option key={o} value={o}>{o}</option>)}
           </select>
         )}
       </Field>

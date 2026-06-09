@@ -54,7 +54,7 @@ export function PrivacyPage() {
               <p className="mt-4">
                 Inquiry submissions are retained for the duration of our commercial relationship
                 with you, or for seven years following the last contact, whichever is shorter, in
-                accordance with Vietnamese business record-keeping requirements.
+                accordance with applicable business record-keeping requirements.
               </p>
             </div>
 
@@ -66,8 +66,8 @@ export function PrivacyPage() {
             </div>
 
             <p className="text-caption text-ink-tertiary border-t border-line-hair pt-6">
-              This is a placeholder template. Replace with content reviewed by Australian and
-              Vietnamese legal counsel before production use.
+              This is a placeholder template. Replace with content reviewed by qualified legal
+              counsel before production use.
             </p>
 
           </article>

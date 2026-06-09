@@ -282,7 +282,7 @@ export function SalesForm({ product }: SalesFormProps) {
             <input
               id={fieldId}
               type="text"
-              placeholder="e.g., Vietnam, EU, GCC"
+              placeholder="e.g., Australia, EU, GCC"
               aria-invalid={!!errors.targetMarket}
               aria-describedby={errors.targetMarket ? errorId : undefined}
               className={inputClass}
@@ -296,7 +296,7 @@ export function SalesForm({ product }: SalesFormProps) {
             <input
               id={fieldId}
               type="text"
-              placeholder="e.g., Hai Phong, Sydney"
+              placeholder="e.g., Sydney, Melbourne"
               className={inputClass}
               {...register('destinationPort')}
             />
